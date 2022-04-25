@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveYourRecipes.Features.AcercaDe.AcercaDeView"
+             xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="WidthRequest" Value="225" />
+                <Setter Property="CornerRadius" Value="25" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="BorderWidth" Value="1.5" />
+            </Style>
+            <Style x:Key="imageStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="{OnPlatform Android=50, iOS=50}" />
+                <Setter Property="WidthRequest" Value="{OnPlatform Android=50, iOS=50}" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="rightArrowStyle" TargetType="Image">
+                <Setter Property="HeightRequest" Value="{OnPlatform Android=25, iOS=25}" />
+                <Setter Property="WidthRequest" Value="{OnPlatform Android=25, iOS=25}" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="10">
+            <Label Text="{translator:Translate acercadeview_primer_texto}" Style="{StaticResource labelStyle}" FontSize="Title" FontAttributes="Bold" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Image Source="github_logo.png" VerticalOptions="Center" Style="{StaticResource imageStyle}"/>
+                <Label Text="{translator:Translate acercadeview_segundo_texto}" Style="{StaticResource labelStyle}"/>
+                <Image Source="icon_right_arrow.png" VerticalOptions="Center" Style="{StaticResource rightArrowStyle}"/>
+                <Label x:Name="linkGitHub" Style="{StaticResource labelStyle}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{translator:Translate acercadeview_segundo_texto_link}" TextDecorations="Underline" TextColor="Blue">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapGitHubCommand}" CommandParameter="{translator:Translate acercadeview_segundo_texto_link}" NumberOfTapsRequired="1"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Image Source="xamarin_logo.png" VerticalOptions="Center" Style="{StaticResource imageStyle}"/>
+                <Label Text="{translator:Translate acercadeview_tercer_texto}" Style="{StaticResource labelStyle}"/>
+                <Image Source="icon_right_arrow.png" VerticalOptions="Center" Style="{StaticResource rightArrowStyle}"/>
+                <Label x:Name="linkXamarin" Style="{StaticResource labelStyle}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{translator:Translate acercadeview_tercer_texto_link}" TextDecorations="Underline" TextColor="Blue">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapXamarinCommand}" CommandParameter="{translator:Translate acercadeview_tercer_texto_link}" NumberOfTapsRequired="1"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Image Source="sqlite_logo.png" VerticalOptions="Center" Style="{StaticResource imageStyle}"/>
+                <Label Text="{translator:Translate acercadeview_cuarto_texto}" Style="{StaticResource labelStyle}"/>
+                <Image Source="icon_right_arrow.png" VerticalOptions="Center" Style="{StaticResource rightArrowStyle}"/>
+                <Label x:Name="linkSQLite" Style="{StaticResource labelStyle}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{translator:Translate acercadeview_cuarto_texto_link}" TextDecorations="Underline" TextColor="Blue">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapSQLiteCommand}" CommandParameter="{translator:Translate acercadeview_cuarto_texto_link}" NumberOfTapsRequired="1"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <Button Text="{translator:Translate volver_al_menu_principal_button}" Style="{StaticResource buttonStyle}" x:Name="volverButton" Clicked="volverButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:localNuevo="clr-namespace:SaveYourRecipes.Features.NuevaReceta"
+            xmlns:localMisRecetas="clr-namespace:SaveYourRecipes.Features.MisRecetas"
+            xmlns:localConfiguracion="clr-namespace:SaveYourRecipes.Features.Configuracion"
+            xmlns:translator="clr-namespace:SaveYourRecipes.Extensions"
+            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            ios:Page.UseSafeArea="true"
+            BarBackgroundColor="Yellow"
+            BarTextColor="Black"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="SaveYourRecipes.MainPageView">
+
+    <localNuevo:NuevaRecetaView 
+        Title="{translator:Translate tabbed_page_nueva_receta_title}"
+        IconImageSource="icon_cook.png"/>
+
+    <localMisRecetas:MisRecetasView 
+        Title="{translator:Translate tabbed_page_mis_recetas_title}"
+        IconImageSource="icon_list.png"/>
+
+    <localConfiguracion:ConfiguracionView 
+        Title="{translator:Translate tabbed_page_configuracion_title}"
+        IconImageSource="icon_settings.png"/>
+
+</TabbedPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveYourRecipes.Features.NuevaReceta.NuevaRecetaView"
+             xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="titleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Title" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="entryStyle" TargetType="Entry">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="pickerStyle" TargetType="Picker">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="editorStyle" TargetType="Editor">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HeightRequest" Value="200" />
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Yellow" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
+                <Entry Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}"/>
+                <Picker Title="{translator:Translate nuevarecetaview_categoria_comida}" Style="{StaticResource pickerStyle}"/>
+                <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
+                <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
+                <Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />
+                <Editor Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
+                <Button Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

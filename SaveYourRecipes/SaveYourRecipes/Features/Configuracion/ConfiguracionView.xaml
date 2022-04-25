@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveYourRecipes.Features.Configuracion.ConfiguracionView"
+             xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="buttonStyles" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Button Text="{translator:Translate configurationview_cambiar_idioma}" Style="{StaticResource buttonStyles}" x:Name="cambiarIdiomaButton" Clicked="cambiarIdiomaButton_Clicked"/>
+                <Button Text="{translator:Translate configuracionview_acerca_de}" Style="{StaticResource buttonStyles}" x:Name="acercaDeButton" Clicked="acercaDeButton_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
