@@ -19,18 +19,6 @@ namespace SaveYourRecipes
         {
             InitializeComponent();
 
-            //Solo hacer esto la primera vez que se abre la app
-            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
-            using (Stream stream = assembly.GetManifestResourceStream("SaveYourRecipes.DBSaveYourRecipes.db"))
-            {
-                using (MemoryStream memoryStream = new MemoryStream())
-                {
-                    stream.CopyTo(memoryStream);
-
-                    File.WriteAllBytes(SQLiteHelper.dbPath, memoryStream.ToArray());
-                }
-            }
-
         }
     }
 }

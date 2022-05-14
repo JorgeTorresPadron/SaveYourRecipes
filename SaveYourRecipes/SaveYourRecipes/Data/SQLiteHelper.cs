@@ -10,11 +10,9 @@ namespace SaveYourRecipes.Data
 {
     public class SQLiteHelper
     {
-        static SQLiteAsyncConnection db;
+        SQLiteAsyncConnection db;
 
-        public static string dbPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DBSaveYourRecipes.db");
-
-        public SQLiteHelper()
+        public SQLiteHelper(string dbPath)
         {
             db = new SQLiteAsyncConnection(dbPath);
             db.CreateTableAsync<Receta>();
@@ -26,9 +24,17 @@ namespace SaveYourRecipes.Data
             db.CreateTableAsync<Receta_pasos>();
         }
 
-        public static Task<int> SaveRecetaAsync(Receta receta)
+        public Task<int> SaveRecetaAsync(Receta receta)
         {
+            if (receta.receta_id == 0)
+            {
                 return db.InsertAsync(receta);
+            }
+            else
+            {
+                return null;
+            }
+                
         }
     }
 }

@@ -9,16 +9,16 @@ namespace SaveYourRecipes.Models
     [Table("Cantidad")]
     public class Cantidad
     {
-        [AutoIncrement, PrimaryKey, NotNull]
+        [AutoIncrement, PrimaryKey]
         public int cantidad_id { get; set; }
 
-        [ForeignKey(typeof(Receta)), NotNull]
+        [ForeignKey(typeof(Receta))]
         public int receta_id { get; set; }
 
-        [ForeignKey(typeof(Ingredientes)), NotNull]
+        [ForeignKey(typeof(Ingredientes))]
         public int ingredientes_id { get; set; }
 
-        [ForeignKey(typeof(Medidas)), NotNull]
+        [ForeignKey(typeof(Medidas))]
         public int medidas_id { get; set; }
 
         public double cantidad_ingredientes { get; set; }
