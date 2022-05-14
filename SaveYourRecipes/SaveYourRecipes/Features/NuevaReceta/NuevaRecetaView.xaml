@@ -35,13 +35,13 @@
         <ScrollView>
             <StackLayout Spacing="10" Padding="10">
                 <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
-                <Entry Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}"/>
-                <Picker Title="{translator:Translate nuevarecetaview_categoria_comida}" Style="{StaticResource pickerStyle}"/>
-                <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
-                <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
-                <Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />
-                <Editor Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
-                <Button Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}"/>
+                <Entry x:Name="nombreRecetaEntry" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}"/>
+                <!--<Picker Title="{translator:Translate nuevarecetaview_categoria_comida}" Style="{StaticResource pickerStyle}"/>-->
+                <Editor x:Name="recetaDescripcion" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
+                <Entry x:Name="tiempoPreparacion" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
+                <Entry x:Name="tiempoCocina" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
+                <!--<Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />-->
+                <Button x:Name="guardarRecetaButton" Clicked="guardarRecetaButton_Clicked" Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -15,7 +15,6 @@ namespace SaveYourRecipes
 {
     public partial class MainPageView : TabbedPage
     {
-        public ObservableCollection<Ingredientes> Ingredientes { get; set; } = new ObservableCollection<Ingredientes>();
         public MainPageView()
         {
             InitializeComponent();
@@ -31,14 +30,6 @@ namespace SaveYourRecipes
                     File.WriteAllBytes(IngredientesRepository.DbPath, memoryStream.ToArray());
                 }
             }
-
-            IngredientesRepository repository = new IngredientesRepository();
-            foreach (var ingredientes in repository.List())
-            {
-                Ingredientes.Add(ingredientes);
-            }
-
-            BindingContext = this;
         }
     }
 }

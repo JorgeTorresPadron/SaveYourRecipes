@@ -19,17 +19,6 @@
     <ContentPage.Content>
         <StackLayout Spacing="10" Padding="10">
             <Label Text="{translator:Translate misrecetasview_mis_recetas_label}" Style="{StaticResource titleLabelStyle}" />
-
-            <CollectionView ItemsSource="{Binding Ingredientes}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Label Text="{Binding ingredientes_id}"/>
-                            <Label Text="{Binding ingredientes_nombre}"/>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

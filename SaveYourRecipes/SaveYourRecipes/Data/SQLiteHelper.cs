@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 using SaveYourRecipes.Models;
+using System.Threading.Tasks;
+using System.IO;
 
 namespace SaveYourRecipes.Data
 {
@@ -20,6 +22,18 @@ namespace SaveYourRecipes.Data
             db.CreateTableAsync<Pais>();
             db.CreateTableAsync<Receta>();
             db.CreateTableAsync<Receta_pasos>();
+        }
+
+        public Task<int> SaveRecetaAsync(Receta receta)
+        {
+            if (receta.receta_id == 0)
+            {
+                return db.InsertAsync(receta);
+            }
+            else
+            {
+                return db.InsertAsync(receta);
+            }
         }
     }
 }
