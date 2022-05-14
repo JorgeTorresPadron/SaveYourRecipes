@@ -2,6 +2,7 @@
 using SQLite;
 using System;
 using System.IO;
+using System.Reflection;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,14 +10,14 @@ namespace SaveYourRecipes
 {
     public partial class App : Application
     {
-        static SQLiteHelper db;
+        // static SQLiteHelper db;
         public App()
         {
             InitializeComponent();
 
             MainPage = new MainPageView();
         }
-
+        /*
         public static SQLiteHelper SQLiteDB
         {
             get
@@ -28,6 +29,7 @@ namespace SaveYourRecipes
                 return db;
             }
         }
+        */
 
         protected override void OnStart()
         {

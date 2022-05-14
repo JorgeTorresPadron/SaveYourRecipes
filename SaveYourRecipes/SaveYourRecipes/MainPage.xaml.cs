@@ -27,9 +27,10 @@ namespace SaveYourRecipes
                 {
                     stream.CopyTo(memoryStream);
 
-                    File.WriteAllBytes(IngredientesRepository.DbPath, memoryStream.ToArray());
+                    File.WriteAllBytes(SQLiteHelper.dbPath, memoryStream.ToArray());
                 }
             }
+
         }
     }
 }

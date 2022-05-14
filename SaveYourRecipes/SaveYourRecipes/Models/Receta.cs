@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace SaveYourRecipes.Models
 {
@@ -11,6 +12,7 @@ namespace SaveYourRecipes.Models
         [PrimaryKey, AutoIncrement, NotNull]
         public int receta_id { get; set; }
 
+        [ForeignKey(typeof(Categoria_comida)), NotNull]
         public int categoria_comida_id { get; set; }
 
         public string receta_nombre { get; set; }
@@ -21,6 +23,7 @@ namespace SaveYourRecipes.Models
 
         public string tiempo_cocina { get; set; }
 
+        [ForeignKey(typeof(Pais)), NotNull]
         public int pais_id { get; set; }
     }
 }
