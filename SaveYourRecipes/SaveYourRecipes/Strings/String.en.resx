@@ -53,6 +53,7 @@
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
+
     mimetype: application/x-microsoft.net.object.bytearray.base64
     value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
@@ -142,6 +143,9 @@
   </data>
   <data name="configurationview_cambiar_idioma" xml:space="preserve">
     <value>Change language</value>
+  </data>
+  <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
+    <value>My Recipes</value>
   </data>
   <data name="nuevarecetaview_categoria_comida" xml:space="preserve">
     <value>Select the category to which it belongs</value>
