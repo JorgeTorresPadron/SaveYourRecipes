@@ -147,6 +147,9 @@
   <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
     <value>My Recipes</value>
   </data>
+  <data name="misrecetasview_mostrar_receta" xml:space="preserve">
+    <value>Show stored recipes</value>
+  </data>
   <data name="nuevarecetaview_categoria_comida" xml:space="preserve">
     <value>Select the category to which it belongs</value>
   </data>

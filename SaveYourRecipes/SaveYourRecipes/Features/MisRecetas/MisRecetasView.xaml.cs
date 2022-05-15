@@ -16,5 +16,14 @@ namespace SaveYourRecipes.Features.MisRecetas
         {
             InitializeComponent();
         }
+
+        private async void mostrarDatos_Clicked(object sender, EventArgs e)
+        {
+            var recetaList = await App.SQLiteDB.GetRecetasAsync();
+            if (recetaList != null)
+            {
+                listaRecetas.ItemsSource = recetaList;
+            }
+        }
     }
 }

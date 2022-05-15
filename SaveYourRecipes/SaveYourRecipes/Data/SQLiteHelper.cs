@@ -36,5 +36,24 @@ namespace SaveYourRecipes.Data
             }
                 
         }
+
+        /// <summary>
+        /// Recuperar todas las recetas
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<Receta>> GetRecetasAsync()
+        {
+            return db.Table<Receta>().ToListAsync();
+        }
+
+        /// <summary>
+        /// Recuperar recetas por id
+        /// </summary>
+        /// <param name="idReceta">Id de la receta que se requiere</param>
+        /// <returns></returns>
+        public Task<Receta> GetRecetaByIdAsync(int idReceta)
+        {
+            return db.Table<Receta>().Where(a => a.receta_id == idReceta).FirstOrDefaultAsync();
+        }
     }
 }

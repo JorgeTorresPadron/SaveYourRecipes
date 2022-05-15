@@ -151,6 +151,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Mostrar recetas almacenadas.
+        /// </summary>
+        internal static string misrecetasview_mostrar_receta {
+            get {
+                return ResourceManager.GetString("misrecetasview_mostrar_receta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Selecciona la categoría a la que pertenece.
         /// </summary>
         internal static string nuevarecetaview_categoria_comida {
