@@ -144,6 +144,12 @@
   <data name="configurationview_cambiar_idioma" xml:space="preserve">
     <value>Cambiar idioma</value>
   </data>
+  <data name="editarrecetaview_actualizar_receta_button" xml:space="preserve">
+    <value>Actualizar cambios en la receta</value>
+  </data>
+  <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
+    <value>Actualizar receta</value>
+  </data>
   <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
     <value>Mis Recetas</value>
   </data>

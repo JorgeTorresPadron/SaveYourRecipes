@@ -24,15 +24,20 @@ namespace SaveYourRecipes.Data
             db.CreateTableAsync<Receta_pasos>();
         }
 
+        /// <summary>
+        /// Guardar o actualizar la receta
+        /// </summary>
+        /// <param name="receta"></param>
+        /// <returns></returns>
         public Task<int> SaveRecetaAsync(Receta receta)
         {
-            if (receta.receta_id == 0)
+            if (receta.receta_id != 0)
             {
                 return db.InsertAsync(receta);
             }
             else
             {
-                return null;
+                return db.UpdateAsync(receta);
             }
                 
         }

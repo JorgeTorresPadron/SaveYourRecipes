@@ -15,7 +15,7 @@ namespace SaveYourRecipes.Features.Configuracion
 
         private void cambiarIdiomaButton_Clicked(object sender, EventArgs e)
         {
-
+            
         }
 
         private void acercaDeButton_Clicked(object sender, EventArgs e)

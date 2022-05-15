@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SaveYourRecipes.Models;
+using SaveYourRecipes.Features.Editar;
 
 namespace SaveYourRecipes.Features.MisRecetas
 {
@@ -15,6 +17,11 @@ namespace SaveYourRecipes.Features.MisRecetas
         public MisRecetasView()
         {
             InitializeComponent();
+        }
+
+        private void listaRecetas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Navigation.PushModalAsync(new EditarRecetaView());
         }
 
         private async void mostrarDatos_Clicked(object sender, EventArgs e)

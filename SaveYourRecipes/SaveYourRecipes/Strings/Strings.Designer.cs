@@ -142,6 +142,24 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Actualizar cambios en la receta.
+        /// </summary>
+        internal static string editarrecetaview_actualizar_receta_button {
+            get {
+                return ResourceManager.GetString("editarrecetaview_actualizar_receta_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Actualizar receta.
+        /// </summary>
+        internal static string editarrecetaview_actualizar_receta_label {
+            get {
+                return ResourceManager.GetString("editarrecetaview_actualizar_receta_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Mis Recetas.
         /// </summary>
         internal static string misrecetasview_mis_recetas_label {

@@ -22,7 +22,7 @@
     <ContentPage.Content>
         <StackLayout Spacing="10" Padding="10">
             <Label Text="{translator:Translate misrecetasview_mis_recetas_label}" Style="{StaticResource titleLabelStyle}" />
-            <ListView x:Name="listaRecetas">
+            <ListView x:Name="listaRecetas" ItemSelected="listaRecetas_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
