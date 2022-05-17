@@ -35,11 +35,11 @@
         <ScrollView>
             <StackLayout Spacing="10" Padding="10">
                 <Label Text="{translator:Translate editarrecetaview_actualizar_receta_label}" Style="{StaticResource titleLabelStyle}"/>
-                <Entry x:Name="nombreRecetaEntry" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}"/>
+                <Entry x:Name="actualizarNombreReceta" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}"/>
                 <!--<Picker Title="{translator:Translate nuevarecetaview_categoria_comida}" Style="{StaticResource pickerStyle}"/>-->
-                <Editor x:Name="recetaDescripcion" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
-                <Entry x:Name="tiempoPreparacion" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
-                <Entry x:Name="tiempoCocina" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
+                <Editor x:Name="actualizarRecetaDescripcion" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
+                <Entry x:Name="actualizarTiempoPreparacion" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
+                <Entry x:Name="actualizarTiempoCocina" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
                 <!--<Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />-->
                 <Button x:Name="actualizarRecetaButton" Clicked="actualizarRecetaButton_Clicked" Text="{translator:Translate editarrecetaview_actualizar_receta_button}" Style="{StaticResource buttonStyle}"/>
             </StackLayout>

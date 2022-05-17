@@ -8,7 +8,7 @@ namespace SaveYourRecipes.Models
     [Table("Ingredientes")]
     public class Ingredientes
     {
-        [AutoIncrement, PrimaryKey]
+        [AutoIncrement, PrimaryKey, Column("ingredientes_id")]
         public int ingredientes_id { get; set; }
         public string ingredientes_nombre { get; set; }
     }

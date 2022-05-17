@@ -18,7 +18,6 @@ namespace SaveYourRecipes
         public MainPageView()
         {
             InitializeComponent();
-
         }
     }
 }

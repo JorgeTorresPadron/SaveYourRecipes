@@ -9,7 +9,7 @@ namespace SaveYourRecipes.Models
     [Table("Cantidad")]
     public class Cantidad
     {
-        [AutoIncrement, PrimaryKey]
+        [AutoIncrement, PrimaryKey, Column("cantidad_id")]
         public int cantidad_id { get; set; }
 
         [ForeignKey(typeof(Receta))]

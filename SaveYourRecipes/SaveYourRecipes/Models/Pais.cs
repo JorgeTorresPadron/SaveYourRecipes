@@ -8,7 +8,7 @@ namespace SaveYourRecipes.Models
     [Table("Pais")]
     public class Pais
     {
-        [AutoIncrement, PrimaryKey]
+        [AutoIncrement, PrimaryKey, Column("pais_id")]
         public int pais_id { get; set; }
 
         public string pais_nombre { get; set; }

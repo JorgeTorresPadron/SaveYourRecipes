@@ -150,6 +150,9 @@
   <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
     <value>Actualizar receta</value>
   </data>
+  <data name="misrecetasview_eliminar_receta" xml:space="preserve">
+    <value>Eliminar recetas</value>
+  </data>
   <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
     <value>Mis Recetas</value>
   </data>

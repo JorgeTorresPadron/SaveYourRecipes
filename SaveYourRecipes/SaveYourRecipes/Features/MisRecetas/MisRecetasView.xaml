@@ -25,25 +25,30 @@
             <ListView x:Name="listaRecetas" ItemSelected="listaRecetas_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="{translator:Translate misrecetasview_eliminar_receta}" BackgroundColor="IndianRed" CommandParameter="{Binding .}" Invoked="SwipeItem_Invoked" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
                             <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding receta_id}" Grid.Row="0" Grid.Column="0" />
-                                <Label Text="{Binding receta_nombre}" Grid.Row="0" Grid.Column="1" />
-                                <Label Text="{Binding receta_descripcion}" Grid.Row="0" Grid.Column="2" />
-                                <Label Text="{Binding tiempo_preparacion}" Grid.Row="0" Grid.Column="3" />
-                                <Label Text="{Binding tiempo_cocina}" Grid.Row="0" Grid.Column="4" />
-                            </Grid>
-                        </ViewCell>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding receta_id}" Grid.Row="0" Grid.Column="0" />
+                                    <Label Text="{Binding receta_nombre}" Grid.Row="0" Grid.Column="1" />
+                                    <Label Text="{Binding receta_descripcion}" Grid.Row="0" Grid.Column="2" />
+                                    <Label Text="{Binding tiempo_preparacion}" Grid.Row="0" Grid.Column="3" />
+                                    <Label Text="{Binding tiempo_cocina}" Grid.Row="0" Grid.Column="4" />
+                                </Grid>
+                        </SwipeView>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

@@ -160,6 +160,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar recetas.
+        /// </summary>
+        internal static string misrecetasview_eliminar_receta {
+            get {
+                return ResourceManager.GetString("misrecetasview_eliminar_receta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Mis Recetas.
         /// </summary>
         internal static string misrecetasview_mis_recetas_label {

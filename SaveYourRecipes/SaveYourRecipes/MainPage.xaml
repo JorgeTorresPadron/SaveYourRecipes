@@ -16,14 +16,17 @@
 
     <localNuevo:NuevaRecetaView 
         Title="{translator:Translate tabbed_page_nueva_receta_title}"
+        x:Name="NuevaRecetaTabbedPage"
         IconImageSource="icon_cook.png"/>
 
     <localMisRecetas:MisRecetasView 
         Title="{translator:Translate tabbed_page_mis_recetas_title}"
+        x:Name="MisRecetasTabbedPage"
         IconImageSource="icon_list.png"/>
 
     <localConfiguracion:ConfiguracionView 
         Title="{translator:Translate tabbed_page_configuracion_title}"
+        x:Name="ConfiguracionTabbedPage"
         IconImageSource="icon_settings.png"/>
 
 </TabbedPage>
