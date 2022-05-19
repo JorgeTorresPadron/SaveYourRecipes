@@ -34,15 +34,7 @@ namespace SaveYourRecipes.Features.MisRecetas
 
                     File.WriteAllBytes(SQLiteHelper.DbPath, memoryStream.ToArray());
                 }
-            }
-
-            SQLiteHelper repository = new SQLiteHelper();
-            foreach (var receta in repository.recetaList())
-            {
-                Recetas.Add(receta);
-            }
-
-            BindingContext = this;
+            } 
         }
 
         private async void listaRecetas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -52,7 +44,13 @@ namespace SaveYourRecipes.Features.MisRecetas
 
         private async void mostrarDatos_Clicked(object sender, EventArgs e)
         {
-            
+            SQLiteHelper repository = new SQLiteHelper();
+            foreach (var receta in repository.recetaList())
+            {
+                Recetas.Add(receta);
+            }
+
+            BindingContext = this;
         }
 
         private async void SwipeItem_Invoked(object sender, EventArgs e)
