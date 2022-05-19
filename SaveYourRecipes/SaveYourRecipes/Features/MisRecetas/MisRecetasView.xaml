@@ -22,36 +22,19 @@
     <ContentPage.Content>
         <StackLayout Spacing="10" Padding="10">
             <Label Text="{translator:Translate misrecetasview_mis_recetas_label}" Style="{StaticResource titleLabelStyle}" />
-            <ListView x:Name="listaRecetas" ItemSelected="listaRecetas_ItemSelected">
-                <ListView.ItemTemplate>
+            <CollectionView ItemsSource="{Binding Recetas}">
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <SwipeView>
-                            <SwipeView.RightItems>
-                                <SwipeItems>
-                                    <SwipeItem Text="{translator:Translate misrecetasview_eliminar_receta}" BackgroundColor="IndianRed" CommandParameter="{Binding .}" Invoked="SwipeItem_Invoked" />
-                                </SwipeItems>
-                            </SwipeView.RightItems>
-                            <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding receta_id}" Grid.Row="0" Grid.Column="0" />
-                                    <Label Text="{Binding receta_nombre}" Grid.Row="0" Grid.Column="1" />
-                                    <Label Text="{Binding receta_descripcion}" Grid.Row="0" Grid.Column="2" />
-                                    <Label Text="{Binding tiempo_preparacion}" Grid.Row="0" Grid.Column="3" />
-                                    <Label Text="{Binding tiempo_cocina}" Grid.Row="0" Grid.Column="4" />
-                                </Grid>
-                        </SwipeView>
+                        <StackLayout>
+                            <Label Text="{Binding receta_id}" />
+                            <Label Text="{Binding receta_nombre}" />
+                            <Label Text="{Binding receta_descripcion}"/>
+                            <Label Text="{Binding tiempo_preparacion}" />
+                            <Label Text="{Binding tiempo_cocina}"/>
+                        </StackLayout>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             <Button x:Name="mostrarDatos" Clicked="mostrarDatos_Clicked" Text="{translator:Translate misrecetasview_mostrar_receta}" Style="{StaticResource buttonStyle}"/>
         </StackLayout>
     </ContentPage.Content>

@@ -26,7 +26,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
                     tiempo_cocina = tiempoCocina.Text
                 };
                 //guardamos los datos en la base de datos
-                await App.SQLiteDB.SaveRecetaAsync(receta);
+                
                 //ponemos los cambios otra vez vacíos
                 nombreRecetaEntry.Text = "";
                 recetaDescripcion.Text = "";

@@ -36,8 +36,7 @@ namespace SaveYourRecipes.Features.Editar
                     tiempo_cocina = actualizarTiempoCocina.Text
                 };
 
-                await App.SQLiteDB.ActualizarReceta(receta);
-                await App.SQLiteDB.ReadRecetasAsync();
+                
             }
         }
 
