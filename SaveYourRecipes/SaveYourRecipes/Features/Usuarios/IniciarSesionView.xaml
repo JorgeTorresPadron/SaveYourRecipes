@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaveYourRecipes.Features.Usuarios.IniciarSesionView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="titleLabelStyle">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style TargetType="Label" x:Key="normalLabelStyle">
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="FontSize" Value="Header" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            <Style TargetType="Entry" x:Key="nombreUsuarioEntryStyle" >
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="MaxLength" Value="20" />
+                <Setter Property="Keyboard" Value="Text" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
+            </Style>
+            <Style TargetType="Entry" x:Key="passwordUsuarioEntryStyle">
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="MaxLength" Value="16" />
+                <Setter Property="IsPassword" Value="True" />
+                <Setter Property="Keyboard" Value="Text" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
+            </Style>
+            <Style TargetType="Button" x:Key="iniciarSesionButtonStyle" >
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="BackgroundColor" Value="Orange" />
+                <Setter Property="BorderColor" Value="Red" />
+                <Setter Property="BorderWidth" Value="1.5" />
+                <Setter Property="CornerRadius" Value="40" />
+            </Style>
+            <Style TargetType="Button" x:Key="olvidarContraButtonStyle">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontSize" Value="Small" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Inicia sesión para continuar" Style="{StaticResource titleLabelStyle}"/>
+            <Label Text="Nombre de usuario" Style="{StaticResource normalLabelStyle}"/>
+            <Entry Placeholder="Escribe el nombre de usuario" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+            <Label Text="Contraseña" Style="{StaticResource normalLabelStyle}"/>
+            <Entry Placeholder="Escribe la contraseña" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Button Text="¿Olvidaste la contraseña?" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" />
+
+            <ActivityIndicator IsRunning="{Binding IsRunningTxt}" IsVisible="{Binding IsVisibleTxt}" Color="Black" Scale="0.8"/>
+            <Button Text="Iniciar Sesion" Style="{StaticResource iniciarSesionButtonStyle}" Command="{Binding LoginCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Button Text="¿No tienes una cuenta? Registrate" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" x:Name="noCuentaButton" Clicked="noCuentaButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

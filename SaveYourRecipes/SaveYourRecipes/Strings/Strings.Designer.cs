@@ -259,6 +259,105 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Escribe la contraseña.
+        /// </summary>
+        internal static string registrarseview_contrasena_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_contrasena_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        internal static string registrarseview_contrasena_label {
+            get {
+                return ResourceManager.GetString("registrarseview_contrasena_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe tu edad.
+        /// </summary>
+        internal static string registrarseview_edad_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_edad_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Edad.
+        /// </summary>
+        internal static string registrarseview_edad_label {
+            get {
+                return ResourceManager.GetString("registrarseview_edad_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe tu nombre y apellidos.
+        /// </summary>
+        internal static string registrarseview_nombre_apellido_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_nombre_apellido_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre y Apellidos.
+        /// </summary>
+        internal static string registrarseview_nombre_apellido_label {
+            get {
+                return ResourceManager.GetString("registrarseview_nombre_apellido_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe el nombre de usuario.
+        /// </summary>
+        internal static string registrarseview_nombre_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_nombre_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario.
+        /// </summary>
+        internal static string registrarseview_nombre_label {
+            get {
+                return ResourceManager.GetString("registrarseview_nombre_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registrarse.
+        /// </summary>
+        internal static string registrarseview_registrarse_button {
+            get {
+                return ResourceManager.GetString("registrarseview_registrarse_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿Ya tienes una cuenta? Inicia Sesión.
+        /// </summary>
+        internal static string registrarseview_tiene_cuenta_button {
+            get {
+                return ResourceManager.GetString("registrarseview_tiene_cuenta_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Crea una nueva cuenta para continuar.
+        /// </summary>
+        internal static string registrarseview_titulo {
+            get {
+                return ResourceManager.GetString("registrarseview_titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Configuración.
         /// </summary>
         internal static string tabbed_page_configuracion_title {

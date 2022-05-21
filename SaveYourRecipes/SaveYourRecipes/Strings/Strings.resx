@@ -183,6 +183,39 @@
   <data name="nuevarecetaview_tiempo_preparacion" xml:space="preserve">
     <value>Escribe el tiempo de preparación de la receta</value>
   </data>
+  <data name="registrarseview_contrasena_entry" xml:space="preserve">
+    <value>Escribe la contraseña</value>
+  </data>
+  <data name="registrarseview_contrasena_label" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="registrarseview_edad_entry" xml:space="preserve">
+    <value>Escribe tu edad</value>
+  </data>
+  <data name="registrarseview_edad_label" xml:space="preserve">
+    <value>Edad</value>
+  </data>
+  <data name="registrarseview_nombre_apellido_entry" xml:space="preserve">
+    <value>Escribe tu nombre y apellidos</value>
+  </data>
+  <data name="registrarseview_nombre_apellido_label" xml:space="preserve">
+    <value>Nombre y Apellidos</value>
+  </data>
+  <data name="registrarseview_nombre_entry" xml:space="preserve">
+    <value>Escribe el nombre de usuario</value>
+  </data>
+  <data name="registrarseview_nombre_label" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="registrarseview_registrarse_button" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="registrarseview_tiene_cuenta_button" xml:space="preserve">
+    <value>¿Ya tienes una cuenta? Inicia Sesión</value>
+  </data>
+  <data name="registrarseview_titulo" xml:space="preserve">
+    <value>Crea una nueva cuenta para continuar</value>
+  </data>
   <data name="tabbed_page_configuracion_title" xml:space="preserve">
     <value>Configuración</value>
   </data>

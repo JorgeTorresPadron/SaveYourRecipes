@@ -11,14 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="SaveYourRecipes.db" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="SaveYourRecipes.db" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
@@ -26,6 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MainPageView.xaml.cs">
+      <DependentUpon>MainPageView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Strings\Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -47,6 +43,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Features\NuevaReceta\NuevaRecetaView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Features\Usuarios\IniciarSesionView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Features\Usuarios\RegistrarseView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Strings\Strings.resx">
