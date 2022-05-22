@@ -93,7 +93,7 @@ namespace SaveYourRecipes.Features.Usuarios
             }
             else if (e.Count > 0)
             {
-                await App.Current.MainPage.Navigation.PushAsync(new MainPageView());
+                await App.Current.MainPage.Navigation.PushModalAsync(new MainPageView());
 
                 this.IsRunningTxt = false;
                 this.IsVisibleTxt = false;

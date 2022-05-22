@@ -126,7 +126,7 @@ namespace SaveYourRecipes.Features.Usuarios
             this.IsVisibleTxt = false;
             this.IsEnabledTxt = true;
 
-            await App.Current.MainPage.Navigation.PushAsync(new IniciarSesionView());
+            await App.Current.MainPage.Navigation.PushModalAsync(new IniciarSesionView());
         }
         #endregion
 
