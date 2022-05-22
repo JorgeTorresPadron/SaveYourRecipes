@@ -20,7 +20,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
         private async void yaTengoCuentaButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new IniciarSesionView());
+            await Navigation.PushModalAsync(new IniciarSesionView());
         }
     }
 }

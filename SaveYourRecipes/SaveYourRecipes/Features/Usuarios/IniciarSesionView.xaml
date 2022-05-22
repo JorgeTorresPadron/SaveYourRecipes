@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SaveYourRecipes.Features.Usuarios.IniciarSesionView">
+             x:Class="SaveYourRecipes.Features.Usuarios.IniciarSesionView"
+             xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -51,17 +52,17 @@
 
     <ContentPage.Content>
         <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="Inicia sesión para continuar" Style="{StaticResource titleLabelStyle}"/>
-            <Label Text="Nombre de usuario" Style="{StaticResource normalLabelStyle}"/>
-            <Entry Placeholder="Escribe el nombre de usuario" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Label Text="{translator:Translate iniciarsesionview_titulo}" Style="{StaticResource titleLabelStyle}"/>
+            <Label Text="{translator:Translate iniciarsesionview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
+            <Entry Placeholder="{translator:Translate iniciarsesionview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <Label Text="Contraseña" Style="{StaticResource normalLabelStyle}"/>
-            <Entry Placeholder="Escribe la contraseña" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-            <Button Text="¿Olvidaste la contraseña?" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" />
+            <Label Text="{translator:Translate iniciarsesionview_contrasena_label}" Style="{StaticResource normalLabelStyle}"/>
+            <Entry Placeholder="{translator:Translate iniciarsesionview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Button Text="{translator:Translate iniciarsesionview_olvida_contrasena_button}" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" />
 
             <ActivityIndicator IsRunning="{Binding IsRunningTxt}" IsVisible="{Binding IsVisibleTxt}" Color="Black" Scale="0.8"/>
-            <Button Text="Iniciar Sesion" Style="{StaticResource iniciarSesionButtonStyle}" Command="{Binding LoginCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
-            <Button Text="¿No tienes una cuenta? Registrate" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" x:Name="noCuentaButton" Clicked="noCuentaButton_Clicked" />
+            <Button Text="{translator:Translate iniciarsesionview_iniciar_sesion_button}" Style="{StaticResource iniciarSesionButtonStyle}" Command="{Binding LoginCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Button Text="{translator:Translate iniciarsesionview_no_tiene_cuenta_button}" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" x:Name="noCuentaButton" Clicked="noCuentaButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

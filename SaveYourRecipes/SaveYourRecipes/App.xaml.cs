@@ -29,7 +29,7 @@ namespace SaveYourRecipes
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new RegistrarseView());
+            MainPage = new RegistrarseView();
         }
 
         protected override void OnStart()

@@ -20,7 +20,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
         private async void noCuentaButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegistrarseView());
+            await Navigation.PushModalAsync(new RegistrarseView());
         }
     }
 }

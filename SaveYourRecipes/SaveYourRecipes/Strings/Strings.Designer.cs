@@ -160,6 +160,78 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Escribe la contraseña.
+        /// </summary>
+        internal static string iniciarsesionview_contrasena_entry {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_contrasena_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        internal static string iniciarsesionview_contrasena_label {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_contrasena_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar Sesion.
+        /// </summary>
+        internal static string iniciarsesionview_iniciar_sesion_button {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_iniciar_sesion_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿No tienes una cuenta? Registrate.
+        /// </summary>
+        internal static string iniciarsesionview_no_tiene_cuenta_button {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_no_tiene_cuenta_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe el nombre de usuario.
+        /// </summary>
+        internal static string iniciarsesionview_nombre_entry {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_nombre_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario.
+        /// </summary>
+        internal static string iniciarsesionview_nombre_label {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_nombre_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿Olvidaste la contraseña?.
+        /// </summary>
+        internal static string iniciarsesionview_olvida_contrasena_button {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_olvida_contrasena_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a INICIA SESIÓN PARA CONTINUAR.
+        /// </summary>
+        internal static string iniciarsesionview_titulo {
+            get {
+                return ResourceManager.GetString("iniciarsesionview_titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Eliminar recetas.
         /// </summary>
         internal static string misrecetasview_eliminar_receta {
@@ -349,7 +421,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Crea una nueva cuenta para continuar.
+        ///   Busca una cadena traducida similar a CREA UNA NUEVA CUENTA PARA CONTINUAR.
         /// </summary>
         internal static string registrarseview_titulo {
             get {

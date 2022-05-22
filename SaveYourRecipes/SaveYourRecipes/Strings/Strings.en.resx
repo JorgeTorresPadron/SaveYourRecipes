@@ -150,6 +150,30 @@
   <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
     <value>Update recipe</value>
   </data>
+  <data name="iniciarsesionview_contrasena_entry" xml:space="preserve">
+    <value>Enter your password</value>
+  </data>
+  <data name="iniciarsesionview_contrasena_label" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="iniciarsesionview_iniciar_sesion_button" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="iniciarsesionview_nombre_entry" xml:space="preserve">
+    <value>Enter the username</value>
+  </data>
+  <data name="iniciarsesionview_nombre_label" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="iniciarsesionview_no_tiene_cuenta_button" xml:space="preserve">
+    <value>Don't have an account? Sign in</value>
+  </data>
+  <data name="iniciarsesionview_olvida_contrasena_button" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="iniciarsesionview_titulo" xml:space="preserve">
+    <value>LOG IN TO CONTINUE</value>
+  </data>
   <data name="misrecetasview_eliminar_receta" xml:space="preserve">
     <value>Remove recipe</value>
   </data>
@@ -214,7 +238,7 @@
     <value>Already have an account? Log in</value>
   </data>
   <data name="registrarseview_titulo" xml:space="preserve">
-    <value>Create a new account to continue</value>
+    <value>CREATE A NEW ACCOUNT TO CONTINUE</value>
   </data>
   <data name="tabbed_page_configuracion_title" xml:space="preserve">
     <value>Settings</value>
