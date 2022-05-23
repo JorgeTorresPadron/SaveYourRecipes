@@ -26,7 +26,6 @@ namespace SaveYourRecipes.Data
             _database.CreateTableAsync<Receta>().Wait();
             _database.CreateTableAsync<Receta_pasos>().Wait();
             _database.CreateTableAsync<User>().Wait();
-            _database.CreateTableAsync<Person>().Wait();
             #endregion
         }
 
@@ -75,56 +74,15 @@ namespace SaveYourRecipes.Data
         {
             return _database.DeleteAsync(user);
         }
-
+        /// <summary>
+        /// METOD-O INICIAR SESIÓN
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public Task<List<User>> GetUsersValidate(string nombreUsuario, string password)
         {
             return _database.QueryAsync<User>("SELECT * FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "' AND user_password = '" + password + "'");
-        }
-
-        #endregion
-
-        #region CRUD - PERSON TABLE
-        /// <summary>
-        /// METOD-O GET PERSON ID
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public Task<Person> GetPersonIdAsync(int id)
-        {
-            return _database.Table<Person>().Where(i => i.person_id == id).FirstOrDefaultAsync();
-        }
-        /// <summary>
-        /// METOD-O SELECT ()
-        /// </summary>
-        /// <returns></returns>
-        public Task<List<Person>> GetPersonAsync()
-        {
-            return _database.Table<Person>().ToListAsync();
-        }
-        /// <summary>
-        /// METOD-O GUARDAR Y ACTUALIZAR
-        /// </summary>
-        /// <param name="person"></param>
-        /// <returns></returns>
-        public Task<int> SavePersonAsync(Person person)
-        {
-            if (person.person_id != 0)
-            {
-               return _database.UpdateAsync(person);
-            }
-            else
-            {
-                return _database.InsertAsync(person);
-            }
-        }
-        /// <summary>
-        /// METOD-O ELIMINAR ()
-        /// </summary>
-        /// <param name="person"></param>
-        /// <returns></returns>
-        public Task<int> DeletePersonAsync(Person person)
-        {
-            return _database.DeleteAsync(person);
         }
 
         #endregion

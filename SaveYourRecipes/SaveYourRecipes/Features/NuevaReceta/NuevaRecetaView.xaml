@@ -26,7 +26,7 @@
                 <Setter Property="HeightRequest" Value="200" />
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Yellow" />
+                <Setter Property="BackgroundColor" Value="Orange" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

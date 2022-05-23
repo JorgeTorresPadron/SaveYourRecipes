@@ -1,4 +1,5 @@
 ﻿using SaveYourRecipes.Features.AcercaDe;
+using SaveYourRecipes.Features.Usuarios;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,14 +14,14 @@ namespace SaveYourRecipes.Features.Configuracion
             InitializeComponent();
         }
 
-        private void cambiarIdiomaButton_Clicked(object sender, EventArgs e)
+        private async void acercaDeButton_Clicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushModalAsync(new AcercaDeView());
         }
 
-        private void acercaDeButton_Clicked(object sender, EventArgs e)
+        private async void cerrarSesionButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new AcercaDeView());
+            await Navigation.PushModalAsync(new IniciarSesionView());
         }
     }
 }

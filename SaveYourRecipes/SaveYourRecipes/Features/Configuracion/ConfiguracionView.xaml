@@ -16,8 +16,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10">
-                <Button Text="{translator:Translate configurationview_cambiar_idioma}" Style="{StaticResource buttonStyles}" x:Name="cambiarIdiomaButton" Clicked="cambiarIdiomaButton_Clicked"/>
                 <Button Text="{translator:Translate configuracionview_acerca_de}" Style="{StaticResource buttonStyles}" x:Name="acercaDeButton" Clicked="acercaDeButton_Clicked"/>
+                <Button Text="{translator:Translate configurationview_cerrar_sesion}" Style="{StaticResource buttonStyles}" x:Name="cerrarSesionButton" Clicked="cerrarSesionButton_Clicked"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

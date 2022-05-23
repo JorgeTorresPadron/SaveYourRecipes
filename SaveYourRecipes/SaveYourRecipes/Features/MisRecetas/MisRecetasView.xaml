@@ -14,7 +14,7 @@
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Yellow" />
+                <Setter Property="BackgroundColor" Value="Orange" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

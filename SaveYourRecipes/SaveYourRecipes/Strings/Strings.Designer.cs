@@ -133,11 +133,11 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cambiar idioma.
+        ///   Busca una cadena traducida similar a Cerrar sesión.
         /// </summary>
-        internal static string configurationview_cambiar_idioma {
+        internal static string configurationview_cerrar_sesion {
             get {
-                return ResourceManager.GetString("configurationview_cambiar_idioma", resourceCulture);
+                return ResourceManager.GetString("configurationview_cerrar_sesion", resourceCulture);
             }
         }
         

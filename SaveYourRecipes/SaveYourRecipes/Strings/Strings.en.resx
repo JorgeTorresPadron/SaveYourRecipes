@@ -141,8 +141,8 @@
   <data name="configuracionview_acerca_de" xml:space="preserve">
     <value>About...</value>
   </data>
-  <data name="configurationview_cambiar_idioma" xml:space="preserve">
-    <value>Change language</value>
+  <data name="configurationview_cerrar_sesion" xml:space="preserve">
+    <value>Log off</value>
   </data>
   <data name="editarrecetaview_actualizar_receta_button" xml:space="preserve">
     <value>Update recipe changes</value>

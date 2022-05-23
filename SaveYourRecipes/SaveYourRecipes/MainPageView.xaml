@@ -7,7 +7,7 @@
             xmlns:translator="clr-namespace:SaveYourRecipes.Extensions"
             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
             ios:Page.UseSafeArea="true"
-            BarBackgroundColor="Yellow"
+            BarBackgroundColor="Orange"
             BarTextColor="Black"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
