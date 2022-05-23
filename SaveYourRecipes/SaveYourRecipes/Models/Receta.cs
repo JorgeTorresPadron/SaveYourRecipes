@@ -6,6 +6,7 @@ using SQLiteNetExtensions.Attributes;
 
 namespace SaveYourRecipes.Models
 {
+
     [Table("Receta")]
     public class Receta
     {
