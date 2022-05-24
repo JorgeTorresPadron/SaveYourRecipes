@@ -13,6 +13,9 @@ namespace SaveYourRecipes.Models
         [PrimaryKey, AutoIncrement, Column("receta_id")]
         public int receta_id { get; set; }
 
+        [ForeignKey(typeof(User))]
+        public int receta_user_id { get; set; }
+
         [ForeignKey(typeof(Categoria_comida))]
         public int categoria_comida_id { get; set; }
 

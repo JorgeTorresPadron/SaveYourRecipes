@@ -124,6 +124,69 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar contraseña.
+        /// </summary>
+        internal static string cambiarcontrasenaview_cambiar_contrasena_button {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_cambiar_contrasena_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe la nueva contraseña del usuario.
+        /// </summary>
+        internal static string cambiarcontrasenaview_contrasena_entry {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_contrasena_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        internal static string cambiarcontrasenaview_contrasena_label {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_contrasena_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Volver al inicio de sesión.
+        /// </summary>
+        internal static string cambiarcontrasenaview_inicio_sesion_button {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_inicio_sesion_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CAMBIAR CONTRASEÑA.
+        /// </summary>
+        internal static string cambiarcontrasenaview_titulo {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe el nombre de usuario.
+        /// </summary>
+        internal static string cambiarcontrasenaview_usuario_entry {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_usuario_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario.
+        /// </summary>
+        internal static string cambiarcontrasenaview_usuario_label {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_usuario_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Acerca de....
         /// </summary>
         internal static string configuracionview_acerca_de {

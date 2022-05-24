@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SaveYourRecipes.Features.Usuarios.IniciarSesionView"
-             xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
-
+             x:Class="SaveYourRecipes.Features.Usuarios.CambiarContrasenaView"
+              xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label" x:Key="titleLabelStyle">
@@ -33,7 +32,7 @@
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
             </Style>
-            <Style TargetType="Button" x:Key="iniciarSesionButtonStyle" >
+            <Style TargetType="Button" x:Key="cambiarContrasenaButtonStyle" >
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="BackgroundColor" Value="Orange" />
@@ -41,7 +40,7 @@
                 <Setter Property="BorderWidth" Value="1.5" />
                 <Setter Property="CornerRadius" Value="40" />
             </Style>
-            <Style TargetType="Button" x:Key="olvidarContraButtonStyle">
+            <Style TargetType="Button" x:Key="iniciarSesionButtonStyle">
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="HorizontalOptions" Value="Center" />
@@ -49,20 +48,19 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
+    
     <ContentPage.Content>
         <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="{translator:Translate iniciarsesionview_titulo}" Style="{StaticResource titleLabelStyle}"/>
-            <Label Text="{translator:Translate iniciarsesionview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
-            <Entry Placeholder="{translator:Translate iniciarsesionview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Label Text="{translator:Translate cambiarcontrasenaview_titulo}" Style="{StaticResource titleLabelStyle}"/>
+            <Label Text="{translator:Translate cambiarcontrasenaview_usuario_label}" Style="{StaticResource normalLabelStyle}"/>
+            <Entry Placeholder="{translator:Translate cambiarcontrasenaview_usuario_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <Label Text="{translator:Translate iniciarsesionview_contrasena_label}" Style="{StaticResource normalLabelStyle}"/>
-            <Entry Placeholder="{translator:Translate iniciarsesionview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-            <Button Text="{translator:Translate iniciarsesionview_olvida_contrasena_button}" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" x:Name="cambiarContrasenaButton" Clicked="cambiarContrasenaButton_Clicked"/>
+            <Label Text="{translator:Translate cambiarcontrasenaview_contrasena_label}" Style="{StaticResource normalLabelStyle}"/>
+            <Entry Placeholder="{translator:Translate cambiarcontrasenaview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
             <ActivityIndicator IsRunning="{Binding IsRunningTxt}" IsVisible="{Binding IsVisibleTxt}" Color="Black" Scale="0.8"/>
-            <Button Text="{translator:Translate iniciarsesionview_iniciar_sesion_button}" Style="{StaticResource iniciarSesionButtonStyle}" Command="{Binding LoginCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
-            <Button Text="{translator:Translate iniciarsesionview_no_tiene_cuenta_button}" Style="{StaticResource olvidarContraButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" x:Name="noCuentaButton" Clicked="noCuentaButton_Clicked" />
+            <Button Text="{translator:Translate cambiarcontrasenaview_cambiar_contrasena_button}" Style="{StaticResource cambiarContrasenaButtonStyle}" Command="{Binding ChangePasswordCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Button Text="{translator:Translate cambiarcontrasenaview_inicio_sesion_button}" Style="{StaticResource iniciarSesionButtonStyle}" IsEnabled="{Binding IsEnabledTxt}" x:Name="iniciarSesionButton" Clicked="iniciarSesionButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

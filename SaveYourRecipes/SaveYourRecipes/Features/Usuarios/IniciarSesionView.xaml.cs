@@ -22,5 +22,10 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             await Navigation.PushModalAsync(new RegistrarseView());
         }
+
+        private async void cambiarContrasenaButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CambiarContrasenaView());
+        }
     }
 }

@@ -84,7 +84,19 @@ namespace SaveYourRecipes.Data
         {
             return _database.QueryAsync<User>("SELECT * FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "' AND user_password = '" + password + "'");
         }
-
+        /// <summary>
+        /// METOD-O COMPROBAR QUE USUARIO EXISTE PARA CAMBIAR CONTRASEÑA
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <returns></returns>
+        public Task<List<User>> GetUserChangePasswordValidate(string nombreUsuario)
+        {
+            return _database.QueryAsync<User>("SELECT * FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "'");
+        }
+        public Task UpdateUserPassword(string nombreUsuario, string password)
+        {
+            return _database.QueryAsync<User>("UPDATE User SET user_password = '" + password + "' WHERE user_nombre_usuario = '" + nombreUsuario + "'");
+        }
         #endregion
     }
 }
