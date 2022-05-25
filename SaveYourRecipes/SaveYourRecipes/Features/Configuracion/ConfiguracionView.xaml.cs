@@ -23,5 +23,10 @@ namespace SaveYourRecipes.Features.Configuracion
         {
             await Navigation.PushModalAsync(new IniciarSesionView());
         }
+
+        private async void eliminarUsuarioButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EliminarUsuarioView());
+        }
     }
 }

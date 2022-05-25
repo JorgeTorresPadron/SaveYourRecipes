@@ -205,6 +205,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar mi usuario.
+        /// </summary>
+        internal static string configurationview_eliminar_usuario {
+            get {
+                return ResourceManager.GetString("configurationview_eliminar_usuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Actualizar cambios en la receta.
         /// </summary>
         internal static string editarrecetaview_actualizar_receta_button {
@@ -219,6 +228,60 @@ namespace SaveYourRecipes.Strings {
         internal static string editarrecetaview_actualizar_receta_label {
             get {
                 return ResourceManager.GetString("editarrecetaview_actualizar_receta_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe tu contraseña de usuario.
+        /// </summary>
+        internal static string eliminarusuarioview_contrasena_entry {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_contrasena_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        internal static string eliminarusuarioview_contrasena_label {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_contrasena_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar mi usuario.
+        /// </summary>
+        internal static string eliminarusuarioview_eliminar_usuario_button {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_eliminar_usuario_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe tu nombre de usuario.
+        /// </summary>
+        internal static string eliminarusuarioview_nombre_entry {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_nombre_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre de usuario.
+        /// </summary>
+        internal static string eliminarusuarioview_nombre_label {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_nombre_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ELIMINACIÓN DEL USUARIO.
+        /// </summary>
+        internal static string eliminarusuarioview_titulo {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_titulo", resourceCulture);
             }
         }
         

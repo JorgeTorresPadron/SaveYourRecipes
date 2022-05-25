@@ -9,6 +9,7 @@
             <Style x:Key="buttonStyles" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="FontSize" Value="Small" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -17,6 +18,7 @@
         <ScrollView>
             <StackLayout Padding="10" Spacing="10">
                 <Button Text="{translator:Translate configuracionview_acerca_de}" Style="{StaticResource buttonStyles}" x:Name="acercaDeButton" Clicked="acercaDeButton_Clicked"/>
+                <Button Text="{translator:Translate configurationview_eliminar_usuario}" Style="{StaticResource buttonStyles}" x:Name="eliminarUsuarioButton" Clicked="eliminarUsuarioButton_Clicked"/>
                 <Button Text="{translator:Translate configurationview_cerrar_sesion}" Style="{StaticResource buttonStyles}" x:Name="cerrarSesionButton" Clicked="cerrarSesionButton_Clicked"/>
             </StackLayout>
         </ScrollView>

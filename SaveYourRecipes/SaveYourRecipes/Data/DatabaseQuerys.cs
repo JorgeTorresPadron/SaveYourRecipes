@@ -28,7 +28,6 @@ namespace SaveYourRecipes.Data
             _database.CreateTableAsync<User>().Wait();
             #endregion
         }
-
         #endregion
 
         #region CRUD - USER TABLE
@@ -93,10 +92,30 @@ namespace SaveYourRecipes.Data
         {
             return _database.QueryAsync<User>("SELECT * FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "'");
         }
+        /// <summary>
+        /// METOD-O ACTUALIZAR CONTRASEÑA USUARIO
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public Task UpdateUserPassword(string nombreUsuario, string password)
         {
             return _database.QueryAsync<User>("UPDATE User SET user_password = '" + password + "' WHERE user_nombre_usuario = '" + nombreUsuario + "'");
         }
+        /// <summary>
+        /// METOD-O ELIMINAR USUARIO
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public Task DeleteUser(string nombreUsuario, string password)
+        {
+            return _database.QueryAsync<User>("DELETE FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "' AND user_password = '" + password + "'");
+        }
+        #endregion
+
+        #region CRUD - RECETA TABLE 
+
         #endregion
     }
 }

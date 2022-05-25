@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,7 +12,7 @@ namespace SaveYourRecipes.Models
         [PrimaryKey, AutoIncrement]
         public int user_id { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(20), Unique]
         public string user_nombre_usuario { get; set; }
 
         [MaxLength(16)]
@@ -24,5 +25,8 @@ namespace SaveYourRecipes.Models
         public int user_edad { get; set; }
 
         public DateTime user_fecha_creacion { get; set; }
+
+        [OneToMany(CascadeOperations = CascadeOperation.CascadeInsert | CascadeOperation.CascadeDelete)]
+        public List<Receta> Receta { get; set; }
     }
 }

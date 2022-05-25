@@ -165,11 +165,32 @@
   <data name="configurationview_cerrar_sesion" xml:space="preserve">
     <value>Cerrar sesión</value>
   </data>
+  <data name="configurationview_eliminar_usuario" xml:space="preserve">
+    <value>Eliminar mi usuario</value>
+  </data>
   <data name="editarrecetaview_actualizar_receta_button" xml:space="preserve">
     <value>Actualizar cambios en la receta</value>
   </data>
   <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
     <value>Actualizar receta</value>
+  </data>
+  <data name="eliminarusuarioview_contrasena_entry" xml:space="preserve">
+    <value>Escribe tu contraseña de usuario</value>
+  </data>
+  <data name="eliminarusuarioview_contrasena_label" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="eliminarusuarioview_eliminar_usuario_button" xml:space="preserve">
+    <value>Eliminar mi usuario</value>
+  </data>
+  <data name="eliminarusuarioview_nombre_entry" xml:space="preserve">
+    <value>Escribe tu nombre de usuario</value>
+  </data>
+  <data name="eliminarusuarioview_nombre_label" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="eliminarusuarioview_titulo" xml:space="preserve">
+    <value>ELIMINACIÓN DEL USUARIO</value>
   </data>
   <data name="iniciarsesionview_contrasena_entry" xml:space="preserve">
     <value>Escribe la contraseña</value>
