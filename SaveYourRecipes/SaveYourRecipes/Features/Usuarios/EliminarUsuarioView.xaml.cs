@@ -15,6 +15,7 @@ namespace SaveYourRecipes.Features.Usuarios
         public EliminarUsuarioView()
         {
             InitializeComponent();
+            BindingContext = new EliminarUsuarioViewModel();
         }
     }
 }

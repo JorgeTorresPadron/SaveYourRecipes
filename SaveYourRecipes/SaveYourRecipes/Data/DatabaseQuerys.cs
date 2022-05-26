@@ -108,7 +108,7 @@ namespace SaveYourRecipes.Data
         /// <param name="nombreUsuario"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        public Task DeleteUser(string nombreUsuario, string password)
+        public Task DeleteUserCompletely(string nombreUsuario, string password)
         {
             return _database.QueryAsync<User>("DELETE FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "' AND user_password = '" + password + "'");
         }
