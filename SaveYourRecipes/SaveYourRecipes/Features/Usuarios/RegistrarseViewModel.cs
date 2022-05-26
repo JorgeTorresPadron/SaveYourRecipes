@@ -116,6 +116,7 @@ namespace SaveYourRecipes.Features.Usuarios
                 user_nombre_apellido = nombreApellidoUsuario,
                 user_edad = edadUsuario,
                 user_fecha_creacion = DateTime.Now,
+                user_is_login = false,
             };
 
             await App.Database.SaveUserAsync(user);

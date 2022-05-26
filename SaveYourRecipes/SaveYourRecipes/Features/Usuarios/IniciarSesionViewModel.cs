@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 using SaveYourRecipes.Models;
+using SaveYourRecipes.Service;
 
 namespace SaveYourRecipes.Features.Usuarios
 {
@@ -93,6 +94,9 @@ namespace SaveYourRecipes.Features.Usuarios
             }
             else if (e.Count > 0)
             {
+                CompartirInformacion.nombreUsuarioShare = nombreUsuario;
+                CompartirInformacion.isLoginShare = true;
+                await App.Database.UpdateUserIsLogin(nombreUsuario, CompartirInformacion.isLoginShare);
                 await App.Current.MainPage.Navigation.PushModalAsync(new MainPageView());
 
                 this.IsRunningTxt = false;

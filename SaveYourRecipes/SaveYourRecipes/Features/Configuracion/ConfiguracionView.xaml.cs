@@ -1,5 +1,6 @@
 ﻿using SaveYourRecipes.Features.AcercaDe;
 using SaveYourRecipes.Features.Usuarios;
+using SaveYourRecipes.Service;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -21,6 +22,8 @@ namespace SaveYourRecipes.Features.Configuracion
 
         private async void cerrarSesionButton_Clicked(object sender, EventArgs e)
         {
+            CompartirInformacion.isLoginShare = false;
+            await App.Database.UpdateUserIsLogin(CompartirInformacion.nombreUsuarioShare, CompartirInformacion.isLoginShare);
             await Navigation.PushModalAsync(new IniciarSesionView());
         }
 

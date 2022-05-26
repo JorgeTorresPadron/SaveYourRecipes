@@ -99,6 +99,16 @@ namespace SaveYourRecipes.Data
             return _database.QueryAsync<User>("UPDATE User SET user_password = '" + password + "' WHERE user_nombre_usuario = '" + nombreUsuario + "'");
         }
         /// <summary>
+        /// METOD-O ACTUALIZAR CONTRASEÑA USUARIO
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public Task UpdateUserIsLogin(string nombreUsuario, bool islogin)
+        {
+            return _database.QueryAsync<User>("UPDATE User SET user_is_login = '" + islogin + "' WHERE user_nombre_usuario = '" + nombreUsuario + "'");
+        }
+        /// <summary>
         /// METOD-O ELIMINAR USUARIO
         /// </summary>
         /// <param name="nombreUsuario"></param>
