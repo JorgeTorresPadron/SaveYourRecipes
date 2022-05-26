@@ -18,13 +18,9 @@ namespace SaveYourRecipes.Data
             _database = new SQLiteAsyncConnection(dbPath);
 
             #region Creacion - Tablas
-            _database.CreateTableAsync<Cantidad>().Wait();
             _database.CreateTableAsync<Categoria_comida>().Wait();
-            _database.CreateTableAsync<Ingredientes>().Wait();
-            _database.CreateTableAsync<Medidas>().Wait();
             _database.CreateTableAsync<Pais>().Wait();
             _database.CreateTableAsync<Receta>().Wait();
-            _database.CreateTableAsync<Receta_pasos>().Wait();
             _database.CreateTableAsync<User>().Wait();
             #endregion
         }

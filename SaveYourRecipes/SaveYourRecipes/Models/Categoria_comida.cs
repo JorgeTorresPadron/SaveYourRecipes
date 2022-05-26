@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace SaveYourRecipes.Models
 {
@@ -12,5 +13,8 @@ namespace SaveYourRecipes.Models
         public int categoria_comida_id { get; set; }
 
         public string categoria_comida_nombre { get; set; }
+
+        [OneToMany]
+        public List<Receta> Receta { get; set; }
     }
 }

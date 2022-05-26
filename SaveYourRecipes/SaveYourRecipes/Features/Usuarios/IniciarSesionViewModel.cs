@@ -85,7 +85,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
             if (e.Count == 0)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Nombre de usuario o contraseña incorrectos / Incorrect username or password", "Ok");
+                await App.Current.MainPage.DisplayAlert("Error", "El usuario no existe o los datos introducidos son incorrectos / The user does not exist or the data entered is incorrect", "Ok");
 
                 this.IsRunningTxt = false;
                 this.IsVisibleTxt = false;

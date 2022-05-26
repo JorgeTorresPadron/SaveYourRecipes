@@ -26,6 +26,8 @@ namespace SaveYourRecipes.Models
 
         public DateTime user_fecha_creacion { get; set; }
 
+        public bool user_is_login { get; set; }
+
         [OneToMany(CascadeOperations = CascadeOperation.CascadeInsert | CascadeOperation.CascadeDelete)]
         public List<Receta> Receta { get; set; }
     }

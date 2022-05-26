@@ -23,6 +23,10 @@ namespace SaveYourRecipes.Models
 
         public string receta_descripcion { get; set; }
 
+        public string receta_pasos_receta { get; set; }
+
+        public string receta_ingredientes { get; set; }
+
         public string tiempo_preparacion { get; set; }
 
         public string tiempo_cocina { get; set; }
