@@ -162,6 +162,9 @@
   <data name="configuracionview_acerca_de" xml:space="preserve">
     <value>Acerca de...</value>
   </data>
+  <data name="configuracionview_configuracion_label" xml:space="preserve">
+    <value>CONFIGURACIÓN</value>
+  </data>
   <data name="configurationview_cerrar_sesion" xml:space="preserve">
     <value>Cerrar sesión</value>
   </data>
@@ -220,7 +223,7 @@
     <value>Eliminar recetas</value>
   </data>
   <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
-    <value>Mis Recetas</value>
+    <value>MIS RECETAS</value>
   </data>
   <data name="misrecetasview_mostrar_receta" xml:space="preserve">
     <value>Mostrar recetas almacenadas</value>
@@ -241,7 +244,7 @@
     <value>Escribe el nombre de la receta</value>
   </data>
   <data name="nuevarecetaview_nueva_receta_label" xml:space="preserve">
-    <value>Crear una nueva receta</value>
+    <value>NUEVA RECETA</value>
   </data>
   <data name="nuevarecetaview_tiempo_cocina" xml:space="preserve">
     <value>Escribe el tiempo de cocina de la receta</value>

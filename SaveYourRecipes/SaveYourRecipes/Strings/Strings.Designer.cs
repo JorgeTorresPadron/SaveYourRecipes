@@ -196,6 +196,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a CONFIGURACIÓN.
+        /// </summary>
+        internal static string configuracionview_configuracion_label {
+            get {
+                return ResourceManager.GetString("configuracionview_configuracion_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cerrar sesión.
         /// </summary>
         internal static string configurationview_cerrar_sesion {
@@ -367,7 +376,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Mis Recetas.
+        ///   Busca una cadena traducida similar a MIS RECETAS.
         /// </summary>
         internal static string misrecetasview_mis_recetas_label {
             get {
@@ -430,7 +439,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Crear una nueva receta.
+        ///   Busca una cadena traducida similar a NUEVA RECETA.
         /// </summary>
         internal static string nuevarecetaview_nueva_receta_label {
             get {

@@ -6,6 +6,13 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
+            <Style x:Key="titleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Title" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
             <Style x:Key="buttonStyles" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="BorderColor" Value="Transparent" />
@@ -17,6 +24,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10">
+                <Label Text="{translator:Translate configuracionview_configuracion_label}" Style="{StaticResource titleLabelStyle}"/>
                 <Button Text="{translator:Translate configuracionview_acerca_de}" Style="{StaticResource buttonStyles}" x:Name="acercaDeButton" Clicked="acercaDeButton_Clicked"/>
                 <Button Text="{translator:Translate configurationview_eliminar_usuario}" Style="{StaticResource buttonStyles}" x:Name="eliminarUsuarioButton" Clicked="eliminarUsuarioButton_Clicked"/>
                 <Button Text="{translator:Translate configurationview_cerrar_sesion}" Style="{StaticResource buttonStyles}" x:Name="cerrarSesionButton" Clicked="cerrarSesionButton_Clicked"/>
