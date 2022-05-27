@@ -14,7 +14,10 @@
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="CornerRadius" Value="40" />
                 <Setter Property="BackgroundColor" Value="Orange" />
+                <Setter Property="FontSize" Value="Medium" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

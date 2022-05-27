@@ -12,11 +12,9 @@
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="WidthRequest" Value="225" />
-                <Setter Property="CornerRadius" Value="25" />
-                <Setter Property="BackgroundColor" Value="Transparent" />
-                <Setter Property="BorderColor" Value="Black" />
-                <Setter Property="BorderWidth" Value="1.5" />
+                <Setter Property="CornerRadius" Value="40" />
+                <Setter Property="BackgroundColor" Value="Orange" />
+                <Setter Property="FontSize" Value="Medium" />
             </Style>
             <Style x:Key="imageStyle" TargetType="Image">
                 <Setter Property="HeightRequest" Value="{OnPlatform Android=50, iOS=50}" />
