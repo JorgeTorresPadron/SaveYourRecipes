@@ -421,7 +421,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Selecciona los ingredientes de la receta.
+        ///   Busca una cadena traducida similar a Escribe los ingredientes de la receta.
         /// </summary>
         internal static string nuevarecetaview_ingredientes_receta {
             get {
@@ -444,6 +444,15 @@ namespace SaveYourRecipes.Strings {
         internal static string nuevarecetaview_nueva_receta_label {
             get {
                 return ResourceManager.GetString("nuevarecetaview_nueva_receta_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe los pasos de la receta.
+        /// </summary>
+        internal static string nuevarecetaview_pasos_receta {
+            get {
+                return ResourceManager.GetString("nuevarecetaview_pasos_receta", resourceCulture);
             }
         }
         

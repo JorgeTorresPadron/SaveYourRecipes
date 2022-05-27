@@ -121,7 +121,48 @@ namespace SaveYourRecipes.Data
         #endregion
 
         #region CRUD - RECETA TABLE 
-
+        /// <summary>
+        /// METOD-O SELECCIONAR RECETA POR ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task<Receta> GetRecetaIdAsync(int id)
+        {
+            return _database.Table<Receta>().Where(i => i.receta_id == id).FirstOrDefaultAsync();
+        }
+        /// <summary>
+        /// METOD-O SELECCIONAR RECETAS
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<Receta>> GetRecetaAsync()
+        {
+            return _database.Table<Receta>().ToListAsync();
+        }
+        /// <summary>
+        /// METOD-O GUARDAR RECETAS
+        /// </summary>
+        /// <param name="receta"></param>
+        /// <returns></returns>
+        public Task<int> SaveRecetaAsync(Receta receta)
+        {
+            if (receta.receta_id != 0)
+            {
+                return _database.UpdateAsync(receta);
+            }
+            else
+            {
+                return _database.InsertAsync(receta);
+            }
+        }
+        /// <summary>
+        /// METOD-O ELIMINAR RECETA
+        /// </summary>
+        /// <param name="receta"></param>
+        /// <returns></returns>
+        public Task<int> DeleteRecetaAsync(Receta receta)
+        {
+            return _database.DeleteAsync(receta);
+        }
         #endregion
     }
 }

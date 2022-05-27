@@ -238,13 +238,16 @@
     <value>Save Recipe</value>
   </data>
   <data name="nuevarecetaview_ingredientes_receta" xml:space="preserve">
-    <value>Select the ingredients of the recipe</value>
+    <value>Write the ingredients of the recipe</value>
   </data>
   <data name="nuevarecetaview_nombre_receta" xml:space="preserve">
     <value>Enter the name of the recipe</value>
   </data>
   <data name="nuevarecetaview_nueva_receta_label" xml:space="preserve">
     <value>NEW RECIPE</value>
+  </data>
+  <data name="nuevarecetaview_pasos_receta" xml:space="preserve">
+    <value>Write the steps of the recipe</value>
   </data>
   <data name="nuevarecetaview_tiempo_cocina" xml:space="preserve">
     <value>Write down the cooking time of the recipe</value>

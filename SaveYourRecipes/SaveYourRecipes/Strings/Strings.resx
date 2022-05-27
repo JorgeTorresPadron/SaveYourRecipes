@@ -238,13 +238,16 @@
     <value>Guardar Receta</value>
   </data>
   <data name="nuevarecetaview_ingredientes_receta" xml:space="preserve">
-    <value>Selecciona los ingredientes de la receta</value>
+    <value>Escribe los ingredientes de la receta</value>
   </data>
   <data name="nuevarecetaview_nombre_receta" xml:space="preserve">
     <value>Escribe el nombre de la receta</value>
   </data>
   <data name="nuevarecetaview_nueva_receta_label" xml:space="preserve">
     <value>NUEVA RECETA</value>
+  </data>
+  <data name="nuevarecetaview_pasos_receta" xml:space="preserve">
+    <value>Escribe los pasos de la receta</value>
   </data>
   <data name="nuevarecetaview_tiempo_cocina" xml:space="preserve">
     <value>Escribe el tiempo de cocina de la receta</value>

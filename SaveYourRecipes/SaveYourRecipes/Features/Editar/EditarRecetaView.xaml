@@ -41,7 +41,7 @@
                 <Entry x:Name="actualizarTiempoPreparacion" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
                 <Entry x:Name="actualizarTiempoCocina" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
                 <!--<Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />-->
-                <Button x:Name="actualizarRecetaButton" Clicked="actualizarRecetaButton_Clicked" Text="{translator:Translate editarrecetaview_actualizar_receta_button}" Style="{StaticResource buttonStyle}"/>
+                <Button Text="{translator:Translate editarrecetaview_actualizar_receta_button}" Style="{StaticResource buttonStyle}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

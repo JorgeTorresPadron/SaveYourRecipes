@@ -27,9 +27,9 @@ namespace SaveYourRecipes.Models
 
         public string receta_ingredientes { get; set; }
 
-        public string tiempo_preparacion { get; set; }
+        public int tiempo_preparacion { get; set; }
 
-        public string tiempo_cocina { get; set; }
+        public int tiempo_cocina { get; set; }
 
         [ForeignKey(typeof(Pais))]
         public int pais_id { get; set; }

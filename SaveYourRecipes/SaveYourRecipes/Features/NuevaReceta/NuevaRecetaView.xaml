@@ -13,17 +13,19 @@
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
             <Style x:Key="entryStyle" TargetType="Entry">
-                <Setter Property="HorizontalTextAlignment" Value="Center" />
-                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Black" />
             </Style>
             <Style x:Key="pickerStyle" TargetType="Picker">
-                <Setter Property="HorizontalTextAlignment" Value="Center" />
-                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Black" />
             </Style>
             <Style x:Key="editorStyle" TargetType="Editor">
-                <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="VerticalOptions" Value="Center" />
-                <Setter Property="HeightRequest" Value="200" />
+                <Setter Property="HeightRequest" Value="100" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Black" />
             </Style>
             <Style x:Key="buttonStyle" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Center" />
@@ -38,13 +40,17 @@
         <ScrollView>
             <StackLayout Spacing="10" Padding="10">
                 <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
-                <Entry x:Name="nombreRecetaEntry" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}"/>
-                <!--<Picker Title="{translator:Translate nuevarecetaview_categoria_comida}" Style="{StaticResource pickerStyle}"/>-->
-                <Editor x:Name="recetaDescripcion" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
-                <Entry x:Name="tiempoPreparacion" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
-                <Entry x:Name="tiempoCocina" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric"/>
-                <!--<Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />-->
-                <Button x:Name="guardarRecetaButton" Clicked="guardarRecetaButton_Clicked" Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}"/>
+                <Entry Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}" Text="{Binding nombreRecetaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Editor Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" Text="{Binding descripcionRecetaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Editor Placeholder="{translator:Translate nuevarecetaview_pasos_receta}" Style="{StaticResource editorStyle}" Text="{Binding pasosRecetaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" Text="{Binding ingredientesRecetaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoPreparacionRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoCocinaRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Picker x:Name="paisReceta" />
+                <Picker x:Name="categoriaComidaReceta" />
+
+                <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
+                <Button Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}" Command="{Binding NewRecipeCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

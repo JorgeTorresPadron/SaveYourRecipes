@@ -18,52 +18,5 @@ namespace SaveYourRecipes.Features.Editar
         {
             InitializeComponent();
         }
-
-        private void actualizarRecetaButton_Clicked(object sender, EventArgs e)
-        {
-            EditarReceta();
-        }
-
-        async void EditarReceta()
-        {
-            if (validarDatos())
-            {
-                Receta receta = new Receta
-                {
-                    receta_nombre = actualizarNombreReceta.Text,
-                    receta_descripcion = actualizarRecetaDescripcion.Text,
-                    tiempo_preparacion = actualizarTiempoPreparacion.Text,
-                    tiempo_cocina = actualizarTiempoCocina.Text
-                };
-
-                
-            }
-        }
-
-        public bool validarDatos()
-        {
-            bool respuesta;
-            if (string.IsNullOrEmpty(actualizarNombreReceta.Text))
-            {
-                respuesta = false;
-            }
-            else if (string.IsNullOrEmpty(actualizarRecetaDescripcion.Text))
-            {
-                respuesta = false;
-            }
-            else if (string.IsNullOrEmpty(actualizarTiempoPreparacion.Text))
-            {
-                respuesta = false;
-            }
-            else if (string.IsNullOrEmpty(actualizarTiempoCocina.Text))
-            {
-                respuesta = false;
-            }
-            else
-            {
-                respuesta = true;
-            }
-            return respuesta;
-        }
     }
 }
