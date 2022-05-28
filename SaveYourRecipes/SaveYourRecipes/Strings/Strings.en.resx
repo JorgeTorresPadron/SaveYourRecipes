@@ -228,6 +228,15 @@
   <data name="misrecetasview_mostrar_receta" xml:space="preserve">
     <value>Show stored recipes</value>
   </data>
+  <data name="nuevacategoriaview_nueva_categoria_button" xml:space="preserve">
+    <value>Save category</value>
+  </data>
+  <data name="nuevacategoriaview_nueva_categoria_entry" xml:space="preserve">
+    <value>Enter the category you want to add</value>
+  </data>
+  <data name="nuevacategoriaview_titulo" xml:space="preserve">
+    <value>ADD A NEW FOOD CATEGORY</value>
+  </data>
   <data name="nuevarecetaview_anadir_categoria_button" xml:space="preserve">
     <value>Add category</value>
   </data>

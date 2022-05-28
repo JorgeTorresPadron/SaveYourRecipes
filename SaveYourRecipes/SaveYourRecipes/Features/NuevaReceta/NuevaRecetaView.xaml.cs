@@ -15,14 +15,14 @@ namespace SaveYourRecipes.Features.NuevaReceta
             BindingContext = new NuevaRecetaViewModel();
         }
 
-        private void anadirPaisButton_Clicked(object sender, EventArgs e)
+        private async void anadirPaisButton_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushModalAsync(new NuevoPaisView());
         }
 
-        private void anadirCategoriaButton_Clicked(object sender, EventArgs e)
+        private async void anadirCategoriaButton_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushModalAsync(new NuevaCategoriaView());
         }
     }
 }

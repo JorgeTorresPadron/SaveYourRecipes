@@ -394,6 +394,33 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Guardar categoría.
+        /// </summary>
+        internal static string nuevacategoriaview_nueva_categoria_button {
+            get {
+                return ResourceManager.GetString("nuevacategoriaview_nueva_categoria_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe la categoría que quieres añadir.
+        /// </summary>
+        internal static string nuevacategoriaview_nueva_categoria_entry {
+            get {
+                return ResourceManager.GetString("nuevacategoriaview_nueva_categoria_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a AÑADIR UNA NUEVA CATEGORÍA DE COMIDA.
+        /// </summary>
+        internal static string nuevacategoriaview_titulo {
+            get {
+                return ResourceManager.GetString("nuevacategoriaview_titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Añadir categoría.
         /// </summary>
         internal static string nuevarecetaview_anadir_categoria_button {
