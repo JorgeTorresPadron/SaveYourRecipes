@@ -15,6 +15,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
         public NuevoPaisView()
         {
             InitializeComponent();
+            BindingContext = new NuevoPaisViewModel();
         }
     }
 }

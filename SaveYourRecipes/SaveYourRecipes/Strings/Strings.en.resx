@@ -276,6 +276,15 @@
   <data name="nuevarecetaview_tiempo_preparacion" xml:space="preserve">
     <value>Write down the recipe preparation time</value>
   </data>
+  <data name="nuevopaisview_nuevo_pais_button" xml:space="preserve">
+    <value>Save country</value>
+  </data>
+  <data name="nuevopaisview_nuevo_pais_entry" xml:space="preserve">
+    <value>Enter the country you want to add</value>
+  </data>
+  <data name="nuevopaisview_titulo" xml:space="preserve">
+    <value>ADD A COUNTRY</value>
+  </data>
   <data name="registrarseview_contrasena_entry" xml:space="preserve">
     <value>Enter your password</value>
   </data>

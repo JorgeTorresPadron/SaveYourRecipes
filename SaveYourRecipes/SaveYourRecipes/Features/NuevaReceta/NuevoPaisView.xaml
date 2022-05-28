@@ -3,11 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SaveYourRecipes.Features.NuevaReceta.NuevoPaisView"
              xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="titleLabelStyle">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style TargetType="Label" x:Key="normalLabelStyle">
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="FontSize" Value="Header" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            <Style TargetType="Entry" x:Key="nuevoPaisEntryStyle" >
+                <Setter Property="HorizontalTextAlignment" Value="Start" />
+                <Setter Property="MaxLength" Value="20" />
+                <Setter Property="Keyboard" Value="Text" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
+            </Style>
+            <Style TargetType="Button" x:Key="regitrarseButtonStyle" >
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="CornerRadius" Value="40" />
+                <Setter Property="BackgroundColor" Value="Orange" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="{translator:Translate nuevopaisview_titulo}" Style="{StaticResource titleLabelStyle}"/>
+
+            <Entry Placeholder="{translator:Translate nuevopaisview_nuevo_pais_entry}" Style="{StaticResource nuevoPaisEntryStyle}" Text="{Binding nombreCategoriaComidaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+            <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
+            <Button Text="{translator:Translate nuevopaisview_nuevo_pais_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding NewCountryCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -538,6 +538,33 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Guardar país.
+        /// </summary>
+        internal static string nuevopaisview_nuevo_pais_button {
+            get {
+                return ResourceManager.GetString("nuevopaisview_nuevo_pais_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe el país que quieres añadir.
+        /// </summary>
+        internal static string nuevopaisview_nuevo_pais_entry {
+            get {
+                return ResourceManager.GetString("nuevopaisview_nuevo_pais_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a AÑADIR UN PAÍS.
+        /// </summary>
+        internal static string nuevopaisview_titulo {
+            get {
+                return ResourceManager.GetString("nuevopaisview_titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Escribe la contraseña.
         /// </summary>
         internal static string registrarseview_contrasena_entry {

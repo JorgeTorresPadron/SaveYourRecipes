@@ -30,14 +30,6 @@
                 <Setter Property="BackgroundColor" Value="Orange" />
                 <Setter Property="FontSize" Value="Medium" />
             </Style>
-            <Style TargetType="Button" x:Key="yaTengoCuentaButtonStyle">
-                <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="TextColor" Value="Black"/>
-                <Setter Property="FontSize" Value="Medium" />
-                <Setter Property="BackgroundColor" Value="Transparent"/>
-                <Setter Property="FontSize" Value="Small" />
-                <Setter Property="FontAttributes" Value="Bold" />
-            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
