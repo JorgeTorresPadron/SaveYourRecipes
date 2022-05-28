@@ -182,6 +182,14 @@ namespace SaveYourRecipes.Data
                 return _database.InsertAsync(categoria_Comida);
             }
         }
+        /// <summary>
+        /// METOD-O PARA VER LAS CATEGORIAS DE COMIDA
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<Categoria_comida>> GetCategoriaComidaAsync()
+        {
+            return _database.Table<Categoria_comida>().ToListAsync();
+        }
         #endregion
 
         #region CRUD - PAIS TABLE
@@ -200,6 +208,14 @@ namespace SaveYourRecipes.Data
             {
                 return _database.InsertAsync(pais);
             }
+        }
+        /// <summary>
+        /// METOD-O PARA VER LOS PAISES
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<Pais>> GetPaisAsync()
+        {
+            return _database.Table<Pais>().ToListAsync();
         }
         #endregion
     }
