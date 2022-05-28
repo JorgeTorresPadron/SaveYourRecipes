@@ -36,7 +36,7 @@
         <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
             <Label Text="{translator:Translate nuevopaisview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
-            <Entry Placeholder="{translator:Translate nuevopaisview_nuevo_pais_entry}" Style="{StaticResource nuevoPaisEntryStyle}" Text="{Binding nombreCategoriaComidaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Entry Placeholder="{translator:Translate nuevopaisview_nuevo_pais_entry}" Style="{StaticResource nuevoPaisEntryStyle}" Text="{Binding nombrePaisTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
             <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
             <Button Text="{translator:Translate nuevopaisview_nuevo_pais_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding NewCountryCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>

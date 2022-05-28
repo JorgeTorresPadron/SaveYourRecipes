@@ -19,6 +19,8 @@ namespace SaveYourRecipes.Features.NuevaReceta
         public string ingredientesReceta;
         public int tiempoPreparacionReceta;
         public int tiempoCocinaReceta;
+        public object paisPickerSource;
+        public object categoriaPickerSource;
 
         public bool isRunning;
         public bool isVisible;
@@ -60,6 +62,18 @@ namespace SaveYourRecipes.Features.NuevaReceta
         {
             get { return this.tiempoCocinaReceta; }
             set {  SetValue(ref this.tiempoCocinaReceta, value); }
+        }
+
+        public object PaisPickerSource
+        {
+            get { return this.paisPickerSource; }
+            set { SetValue(ref this.paisPickerSource, value); }
+        }
+
+        public object CategoriaPickerSource
+        {
+            get { return this.categoriaPickerSource; }
+            set { SetValue(ref this.categoriaPickerSource, value); }
         }
 
         public bool IsEnabledTxt
@@ -156,12 +170,19 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
             await App.Current.MainPage.Navigation.PushModalAsync(new MisRecetasView());
         }
+
+        public async Task LoadData()
+        {
+            this.PaisPickerSource = await App.Database.GetPaisAsync();
+            this.CategoriaPickerSource = await App.Database.GetCategoriaComidaAsync();
+        }
         #endregion
 
         #region Constructor
         public NuevaRecetaViewModel()
         {
             IsEnabledTxt = true;
+            LoadData();
         }
 
         #endregion

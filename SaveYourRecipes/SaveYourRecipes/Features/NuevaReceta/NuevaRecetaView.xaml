@@ -48,12 +48,12 @@
                 <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoCocinaRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Picker x:Name="paisReceta" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}"/>
+                    <Picker ItemsSource="{Binding PaisPickerSource}" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}"/>
                     <Button Text="{translator:Translate nuevarecetaview_anadir_pais_button}" Style="{StaticResource buttonStyle}" x:Name="anadirPaisButton" Clicked="anadirPaisButton_Clicked" />
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Picker x:Name="categoriaComidaReceta" Title="{translator:Translate nuevarecetaview_anadir_categoria_picker}" Style="{StaticResource pickerStyle}"/>
+                    <Picker ItemsSource="{Binding CategoriaPickerSource}" Title="{translator:Translate nuevarecetaview_anadir_categoria_picker}" Style="{StaticResource pickerStyle}"/>
                     <Button Text="{translator:Translate nuevarecetaview_anadir_categoria_button}" Style="{StaticResource buttonStyle}" x:Name="anadirCategoriaButton" Clicked="anadirCategoriaButton_Clicked" />
                 </StackLayout>
                 
