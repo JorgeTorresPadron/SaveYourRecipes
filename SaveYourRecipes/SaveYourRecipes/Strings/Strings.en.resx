@@ -253,7 +253,7 @@
     <value>Select the category to which it belongs</value>
   </data>
   <data name="nuevarecetaview_descripcion_receta" xml:space="preserve">
-    <value>Write the steps of the recipe</value>
+    <value>Write the recipe description</value>
   </data>
   <data name="nuevarecetaview_guardar_nueva_receta" xml:space="preserve">
     <value>Save Recipe</value>

@@ -164,5 +164,43 @@ namespace SaveYourRecipes.Data
             return _database.DeleteAsync(receta);
         }
         #endregion
+
+        #region CRUD - CATEGORIA_COMIDA TABLE
+        /// <summary>
+        /// METOD-O GUARDAR CATEGORIA COMIDA
+        /// </summary>
+        /// <param name="categoria_Comida"></param>
+        /// <returns></returns>
+        public Task<int> SaveCategoriaComidaAsync(Categoria_comida categoria_Comida)
+        {
+            if (categoria_Comida.categoria_comida_id != 0)
+            {
+                return _database.UpdateAsync(categoria_Comida);
+            }
+            else
+            {
+                return _database.InsertAsync(categoria_Comida);
+            }
+        }
+        #endregion
+
+        #region CRUD - PAIS TABLE
+        /// <summary>
+        /// METOD-O GUARDAR PAIS
+        /// </summary>
+        /// <param name="pais"></param>
+        /// <returns></returns>
+        public Task<int> SavePaisAsync(Pais pais)
+        {
+            if (pais.pais_id != 0)
+            {
+                return _database.UpdateAsync(pais);
+            }
+            else
+            {
+                return _database.InsertAsync(pais);
+            }
+        }
+        #endregion
     }
 }

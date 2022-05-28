@@ -44,7 +44,7 @@
         <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
             <Label Text="{translator:Translate nuevacategoriaview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
-            <Entry Placeholder="{translator:Translate nuevacategoriaview_nueva_categoria_entry}" Style="{StaticResource nuevaCategoriaEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Entry Placeholder="{translator:Translate nuevacategoriaview_nueva_categoria_entry}" Style="{StaticResource nuevaCategoriaEntryStyle}" Text="{Binding nombreCategoriaComidaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
             <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
             <Button Text="{translator:Translate nuevacategoriaview_nueva_categoria_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding NewCategoryCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>

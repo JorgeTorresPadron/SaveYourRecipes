@@ -148,7 +148,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
             await App.Database.SaveRecetaAsync(receta);
 
-            await App.Current.MainPage.DisplayAlert("Éxito / Success", "Bienvenido / Welcome " + nombreReceta.ToString(), "Ok");
+            await App.Current.MainPage.DisplayAlert("Éxito / Success", "Receta / Recipe " + nombreReceta.ToString() + " almacenada correctamente / stored correctly", "Ok");
 
             this.IsRunningTxt = false;
             this.IsVisibleTxt = false;

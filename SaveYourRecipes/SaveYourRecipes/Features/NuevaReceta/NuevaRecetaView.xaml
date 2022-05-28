@@ -31,7 +31,7 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="CornerRadius" Value="40" />
                 <Setter Property="BackgroundColor" Value="Orange" />
-                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontSize" Value="Small" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -47,12 +47,12 @@
                 <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoPreparacionRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
                 <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoCocinaRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Picker x:Name="paisReceta" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}"/>
                     <Button Text="{translator:Translate nuevarecetaview_anadir_pais_button}" Style="{StaticResource buttonStyle}" x:Name="anadirPaisButton" Clicked="anadirPaisButton_Clicked" />
                 </StackLayout>
 
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Picker x:Name="categoriaComidaReceta" Title="{translator:Translate nuevarecetaview_anadir_categoria_picker}" Style="{StaticResource pickerStyle}"/>
                     <Button Text="{translator:Translate nuevarecetaview_anadir_categoria_button}" Style="{StaticResource buttonStyle}" x:Name="anadirCategoriaButton" Clicked="anadirCategoriaButton_Clicked" />
                 </StackLayout>

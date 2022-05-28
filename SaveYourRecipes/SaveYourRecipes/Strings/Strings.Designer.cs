@@ -466,7 +466,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Escribe los pasos de la receta.
+        ///   Busca una cadena traducida similar a Escribe la descripción de la receta.
         /// </summary>
         internal static string nuevarecetaview_descripcion_receta {
             get {

@@ -15,6 +15,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
         public NuevaCategoriaView()
         {
             InitializeComponent();
+            BindingContext = new NuevaCategoriaViewModel();
         }
     }
 }
