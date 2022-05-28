@@ -228,6 +228,18 @@
   <data name="misrecetasview_mostrar_receta" xml:space="preserve">
     <value>Mostrar recetas almacenadas</value>
   </data>
+  <data name="nuevarecetaview_anadir_categoria_button" xml:space="preserve">
+    <value>Añadir categoría</value>
+  </data>
+  <data name="nuevarecetaview_anadir_categoria_picker" xml:space="preserve">
+    <value>Selecciona la categoría</value>
+  </data>
+  <data name="nuevarecetaview_anadir_pais_button" xml:space="preserve">
+    <value>Añadir país</value>
+  </data>
+  <data name="nuevarecetaview_anadir_pais_picker" xml:space="preserve">
+    <value>Selecciona el país</value>
+  </data>
   <data name="nuevarecetaview_categoria_comida" xml:space="preserve">
     <value>Selecciona la categoría a la que pertenece</value>
   </data>

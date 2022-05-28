@@ -43,7 +43,13 @@
     <EmbeddedResource Update="Features\MisRecetas\MisRecetasView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Features\NuevaReceta\NuevaCategoriaView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Features\NuevaReceta\NuevaRecetaView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Features\NuevaReceta\NuevoPaisView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Features\Usuarios\CambiarContrasenaView.xaml">

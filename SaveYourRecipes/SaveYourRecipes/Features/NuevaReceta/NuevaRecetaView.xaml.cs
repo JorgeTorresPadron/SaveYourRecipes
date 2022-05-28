@@ -14,5 +14,15 @@ namespace SaveYourRecipes.Features.NuevaReceta
             InitializeComponent();
             BindingContext = new NuevaRecetaViewModel();
         }
+
+        private void anadirPaisButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void anadirCategoriaButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

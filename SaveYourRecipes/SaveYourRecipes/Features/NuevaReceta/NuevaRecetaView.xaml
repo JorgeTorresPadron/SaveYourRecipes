@@ -46,8 +46,18 @@
                 <Editor Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" Text="{Binding ingredientesRecetaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
                 <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoPreparacionRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
                 <Entry Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" Text="{Binding tiempoCocinaRecetaTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
-                <Picker x:Name="paisReceta" />
-                <Picker x:Name="categoriaComidaReceta" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Picker x:Name="paisReceta" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}"/>
+                    <Button Text="{translator:Translate nuevarecetaview_anadir_pais_button}" Style="{StaticResource buttonStyle}" x:Name="anadirPaisButton" Clicked="anadirPaisButton_Clicked" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Picker x:Name="categoriaComidaReceta" Title="{translator:Translate nuevarecetaview_anadir_categoria_picker}" Style="{StaticResource pickerStyle}"/>
+                    <Button Text="{translator:Translate nuevarecetaview_anadir_categoria_button}" Style="{StaticResource buttonStyle}" x:Name="anadirCategoriaButton" Clicked="anadirCategoriaButton_Clicked" />
+                </StackLayout>
+                
+               
 
                 <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
                 <Button Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}" Command="{Binding NewRecipeCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
