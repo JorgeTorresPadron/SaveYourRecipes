@@ -5,7 +5,15 @@
              xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
     <ContentPage.Resources>
         <ResourceDictionary>
+            <Style x:Key="titleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
             <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
                 <Setter Property="VerticalOptions" Value="Center"/>
@@ -33,11 +41,19 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="10">
-            <Label Text="{translator:Translate acercadeview_primer_texto}" Style="{StaticResource labelStyle}" FontSize="Title" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="{translator:Translate acercadeview_primer_texto}" Style="{StaticResource titleLabelStyle}" />
+
             <StackLayout Orientation="Horizontal" Spacing="5">
-                <Image Source="github_logo.png" VerticalOptions="Center" Style="{StaticResource imageStyle}"/>
+                <Label Text="{translator:Translate acercadeview_idiomas_disponibles}" Style="{StaticResource labelStyle}"/>
+                <Image Source="icon_right_arrow.png" Style="{StaticResource rightArrowStyle}"/>
+                <Image Source="spanishFlag.png" Style="{StaticResource imageStyle}"/>
+                <Image Source="englishFlag.png" Style="{StaticResource imageStyle}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Image Source="github_logo.png" Style="{StaticResource imageStyle}"/>
                 <Label Text="{translator:Translate acercadeview_segundo_texto}" Style="{StaticResource labelStyle}"/>
-                <Image Source="icon_right_arrow.png" VerticalOptions="Center" Style="{StaticResource rightArrowStyle}"/>
+                <Image Source="icon_right_arrow.png" Style="{StaticResource rightArrowStyle}"/>
                 <Label x:Name="linkGitHub" Style="{StaticResource labelStyle}">
                     <Label.FormattedText>
                         <FormattedString>
@@ -50,10 +66,11 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal" Spacing="5">
-                <Image Source="xamarin_logo.png" VerticalOptions="Center" Style="{StaticResource imageStyle}"/>
+                <Image Source="xamarin_logo.png" Style="{StaticResource imageStyle}"/>
                 <Label Text="{translator:Translate acercadeview_tercer_texto}" Style="{StaticResource labelStyle}"/>
-                <Image Source="icon_right_arrow.png" VerticalOptions="Center" Style="{StaticResource rightArrowStyle}"/>
+                <Image Source="icon_right_arrow.png" Style="{StaticResource rightArrowStyle}"/>
                 <Label x:Name="linkXamarin" Style="{StaticResource labelStyle}">
                     <Label.FormattedText>
                         <FormattedString>
@@ -66,10 +83,11 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
+            
             <StackLayout Orientation="Horizontal" Spacing="5">
-                <Image Source="sqlite_logo.png" VerticalOptions="Center" Style="{StaticResource imageStyle}"/>
+                <Image Source="sqlite_logo.png" Style="{StaticResource imageStyle}"/>
                 <Label Text="{translator:Translate acercadeview_cuarto_texto}" Style="{StaticResource labelStyle}"/>
-                <Image Source="icon_right_arrow.png" VerticalOptions="Center" Style="{StaticResource rightArrowStyle}"/>
+                <Image Source="icon_right_arrow.png" Style="{StaticResource rightArrowStyle}"/>
                 <Label x:Name="linkSQLite" Style="{StaticResource labelStyle}">
                     <Label.FormattedText>
                         <FormattedString>
@@ -82,6 +100,7 @@
                     </Label.FormattedText>
                 </Label>
             </StackLayout>
+            
             <Button Text="{translator:Translate volver_al_menu_principal_button}" Style="{StaticResource buttonStyle}" x:Name="volverButton" Clicked="volverButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

@@ -79,6 +79,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Disponible en los idiomas siguientes.
+        /// </summary>
+        internal static string acercadeview_idiomas_disponibles {
+            get {
+                return ResourceManager.GetString("acercadeview_idiomas_disponibles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Aplicación creada por Jorge Torres Padrón usando Xamarin Forms y SQLite.
         /// </summary>
         internal static string acercadeview_primer_texto {

@@ -49,7 +49,7 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate iniciarsesionview_titulo}" Style="{StaticResource titleLabelStyle}"/>
             <Label Text="{translator:Translate iniciarsesionview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
             <Entry Placeholder="{translator:Translate iniciarsesionview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>

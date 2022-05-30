@@ -123,6 +123,9 @@
   <data name="acercadeview_cuarto_texto_link" xml:space="preserve">
     <value>https://sqlite.org/docs.html</value>
   </data>
+  <data name="acercadeview_idiomas_disponibles" xml:space="preserve">
+    <value>Disponible en los idiomas siguientes</value>
+  </data>
   <data name="acercadeview_primer_texto" xml:space="preserve">
     <value>Aplicación creada por Jorge Torres Padrón usando Xamarin Forms y SQLite</value>
   </data>

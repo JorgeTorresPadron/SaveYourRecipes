@@ -65,7 +65,7 @@
     </ContentPage.Resources>
     
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate registrarseview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
             <Label Text="{translator:Translate registrarseview_nombre_label}" Style="{StaticResource normalLabelStyle}" />
