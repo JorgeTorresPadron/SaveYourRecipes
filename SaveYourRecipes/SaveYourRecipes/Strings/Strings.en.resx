@@ -231,6 +231,12 @@
   <data name="misrecetasview_mostrar_receta" xml:space="preserve">
     <value>Show stored recipes</value>
   </data>
+  <data name="nuevacategoriaview_eliminar_categoria_button" xml:space="preserve">
+    <value>Delete category</value>
+  </data>
+  <data name="nuevacategoriaview_modificar_categoria_button" xml:space="preserve">
+    <value>Modify category</value>
+  </data>
   <data name="nuevacategoriaview_nueva_categoria_button" xml:space="preserve">
     <value>Save category</value>
   </data>

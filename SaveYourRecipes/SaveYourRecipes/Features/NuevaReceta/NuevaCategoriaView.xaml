@@ -17,6 +17,13 @@
                 <Setter Property="FontSize" Value="Header" />
                 <Setter Property="TextColor" Value="Black" />
             </Style>
+            <Style TargetType="Label" x:Key="listLabelStyle">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
             <Style TargetType="Entry" x:Key="nuevaCategoriaEntryStyle" >
                 <Setter Property="HorizontalTextAlignment" Value="Start" />
                 <Setter Property="MaxLength" Value="20" />
@@ -33,13 +40,36 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+        <StackLayout Padding="10, 20, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate nuevacategoriaview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
-            <Entry Placeholder="{translator:Translate nuevacategoriaview_nueva_categoria_entry}" Style="{StaticResource nuevaCategoriaEntryStyle}" Text="{Binding nombreCategoriaComidaTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Entry x:Name="idCategoriaTxt" IsVisible="false"/>
+            <Entry x:Name="nuevaCategoriaTxt" Placeholder="{translator:Translate nuevacategoriaview_nueva_categoria_entry}" Style="{StaticResource nuevaCategoriaEntryStyle}"/>
 
-            <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
-            <Button Text="{translator:Translate nuevacategoriaview_nueva_categoria_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding NewCategoryCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
+            <Button x:Name="modificarCategoriaButton" Clicked="modificarCategoriaButton_Clicked" IsVisible="false" Text="{translator:Translate nuevacategoriaview_modificar_categoria_button}" Style="{StaticResource regitrarseButtonStyle}"/>
+            <Button x:Name="eliminarCategoriaButton" Clicked="eliminarCategoriaButton_Clicked" IsVisible="false" Text="{translator:Translate nuevacategoriaview_eliminar_categoria_button}" Style="{StaticResource regitrarseButtonStyle}"/>
+            <Button x:Name="nuevaCategoriaButton" Clicked="nuevaCategoriaButton_Clicked" IsVisible="true" Text="{translator:Translate nuevacategoriaview_nueva_categoria_button}" Style="{StaticResource regitrarseButtonStyle}"/>
+
+            <ListView x:Name="lstCategorias" ItemSelected="lstCategorias_ItemSelected" VerticalScrollBarVisibility="Default" SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="75*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding categoria_comida_id}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
+                                <Label Text="{Binding categoria_comida_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="1" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

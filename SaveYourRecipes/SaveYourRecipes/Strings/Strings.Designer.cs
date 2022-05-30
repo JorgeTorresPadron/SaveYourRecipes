@@ -403,6 +403,24 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar categoría.
+        /// </summary>
+        internal static string nuevacategoriaview_eliminar_categoria_button {
+            get {
+                return ResourceManager.GetString("nuevacategoriaview_eliminar_categoria_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modificar categoría.
+        /// </summary>
+        internal static string nuevacategoriaview_modificar_categoria_button {
+            get {
+                return ResourceManager.GetString("nuevacategoriaview_modificar_categoria_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guardar categoría.
         /// </summary>
         internal static string nuevacategoriaview_nueva_categoria_button {

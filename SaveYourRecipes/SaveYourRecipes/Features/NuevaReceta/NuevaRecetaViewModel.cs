@@ -173,8 +173,16 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         public async Task LoadData()
         {
-            this.PaisPickerSource = await App.Database.GetPaisAsync();
-            this.CategoriaPickerSource = await App.Database.GetCategoriaComidaAsync();
+            var paisPicker = await App.Database.GetPaisAsync();
+            if (paisPicker != null)
+            {
+                this.paisPickerSource = paisPicker;
+            }
+            var categoriaPicker = await App.Database.GetCategoriaComidaAsync();
+            if (categoriaPicker != null)
+            {
+                this.CategoriaPickerSource = categoriaPicker;
+            }
         }
         #endregion
 

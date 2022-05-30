@@ -215,6 +215,24 @@ namespace SaveYourRecipes.Data
         {
             return _database.Table<Categoria_comida>().ToListAsync();
         }
+        /// <summary>
+        /// METOD-O PARA VER LAS CATEGORIAS POR ID
+        /// </summary>
+        /// <param name="idCategoria"></param>
+        /// <returns></returns>
+        public Task<Categoria_comida> GetCategoriaComidaPorId(int idCategoria)
+        {
+            return _database.Table<Categoria_comida>().Where(cat => cat.categoria_comida_id == idCategoria).FirstOrDefaultAsync();
+        }
+        /// <summary>
+        /// METOD-O ELIMINAR CATEGORIA COMIDA
+        /// </summary>
+        /// <param name="categoria_Comida"></param>
+        /// <returns></returns>
+        public Task<int> DeleteCategoriaComidaAsync(Categoria_comida categoria_Comida)
+        {
+            return _database.DeleteAsync(categoria_Comida);
+        }
         #endregion
 
         #region CRUD - PAIS TABLE
