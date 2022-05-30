@@ -65,14 +65,19 @@
     </ContentPage.Resources>
     
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+        <!-- Left, Top, Rigth, Bottom-->
+        <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+          
             <Label Text="{translator:Translate registrarseview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
             <Label Text="{translator:Translate registrarseview_nombre_label}" Style="{StaticResource normalLabelStyle}" />
             <Entry Placeholder="{translator:Translate registrarseview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
+            <!-- Contraseña -->
             <Label Text="{translator:Translate registrarseview_contrasena_label}" Style="{StaticResource normalLabelStyle}" />
             <Entry Placeholder="{translator:Translate registrarseview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <!-- Repetir contraseña -->
+            <Entry Placeholder="{translator:Translate registrarseview_repetir_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordRepeatUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
             <Label Text="{translator:Translate registrarseview_nombre_real_label}" Style="{StaticResource normalLabelStyle}" />
             <Entry Placeholder="{translator:Translate registrarseview_nombre_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding nombreUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>

@@ -321,6 +321,9 @@
   <data name="registrarseview_registrarse_button" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="registrarseview_repetir_contrasena_entry" xml:space="preserve">
+    <value>Repeat the password you just typed</value>
+  </data>
   <data name="registrarseview_tiene_cuenta_button" xml:space="preserve">
     <value>Already have an account? Log in</value>
   </data>

@@ -321,6 +321,9 @@
   <data name="registrarseview_registrarse_button" xml:space="preserve">
     <value>Registrarse</value>
   </data>
+  <data name="registrarseview_repetir_contrasena_entry" xml:space="preserve">
+    <value>Repite la contraseña que acabas de escribir</value>
+  </data>
   <data name="registrarseview_tiene_cuenta_button" xml:space="preserve">
     <value>¿Ya tienes una cuenta? Inicia Sesión</value>
   </data>

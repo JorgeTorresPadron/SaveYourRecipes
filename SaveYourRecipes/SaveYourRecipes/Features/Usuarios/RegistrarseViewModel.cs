@@ -13,6 +13,7 @@ namespace SaveYourRecipes.Features.Usuarios
         #region Atributos
         public string nombreUsuario;
         public string contrasenaUsuario;
+        public string contrasenaRepetidaUsuario;
         public string nombreUsuarioReal;
         public string apellidoUsuarioReal;
         public int edadUsuario;
@@ -33,6 +34,12 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             get { return this.contrasenaUsuario; }
             set { SetValue(ref this.contrasenaUsuario, value); }
+        }
+
+        public string passwordRepeatUsuarioTxt
+        {
+            get { return this.contrasenaRepetidaUsuario; }
+            set { SetValue(ref this.contrasenaRepetidaUsuario, value); }
         }
 
         public string nombreUsuarioRealTxt
@@ -113,6 +120,12 @@ namespace SaveYourRecipes.Features.Usuarios
             if (this.edadUsuario.Equals(null) | this.edadUsuario.Equals(""))
             {
                 await App.Current.MainPage.DisplayAlert("Error", "Debes ingresar tu edad / You must enter your age", "Ok");
+                return;
+            }
+
+            if (this.contrasenaUsuario != this.contrasenaRepetidaUsuario)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "La contraseña repetida no es igual / Repeated password is not the same", "Ok");
                 return;
             }
 

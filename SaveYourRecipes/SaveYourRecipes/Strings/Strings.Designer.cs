@@ -673,6 +673,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Repite la contraseña que acabas de escribir.
+        /// </summary>
+        internal static string registrarseview_repetir_contrasena_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_repetir_contrasena_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ¿Ya tienes una cuenta? Inicia Sesión.
         /// </summary>
         internal static string registrarseview_tiene_cuenta_button {

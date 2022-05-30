@@ -41,7 +41,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+        <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate eliminarusuarioview_titulo}" Style="{StaticResource titleLabelStyle}"/>
             <Label Text="{translator:Translate eliminarusuarioview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
             <Entry Placeholder="{translator:Translate eliminarusuarioview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
