@@ -565,6 +565,24 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar país.
+        /// </summary>
+        internal static string nuevopaisview_eliminar_pais_button {
+            get {
+                return ResourceManager.GetString("nuevopaisview_eliminar_pais_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modificar país.
+        /// </summary>
+        internal static string nuevopaisview_modificar_pais_button {
+            get {
+                return ResourceManager.GetString("nuevopaisview_modificar_pais_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Guardar país.
         /// </summary>
         internal static string nuevopaisview_nuevo_pais_button {

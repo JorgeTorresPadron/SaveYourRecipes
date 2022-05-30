@@ -17,6 +17,13 @@
                 <Setter Property="FontSize" Value="Header" />
                 <Setter Property="TextColor" Value="Black" />
             </Style>
+            <Style TargetType="Label" x:Key="listLabelStyle">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
             <Style TargetType="Entry" x:Key="nuevoPaisEntryStyle" >
                 <Setter Property="HorizontalTextAlignment" Value="Start" />
                 <Setter Property="MaxLength" Value="20" />
@@ -24,7 +31,7 @@
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
             </Style>
-            <Style TargetType="Button" x:Key="regitrarseButtonStyle" >
+            <Style TargetType="Button" x:Key="nuevoPaisButtonStyle" >
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="CornerRadius" Value="40" />
                 <Setter Property="BackgroundColor" Value="Orange" />
@@ -33,13 +40,36 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+        <StackLayout Padding="10, 20, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate nuevopaisview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
-            <Entry Placeholder="{translator:Translate nuevopaisview_nuevo_pais_entry}" Style="{StaticResource nuevoPaisEntryStyle}" Text="{Binding nombrePaisTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Entry x:Name="idPaisTxt" IsVisible="false" />
+            <Entry x:Name="nuevoPaisTxt" Placeholder="{translator:Translate nuevopaisview_nuevo_pais_entry}" Style="{StaticResource nuevoPaisEntryStyle}"/>
 
-            <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
-            <Button Text="{translator:Translate nuevopaisview_nuevo_pais_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding NewCountryCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
+            <Button x:Name="modificarPaisButton" Clicked="modificarPaisButton_Clicked" IsVisible="false" Text="{translator:Translate nuevopaisview_modificar_pais_button}" Style="{StaticResource nuevoPaisButtonStyle}" />
+            <Button x:Name="eliminarPaisButton" Clicked="eliminarPaisButton_Clicked" IsVisible="false" Text="{translator:Translate nuevopaisview_eliminar_pais_button}" Style="{StaticResource nuevoPaisButtonStyle}" />
+            <Button x:Name="nuevoPaisButton" Clicked="nuevoPaisButton_Clicked" IsVisible="true" Text="{translator:Translate nuevopaisview_nuevo_pais_button}" Style="{StaticResource nuevoPaisButtonStyle}" />
+
+            <ListView x:Name="lstPaises" ItemSelected="lstPaises_ItemSelected" VerticalScrollBarVisibility="Default" SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="75*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding pais_id}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
+                                <Label Text="{Binding pais_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="1" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

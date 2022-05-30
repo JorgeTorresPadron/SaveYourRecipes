@@ -260,6 +260,24 @@ namespace SaveYourRecipes.Data
         {
             return _database.Table<Pais>().ToListAsync();
         }
+        /// <summary>
+        /// METOD-O PARA VER LOS PAISES POR ID
+        /// </summary>
+        /// <param name="idPais"></param>
+        /// <returns></returns>
+        public Task<Pais> GetPaisPorId(int idPais)
+        {
+            return _database.Table<Pais>().Where(pas => pas.pais_id == idPais).FirstOrDefaultAsync();
+        }
+        /// <summary>
+        /// METOD-O ELIMINAR PAIS
+        /// </summary>
+        /// <param name="pais"></param>
+        /// <returns></returns>
+        public Task<int> DeletePaisAsync(Pais pais)
+        {
+            return _database.DeleteAsync(pais);
+        }
         #endregion
     }
 }

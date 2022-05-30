@@ -285,6 +285,12 @@
   <data name="nuevarecetaview_tiempo_preparacion" xml:space="preserve">
     <value>Escribe el tiempo de preparación de la receta</value>
   </data>
+  <data name="nuevopaisview_eliminar_pais_button" xml:space="preserve">
+    <value>Eliminar país</value>
+  </data>
+  <data name="nuevopaisview_modificar_pais_button" xml:space="preserve">
+    <value>Modificar país</value>
+  </data>
   <data name="nuevopaisview_nuevo_pais_button" xml:space="preserve">
     <value>Guardar país</value>
   </data>
