@@ -18,8 +18,11 @@ namespace SaveYourRecipes.Models
         [MaxLength(16)]
         public string user_password { get; set; }
 
+        [MaxLength(25)]
+        public string user_nombre_real { get; set; }
+
         [MaxLength(50)]
-        public string user_nombre_apellido { get; set; }
+        public string user_apellido_real { get; set; }
 
         [MaxLength(2)]
         public int user_edad { get; set; }
@@ -28,7 +31,7 @@ namespace SaveYourRecipes.Models
 
         public bool user_is_login { get; set; }
 
-        [OneToMany(CascadeOperations = CascadeOperation.CascadeInsert | CascadeOperation.CascadeDelete)]
+        [OneToMany]
         public List<Receta> Receta { get; set; }
     }
 }

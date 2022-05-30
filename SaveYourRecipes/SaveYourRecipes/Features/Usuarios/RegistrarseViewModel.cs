@@ -13,7 +13,8 @@ namespace SaveYourRecipes.Features.Usuarios
         #region Atributos
         public string nombreUsuario;
         public string contrasenaUsuario;
-        public string nombreApellidoUsuario;
+        public string nombreUsuarioReal;
+        public string apellidoUsuarioReal;
         public int edadUsuario;
 
         public bool isRunning;
@@ -34,10 +35,16 @@ namespace SaveYourRecipes.Features.Usuarios
             set { SetValue(ref this.contrasenaUsuario, value); }
         }
 
-        public string nombreApellidosUsuarioTxt
+        public string nombreUsuarioRealTxt
         {
-            get { return this.nombreApellidoUsuario; }
-            set { SetValue(ref this.nombreApellidoUsuario, value); }
+            get { return this.nombreUsuarioReal; }
+            set { SetValue(ref this.nombreUsuarioReal, value); }
+        }
+
+        public string apellidoUsuarioRealTxt
+        {
+            get { return this.apellidoUsuarioReal; }
+            set { SetValue(ref this.apellidoUsuarioReal, value); }
         }
 
         public int edadUsuarioTxt
@@ -91,9 +98,15 @@ namespace SaveYourRecipes.Features.Usuarios
                 return;
             }
 
-            if (string.IsNullOrEmpty(this.nombreApellidoUsuario))
+            if (string.IsNullOrEmpty(this.nombreUsuarioReal))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingresar tu nombre y tus apellidos / You must enter your first and last name", "Ok");
+                await App.Current.MainPage.DisplayAlert("Error", "Debes ingresar tu nombre / You must enter your first name", "Ok");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(this.apellidoUsuarioReal))
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Error", "Debes ingresar tu apellido / You must enter your last name", "Ok");
                 return;
             }
 
@@ -113,7 +126,8 @@ namespace SaveYourRecipes.Features.Usuarios
             {
                 user_nombre_usuario = nombreUsuario,
                 user_password = contrasenaUsuario,
-                user_nombre_apellido = nombreApellidoUsuario,
+                user_nombre_real = nombreUsuarioReal,
+                user_apellido_real = apellidoUsuarioReal,
                 user_edad = edadUsuario,
                 user_fecha_creacion = DateTime.Now,
                 user_is_login = false,

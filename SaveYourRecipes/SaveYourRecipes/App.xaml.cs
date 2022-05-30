@@ -22,13 +22,14 @@ namespace SaveYourRecipes
                 }
                 return database;
             }
+
+            set { database = value; }
         }
         #endregion
 
         public App()
         {
             InitializeComponent();
-
             MainPage = new IniciarSesionView();
         }
 

@@ -574,6 +574,24 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Escribe tu apellido.
+        /// </summary>
+        internal static string registrarseview_apellido_real_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_apellido_real_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Apellido.
+        /// </summary>
+        internal static string registrarseview_apellido_real_label {
+            get {
+                return ResourceManager.GetString("registrarseview_apellido_real_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Escribe la contraseña.
         /// </summary>
         internal static string registrarseview_contrasena_entry {
@@ -610,24 +628,6 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Escribe tu nombre y apellidos.
-        /// </summary>
-        internal static string registrarseview_nombre_apellido_entry {
-            get {
-                return ResourceManager.GetString("registrarseview_nombre_apellido_entry", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Nombre y Apellidos.
-        /// </summary>
-        internal static string registrarseview_nombre_apellido_label {
-            get {
-                return ResourceManager.GetString("registrarseview_nombre_apellido_label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Escribe el nombre de usuario.
         /// </summary>
         internal static string registrarseview_nombre_entry {
@@ -642,6 +642,24 @@ namespace SaveYourRecipes.Strings {
         internal static string registrarseview_nombre_label {
             get {
                 return ResourceManager.GetString("registrarseview_nombre_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Escribe tu nombre.
+        /// </summary>
+        internal static string registrarseview_nombre_real_entry {
+            get {
+                return ResourceManager.GetString("registrarseview_nombre_real_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre.
+        /// </summary>
+        internal static string registrarseview_nombre_real_label {
+            get {
+                return ResourceManager.GetString("registrarseview_nombre_real_label", resourceCulture);
             }
         }
         

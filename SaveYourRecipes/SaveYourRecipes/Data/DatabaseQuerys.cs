@@ -23,6 +23,22 @@ namespace SaveYourRecipes.Data
             _database.CreateTableAsync<Receta>().Wait();
             _database.CreateTableAsync<User>().Wait();
             #endregion
+
+            /*
+            #region Eliminación - Tablas (Solo para testeo)
+            try
+            {
+                _database.DeleteAllAsync<Categoria_comida>().Wait();
+                _database.DeleteAllAsync<Pais>().Wait();
+                _database.DeleteAllAsync<Receta>().Wait();
+                _database.DeleteAllAsync<User>().Wait();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            #endregion
+            */
         }
         #endregion
 
@@ -87,6 +103,15 @@ namespace SaveYourRecipes.Data
         public Task<List<User>> GetUserChangePasswordValidate(string nombreUsuario)
         {
             return _database.QueryAsync<User>("SELECT * FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "'");
+        }
+        /// <summary>
+        /// METOD-O PARA MOSTRAR LOS USUARIOS QUE TIENEN SESIÓN INICIADA
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <returns></returns>
+        public Task<List<User>> GetUserThatAreLogIn()
+        {
+            return _database.QueryAsync<User>("SELECT * FROM User WHERE user_is_login = true");
         }
         /// <summary>
         /// METOD-O ACTUALIZAR CONTRASEÑA USUARIO

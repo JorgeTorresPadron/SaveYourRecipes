@@ -74,8 +74,11 @@
             <Label Text="{translator:Translate registrarseview_contrasena_label}" Style="{StaticResource normalLabelStyle}" />
             <Entry Placeholder="{translator:Translate registrarseview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <Label Text="{translator:Translate registrarseview_nombre_apellido_label}" Style="{StaticResource normalLabelStyle}" />
-            <Entry Placeholder="{translator:Translate registrarseview_nombre_apellido_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding nombreApellidosUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <Label Text="{translator:Translate registrarseview_nombre_real_label}" Style="{StaticResource normalLabelStyle}" />
+            <Entry Placeholder="{translator:Translate registrarseview_nombre_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding nombreUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+            <Label Text="{translator:Translate registrarseview_apellido_real_label}" Style="{StaticResource normalLabelStyle}" />
+            <Entry Placeholder="{translator:Translate registrarseview_apellido_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding apellidoUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
             <Label Text="{translator:Translate registrarseview_edad_label}" Style="{StaticResource normalLabelStyle}" />
             <Entry Placeholder="{translator:Translate registrarseview_edad_entry}" Style="{StaticResource edadUserEntry}" Text="{Binding edadUsuarioTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>

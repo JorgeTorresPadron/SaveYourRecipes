@@ -8,7 +8,7 @@
             <Style TargetType="Label" x:Key="titleLabelStyle">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
-                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontSize" Value="Title" />
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
@@ -28,12 +28,12 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="CornerRadius" Value="40" />
                 <Setter Property="BackgroundColor" Value="Orange" />
-                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontSize" Value="Small" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate nuevopaisview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
             <Entry Placeholder="{translator:Translate nuevopaisview_nuevo_pais_entry}" Style="{StaticResource nuevoPaisEntryStyle}" Text="{Binding nombrePaisTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
