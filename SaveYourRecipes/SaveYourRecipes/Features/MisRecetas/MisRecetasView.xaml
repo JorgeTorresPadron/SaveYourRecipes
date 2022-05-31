@@ -28,42 +28,44 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
         <StackLayout Spacing="10" Padding="10">
             <Label Text="{translator:Translate misrecetasview_mis_recetas_label}" Style="{StaticResource titleLabelStyle}" />
 
             <Entry x:Name="idRecetaTxt" IsVisible="false" />
-            
-            <ListView x:Name="lstRecetas" ItemSelected="lstRecetas_ItemSelected" VerticalScrollBarVisibility="Default" SeparatorVisibility="Default">
+
+            <ListView x:Name="lstRecetas" ItemSelected="lstRecetas_ItemSelected" VerticalScrollBarVisibility="Default" SeparatorVisibility="Default" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="15*"/>
-                                    <ColumnDefinition Width="42*"/>
-                                    <ColumnDefinition Width="42*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding receta_id}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
-                                <Label Text="{Binding receta_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="1" />
-                                <Label Text="{Binding receta_descripcion}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="2" />
-                                
-                                <Label Text="{Binding receta_pasos_receta}" Style="{StaticResource listLabelStyle}" Grid.Row="1" Grid.Column="1" />
-                                <Label Text="{Binding receta_ingredientes}" Style="{StaticResource listLabelStyle}" Grid.Row="1" Grid.Column="2" />
+                            <ViewCell.View>
+                                <Grid Padding="5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="45*"/>
+                                        <ColumnDefinition Width="45*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding receta_id}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
+                                    <Label Text="{Binding receta_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="1" />
+                                    <Label Text="{Binding receta_descripcion}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="2" />
 
-                                <Label Text="{Binding tiempo_preparacion}" Style="{StaticResource listLabelStyle}" Grid.Row="2" Grid.Column="1" />
-                                <Label Text="{Binding tiempo_cocina}" Style="{StaticResource listLabelStyle}" Grid.Row="2" Grid.Column="2" />
+                                    <Label Text="{Binding receta_pasos_receta}" Style="{StaticResource listLabelStyle}" Grid.Row="1" Grid.Column="1" />
+                                    <Label Text="{Binding receta_ingredientes}" Style="{StaticResource listLabelStyle}" Grid.Row="1" Grid.Column="2" />
 
-                                <Label Text="{Binding receta_pais_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="3" Grid.Column="1" />
-                                <Label Text="{Binding receta_categoria_comida_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="3" Grid.Column="2" />
-                            </Grid>
+                                    <Label Text="{Binding tiempo_preparacion}" Style="{StaticResource listLabelStyle}" Grid.Row="2" Grid.Column="1" />
+                                    <Label Text="{Binding tiempo_cocina}" Style="{StaticResource listLabelStyle}" Grid.Row="2" Grid.Column="2" />
+
+                                    <Label Text="{Binding receta_pais_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="3" Grid.Column="1" />
+                                    <Label Text="{Binding receta_categoria_comida_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="3" Grid.Column="2" />
+                                </Grid>
+                            </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
