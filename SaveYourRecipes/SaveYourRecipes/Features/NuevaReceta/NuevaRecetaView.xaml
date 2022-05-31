@@ -39,12 +39,17 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="10" Padding="10">
-                <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                    <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
+                    <Button x:Name="refrescarPickersButton" Clicked="refrescarPickersButton_Clicked" />
+                </StackLayout>
+                
                 <Entry x:Name="nombreRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}" />
                 <Editor x:Name="descripcionRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
                 <Editor x:Name="pasosRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_pasos_receta}" Style="{StaticResource editorStyle}" />
                 <Editor x:Name="ingredientesRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />
-                <Entry x:Name="tiempoRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
+                <Entry x:Name="tiempoPreparacionTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
                 <Entry x:Name="tiempoCocinaTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">

@@ -16,9 +16,6 @@ namespace SaveYourRecipes.Models
         [ForeignKey(typeof(User))]
         public int receta_user_id { get; set; }
 
-        [ForeignKey(typeof(Categoria_comida))]
-        public int categoria_comida_id { get; set; }
-
         public string receta_nombre { get; set; }
 
         public string receta_descripcion { get; set; }
@@ -31,7 +28,8 @@ namespace SaveYourRecipes.Models
 
         public int tiempo_cocina { get; set; }
 
-        [ForeignKey(typeof(Pais))]
-        public int pais_id { get; set; }
+        public string pais_id { get; set; }
+
+        public string categoria_comida_id { get; set; }
     }
 }
