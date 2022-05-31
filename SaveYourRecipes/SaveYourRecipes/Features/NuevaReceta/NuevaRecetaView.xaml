@@ -33,6 +33,11 @@
                 <Setter Property="BackgroundColor" Value="Orange" />
                 <Setter Property="FontSize" Value="Small" />
             </Style>
+            <Style x:Key="imageButtonSytle" TargetType="ImageButton">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HeightRequest" Value="{OnPlatform Android=20, iOS=20}" />
+                <Setter Property="WidthRequest" Value="{OnPlatform Android=20, iOS=20}" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -40,9 +45,9 @@
         <ScrollView>
             <StackLayout Spacing="10" Padding="10">
 
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                     <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
-                    <Button x:Name="refrescarPickersButton" Clicked="refrescarPickersButton_Clicked" />
+                    <ImageButton x:Name="refrescarPickersButton" Clicked="refrescarPickersButton_Clicked" Source="refresh_icon.png" Style="{StaticResource imageButtonSytle}" />
                 </StackLayout>
                 
                 <Entry x:Name="nombreRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}" />

@@ -226,4 +226,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\xamarin_logo%401x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\refresh_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\refresh_icon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\refresh_icon%401x.png" />
+  </ItemGroup>
 </Project>
