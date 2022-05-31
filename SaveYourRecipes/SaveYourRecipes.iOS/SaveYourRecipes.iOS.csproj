@@ -235,4 +235,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\refresh_icon%401x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saveyourrecipes_logo_title%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saveyourrecipes_logo_title%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saveyourrecipes_logo_title%401x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saveyourrecipes_logo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saveyourrecipes_logo%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saveyourrecipes_logo%401x.png" />
+  </ItemGroup>
 </Project>

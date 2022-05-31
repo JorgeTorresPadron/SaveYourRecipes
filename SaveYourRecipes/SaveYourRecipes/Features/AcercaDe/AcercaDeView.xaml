@@ -6,7 +6,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="titleLabelStyle" TargetType="Label">
-                <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="FontSize" Value="Medium"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="HorizontalOptions" Value="Center"/>
@@ -22,7 +22,7 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="CornerRadius" Value="40" />
                 <Setter Property="BackgroundColor" Value="Orange" />
-                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontSize" Value="Small" />
             </Style>
             <Style x:Key="imageStyle" TargetType="Image">
                 <Setter Property="HeightRequest" Value="{OnPlatform Android=50, iOS=50}" />
@@ -36,11 +36,15 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
+            <Style TargetType="Image" x:Key="logoTitleImage">
+                <Setter Property="HeightRequest" Value="150" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="10">
+        <StackLayout Spacing="10" Padding="10">
+            <Image Source="saveyourrecipes_logo_title.png" Style="{StaticResource logoTitleImage}"/>
             <Label Text="{translator:Translate acercadeview_primer_texto}" Style="{StaticResource titleLabelStyle}" />
 
             <StackLayout Orientation="Horizontal" Spacing="5">

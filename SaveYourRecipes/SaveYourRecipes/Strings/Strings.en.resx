@@ -127,7 +127,7 @@
     <value>Available in the following languages</value>
   </data>
   <data name="acercadeview_primer_texto" xml:space="preserve">
-    <value>Application created by Jorge Torres Padrón using Xamarin Forms and SQLite</value>
+    <value>Application to store food recipes created by Jorge Torres Padrón using Xamarin Forms and SQLite for the final project of the cross-platform application development cycle</value>
   </data>
   <data name="acercadeview_segundo_texto" xml:space="preserve">
     <value>Follow me on GitHub</value>

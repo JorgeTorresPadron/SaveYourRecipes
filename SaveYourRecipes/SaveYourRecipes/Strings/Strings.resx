@@ -127,7 +127,7 @@
     <value>Disponible en los idiomas siguientes</value>
   </data>
   <data name="acercadeview_primer_texto" xml:space="preserve">
-    <value>Aplicación creada por Jorge Torres Padrón usando Xamarin Forms y SQLite</value>
+    <value>Aplicación para almacenar recetas de comida creada por Jorge Torres Padrón usando Xamarin Forms y SQLite para el proyecto final del ciclo de desarrollo de aplicaciones multiplataforma</value>
   </data>
   <data name="acercadeview_segundo_texto" xml:space="preserve">
     <value>Sígueme en GitHub</value>

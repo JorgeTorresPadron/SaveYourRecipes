@@ -45,12 +45,16 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="FontSize" Value="Small" />
             </Style>
+            <Style TargetType="Image" x:Key="logoTitleImage">
+                <Setter Property="HeightRequest" Value="150" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
         <!-- Left, Top, Rigth, Bottom-->
         <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+            <Image Source="saveyourrecipes_logo_title.png" Style="{StaticResource logoTitleImage}"/>
             <Label Text="{translator:Translate iniciarsesionview_titulo}" Style="{StaticResource titleLabelStyle}"/>
             <Label Text="{translator:Translate iniciarsesionview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
             <Entry Placeholder="{translator:Translate iniciarsesionview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>

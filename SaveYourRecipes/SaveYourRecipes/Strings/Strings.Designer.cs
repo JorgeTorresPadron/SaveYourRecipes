@@ -88,7 +88,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Aplicación creada por Jorge Torres Padrón usando Xamarin Forms y SQLite.
+        ///   Busca una cadena traducida similar a Aplicación para almacenar recetas de comida creada por Jorge Torres Padrón usando Xamarin Forms y SQLite para el proyecto final del ciclo de desarrollo de aplicaciones multiplataforma.
         /// </summary>
         internal static string acercadeview_primer_texto {
             get {
