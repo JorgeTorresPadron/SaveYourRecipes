@@ -85,7 +85,6 @@ namespace SaveYourRecipes.Features.NuevaReceta
             await App.Database.SaveRecetaAsync(receta);
            
             await App.Current.MainPage.DisplayAlert("Éxito / Success", "Receta / Recipe " + nombreRecetaTxt.ToString() + " almacenada correctamente / stored correctly", "Ok");
-            await App.Current.MainPage.Navigation.PushModalAsync(new MisRecetasView());
         }
 
         public async Task LoadData()

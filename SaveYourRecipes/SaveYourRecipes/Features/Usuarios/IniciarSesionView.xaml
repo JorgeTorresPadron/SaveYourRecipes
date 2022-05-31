@@ -53,7 +53,7 @@
 
     <ContentPage.Content>
         <!-- Left, Top, Rigth, Bottom-->
-        <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+        <StackLayout Padding="10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Image Source="saveyourrecipes_logo_title.png" Style="{StaticResource logoTitleImage}"/>
             <Label Text="{translator:Translate iniciarsesionview_titulo}" Style="{StaticResource titleLabelStyle}"/>
             <Label Text="{translator:Translate iniciarsesionview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
