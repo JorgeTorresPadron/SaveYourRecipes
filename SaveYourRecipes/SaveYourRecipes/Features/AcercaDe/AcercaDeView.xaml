@@ -37,7 +37,7 @@
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
             <Style TargetType="Image" x:Key="logoTitleImage">
-                <Setter Property="HeightRequest" Value="150" />
+                <Setter Property="HeightRequest" Value="{OnPlatform Android=150, iOS=150}" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
