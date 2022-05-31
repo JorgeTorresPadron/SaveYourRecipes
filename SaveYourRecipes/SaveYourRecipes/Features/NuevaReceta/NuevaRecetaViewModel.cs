@@ -181,7 +181,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
             var categoriaPicker = await App.Database.GetCategoriaComidaAsync();
             if (categoriaPicker != null)
             {
-                this.CategoriaPickerSource = categoriaPicker;
+                this.categoriaPickerSource = categoriaPicker;
             }
         }
         #endregion
