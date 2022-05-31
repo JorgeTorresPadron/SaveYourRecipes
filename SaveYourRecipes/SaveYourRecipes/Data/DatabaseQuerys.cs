@@ -233,6 +233,11 @@ namespace SaveYourRecipes.Data
         {
             return _database.DeleteAsync(categoria_Comida);
         }
+
+        public Task<List<Categoria_comida>> GetCategoriaComidaNombresAsync()
+        {
+            return _database.QueryAsync<Categoria_comida>("SELECT categoria_comida_nombre FROM Categoria_comida");
+        }
         #endregion
 
         #region CRUD - PAIS TABLE
@@ -277,6 +282,11 @@ namespace SaveYourRecipes.Data
         public Task<int> DeletePaisAsync(Pais pais)
         {
             return _database.DeleteAsync(pais);
+        }
+
+        public Task<List<Pais>> GetPaisNombresAsync()
+        {
+            return _database.QueryAsync<Pais>("SELECT pais_nombre FROM Pais");
         }
         #endregion
     }

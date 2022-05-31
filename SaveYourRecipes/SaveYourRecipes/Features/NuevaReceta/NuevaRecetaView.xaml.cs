@@ -28,6 +28,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         private async void guardarRecetaButton_Clicked(object sender, EventArgs e)
         {
+            LoadData();
 
             if (string.IsNullOrEmpty(this.nombreRecetaTxt.Text))
             {
@@ -65,6 +66,20 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 return;
             }
 
+            /*
+            if (string.IsNullOrEmpty((string)paisesPicker.SelectedItem))
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Debes seleccionar un pais / You must select a country", "Ok");
+                return;
+            }
+
+            if (string.IsNullOrEmpty((string)categoriaPicker.SelectedItem))
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Debes seleccionar una cateroría de comida / You must select a food category", "Ok");
+                return;
+            }
+            */
+
             Receta receta = new Receta()
             {
                 receta_nombre = nombreRecetaTxt.Text,
@@ -73,20 +88,21 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 receta_ingredientes = ingredientesRecetaTxt.Text,
                 tiempo_preparacion = Convert.ToInt32(tiempoPreparacionTxt.Text),
                 tiempo_cocina = Convert.ToInt32(tiempoCocinaTxt.Text),
-                pais_id = (string)paisesPicker.SelectedItem,
-                categoria_comida_id = (string)categoriaPicker.SelectedItem,
-                
+                receta_pais_nombre = (string)paisesPicker.SelectedItem,
+                receta_categoria_comida_nombre = (string)categoriaPicker.SelectedItem,
             };
 
             await App.Database.SaveRecetaAsync(receta);
+           
             await App.Current.MainPage.DisplayAlert("Éxito / Success", "Receta / Recipe " + nombreRecetaTxt.ToString() + " almacenada correctamente / stored correctly", "Ok");
+            await App.Current.MainPage.Navigation.PushModalAsync(new MisRecetasView());
         }
 
         public async Task LoadData()
         {
-            paisesPicker.ItemsSource = await App.Database.GetPaisAsync();
+            paisesPicker.ItemsSource = await App.Database.GetPaisNombresAsync();
 
-            categoriaPicker.ItemsSource = await App.Database.GetCategoriaComidaAsync();
+            categoriaPicker.ItemsSource = await App.Database.GetCategoriaComidaNombresAsync();
         }
 
         private void refrescarPickersButton_Clicked(object sender, EventArgs e)

@@ -14,7 +14,5 @@ namespace SaveYourRecipes.Models
 
         public string pais_nombre { get; set; }
 
-        [OneToMany]
-        public List<Receta> Receta { get; set; }
     }
 }

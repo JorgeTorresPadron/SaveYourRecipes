@@ -13,9 +13,6 @@ namespace SaveYourRecipes.Models
         [PrimaryKey, AutoIncrement, Column("receta_id")]
         public int receta_id { get; set; }
 
-        [ForeignKey(typeof(User))]
-        public int receta_user_id { get; set; }
-
         public string receta_nombre { get; set; }
 
         public string receta_descripcion { get; set; }
@@ -28,8 +25,8 @@ namespace SaveYourRecipes.Models
 
         public int tiempo_cocina { get; set; }
 
-        public string pais_id { get; set; }
+        public string receta_pais_nombre { get; set; }
 
-        public string categoria_comida_id { get; set; }
+        public string receta_categoria_comida_nombre { get; set; }
     }
 }

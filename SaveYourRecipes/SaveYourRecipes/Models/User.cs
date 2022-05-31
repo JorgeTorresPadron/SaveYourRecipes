@@ -31,7 +31,5 @@ namespace SaveYourRecipes.Models
 
         public bool user_is_login { get; set; }
 
-        [OneToMany]
-        public List<Receta> Receta { get; set; }
     }
 }
