@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SaveYourRecipes.Features.Usuarios.RegistrarseView"
              xmlns:translator="clr-namespace:SaveYourRecipes.Extensions">
-    
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label" x:Key="titleLabelStyle">
@@ -63,34 +63,34 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
         <!-- Left, Top, Rigth, Bottom-->
-        <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
-          
-            <Label Text="{translator:Translate registrarseview_titulo}" Style="{StaticResource titleLabelStyle}"/>
+            <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
 
-            <Label Text="{translator:Translate registrarseview_nombre_label}" Style="{StaticResource normalLabelStyle}" />
-            <Entry Placeholder="{translator:Translate registrarseview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Label Text="{translator:Translate registrarseview_titulo}" Style="{StaticResource titleLabelStyle}"/>
 
-            <!-- Contraseña -->
-            <Label Text="{translator:Translate registrarseview_contrasena_label}" Style="{StaticResource normalLabelStyle}" />
-            <Entry Placeholder="{translator:Translate registrarseview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-            <!-- Repetir contraseña -->
-            <Entry Placeholder="{translator:Translate registrarseview_repetir_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordRepeatUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Label Text="{translator:Translate registrarseview_nombre_label}" Style="{StaticResource normalLabelStyle}" />
+                <Entry Placeholder="{translator:Translate registrarseview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <Label Text="{translator:Translate registrarseview_nombre_real_label}" Style="{StaticResource normalLabelStyle}" />
-            <Entry Placeholder="{translator:Translate registrarseview_nombre_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding nombreUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <!-- Contraseña -->
+                <Label Text="{translator:Translate registrarseview_contrasena_label}" Style="{StaticResource normalLabelStyle}" />
+                <Entry Placeholder="{translator:Translate registrarseview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <!-- Repetir contraseña -->
+                <Entry Placeholder="{translator:Translate registrarseview_repetir_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding passwordRepeatUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <Label Text="{translator:Translate registrarseview_apellido_real_label}" Style="{StaticResource normalLabelStyle}" />
-            <Entry Placeholder="{translator:Translate registrarseview_apellido_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding apellidoUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Label Text="{translator:Translate registrarseview_nombre_real_label}" Style="{StaticResource normalLabelStyle}" />
+                <Entry Placeholder="{translator:Translate registrarseview_nombre_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding nombreUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <Label Text="{translator:Translate registrarseview_edad_label}" Style="{StaticResource normalLabelStyle}" />
-            <Entry Placeholder="{translator:Translate registrarseview_edad_entry}" Style="{StaticResource edadUserEntry}" Text="{Binding edadUsuarioTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Label Text="{translator:Translate registrarseview_apellido_real_label}" Style="{StaticResource normalLabelStyle}" />
+                <Entry Placeholder="{translator:Translate registrarseview_apellido_real_entry}" Style="{StaticResource nombreApellidosUserEntryStyle}" Text="{Binding apellidoUsuarioRealTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
-            <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
-            <Button Text="{translator:Translate registrarseview_registrarse_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding RegisterCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
-            <Button Text="{translator:Translate registrarseview_tiene_cuenta_button}" Style="{StaticResource yaTengoCuentaButtonStyle}" x:Name="yaTengoCuentaButton" Clicked="yaTengoCuentaButton_Clicked" />
-        </StackLayout>
+                <Label Text="{translator:Translate registrarseview_edad_label}" Style="{StaticResource normalLabelStyle}" />
+                <Entry Placeholder="{translator:Translate registrarseview_edad_entry}" Style="{StaticResource edadUserEntry}" Text="{Binding edadUsuarioTxt, Mode=OneWayToSource}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+                <ActivityIndicator IsRunning="{Binding IsRunningTxt, Mode=TwoWay}" IsVisible="{Binding IsVisibleTxt, Mode=TwoWay}" Color="Black"/>
+                <Button Text="{translator:Translate registrarseview_registrarse_button}" Style="{StaticResource regitrarseButtonStyle}" Command="{Binding RegisterCommand}" IsEnabled="{Binding IsEnabledTxt, Mode=TwoWay}"/>
+                <Button Text="{translator:Translate registrarseview_tiene_cuenta_button}" Style="{StaticResource yaTengoCuentaButtonStyle}" x:Name="yaTengoCuentaButton" Clicked="yaTengoCuentaButton_Clicked" />
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

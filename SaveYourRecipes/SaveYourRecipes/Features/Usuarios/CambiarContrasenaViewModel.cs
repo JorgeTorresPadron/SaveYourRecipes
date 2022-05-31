@@ -13,6 +13,7 @@ namespace SaveYourRecipes.Features.Usuarios
         #region Atributos
         public string nombreUsuario;
         public string contrasenaUsuario;
+        public string contrasenaRepetidaUsuario;
         public bool isRunning;
         public bool isVisible;
         public bool isEnabled;
@@ -29,6 +30,12 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             get { return this.contrasenaUsuario; }
             set { SetValue(ref this.contrasenaUsuario, value); }
+        }
+
+        public string contrasenaRepetidaUsuarioTxt
+        {
+            get { return this.contrasenaRepetidaUsuario; }
+            set { SetValue(ref this.contrasenaRepetidaUsuario, value); }
         }
 
         public bool IsRunningTxt
@@ -72,6 +79,12 @@ namespace SaveYourRecipes.Features.Usuarios
             if (string.IsNullOrEmpty(this.contrasenaUsuario))
             {
                 await App.Current.MainPage.DisplayAlert("Error", "Debes ingreser una contraseña / You must enter a password", "Ok");
+                return;
+            }
+
+            if (this.contrasenaUsuario != this.contrasenaRepetidaUsuario)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "La contraseña repetida no es igual / Repeated password is not the same", "Ok");
                 return;
             }
 

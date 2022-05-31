@@ -169,6 +169,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Repite la nueva contraseña de usuario.
+        /// </summary>
+        internal static string cambiarcontrasenaview_repetir_contrasena_entry {
+            get {
+                return ResourceManager.GetString("cambiarcontrasenaview_repetir_contrasena_entry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a CAMBIAR CONTRASEÑA.
         /// </summary>
         internal static string cambiarcontrasenaview_titulo {

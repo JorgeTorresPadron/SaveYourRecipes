@@ -53,8 +53,11 @@
             <Label Text="{translator:Translate cambiarcontrasenaview_usuario_label}" Style="{StaticResource normalLabelStyle}"/>
             <Entry Placeholder="{translator:Translate cambiarcontrasenaview_usuario_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
+            <!-- Contraseña -->
             <Label Text="{translator:Translate cambiarcontrasenaview_contrasena_label}" Style="{StaticResource normalLabelStyle}"/>
             <Entry Placeholder="{translator:Translate cambiarcontrasenaview_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            <!-- Repetir contraseña -->
+            <Entry Placeholder="{translator:Translate cambiarcontrasenaview_repetir_contrasena_entry}" Style="{StaticResource passwordUsuarioEntryStyle}" Text="{Binding contrasenaRepetidaUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
             <ActivityIndicator IsRunning="{Binding IsRunningTxt}" IsVisible="{Binding IsVisibleTxt}" Color="Black" Scale="0.8"/>
             <Button Text="{translator:Translate cambiarcontrasenaview_cambiar_contrasena_button}" Style="{StaticResource cambiarContrasenaButtonStyle}" Command="{Binding ChangePasswordCommand}" IsEnabled="{Binding IsEnabledTxt}"/>

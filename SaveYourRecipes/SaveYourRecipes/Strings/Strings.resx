@@ -153,6 +153,9 @@
   <data name="cambiarcontrasenaview_inicio_sesion_button" xml:space="preserve">
     <value>Volver al inicio de sesión</value>
   </data>
+  <data name="cambiarcontrasenaview_repetir_contrasena_entry" xml:space="preserve">
+    <value>Repite la nueva contraseña de usuario</value>
+  </data>
   <data name="cambiarcontrasenaview_titulo" xml:space="preserve">
     <value>CAMBIAR CONTRASEÑA</value>
   </data>

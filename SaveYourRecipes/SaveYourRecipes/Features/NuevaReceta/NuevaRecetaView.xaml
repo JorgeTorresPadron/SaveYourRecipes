@@ -23,7 +23,7 @@
                 <Setter Property="TextColor" Value="Black" />
             </Style>
             <Style x:Key="editorStyle" TargetType="Editor">
-                <Setter Property="HeightRequest" Value="100" />
+                <Setter Property="HeightRequest" Value="75" />
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="TextColor" Value="Black" />
             </Style>
@@ -42,41 +42,39 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Spacing="10" Padding="10">
+        <StackLayout Spacing="10" Padding="10">
 
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
-                    <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
-                    <ImageButton x:Name="refrescarPickersButton" Clicked="refrescarPickersButton_Clicked" Source="refresh_icon.png" Style="{StaticResource imageButtonSytle}" />
-                </StackLayout>
-                
-                <Entry x:Name="nombreRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}" />
-                <Editor x:Name="descripcionRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
-                <Editor x:Name="pasosRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_pasos_receta}" Style="{StaticResource editorStyle}" />
-                <Editor x:Name="ingredientesRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />
-                <Entry x:Name="tiempoPreparacionTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
-                <Entry x:Name="tiempoCocinaTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
-
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Picker x:Name="paisesPicker" SelectedItem="{Binding receta_pais_nombre}" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}" >
-                        <Picker.ItemDisplayBinding>
-                            <Binding Path="pais_nombre" />
-                        </Picker.ItemDisplayBinding>
-                    </Picker>
-                    <Button Text="{translator:Translate nuevarecetaview_anadir_pais_button}" Style="{StaticResource buttonStyle}" x:Name="anadirPaisButton" Clicked="anadirPaisButton_Clicked" />
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Picker x:Name="categoriaPicker" SelectedItem="{Binding receta_categoria_comida_nombre}" Title="{translator:Translate nuevarecetaview_anadir_categoria_picker}" Style="{StaticResource pickerStyle}">
-                        <Picker.ItemDisplayBinding>
-                            <Binding Path="categoria_comida_nombre"/>
-                        </Picker.ItemDisplayBinding>
-                    </Picker>
-                    <Button Text="{translator:Translate nuevarecetaview_anadir_categoria_button}" Style="{StaticResource buttonStyle}" x:Name="anadirCategoriaButton" Clicked="anadirCategoriaButton_Clicked" />
-                </StackLayout>
-                
-                <Button x:Name="guardarRecetaButton" Clicked="guardarRecetaButton_Clicked" Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                <Label Text="{translator:Translate nuevarecetaview_nueva_receta_label}" Style="{StaticResource titleLabelStyle}"/>
+                <ImageButton x:Name="refrescarPickersButton" Clicked="refrescarPickersButton_Clicked" Source="refresh_icon.png" Style="{StaticResource imageButtonSytle}" />
             </StackLayout>
-        </ScrollView>
+
+            <Entry x:Name="nombreRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_nombre_receta}" Style="{StaticResource entryStyle}" />
+            <Editor x:Name="descripcionRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_descripcion_receta}" Style="{StaticResource editorStyle}" />
+            <Editor x:Name="pasosRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_pasos_receta}" Style="{StaticResource editorStyle}" />
+            <Editor x:Name="ingredientesRecetaTxt" Placeholder="{translator:Translate nuevarecetaview_ingredientes_receta}" Style="{StaticResource editorStyle}" />
+            <Entry x:Name="tiempoPreparacionTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_preparacion}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
+            <Entry x:Name="tiempoCocinaTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Picker x:Name="paisesPicker" SelectedItem="{Binding receta_pais_nombre}" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}" >
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="pais_nombre" />
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+                <Button Text="{translator:Translate nuevarecetaview_anadir_pais_button}" Style="{StaticResource buttonStyle}" x:Name="anadirPaisButton" Clicked="anadirPaisButton_Clicked" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Picker x:Name="categoriaPicker" SelectedItem="{Binding receta_categoria_comida_nombre}" Title="{translator:Translate nuevarecetaview_anadir_categoria_picker}" Style="{StaticResource pickerStyle}">
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="categoria_comida_nombre"/>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+                <Button Text="{translator:Translate nuevarecetaview_anadir_categoria_button}" Style="{StaticResource buttonStyle}" x:Name="anadirCategoriaButton" Clicked="anadirCategoriaButton_Clicked" />
+            </StackLayout>
+
+            <Button x:Name="guardarRecetaButton" Clicked="guardarRecetaButton_Clicked" Text="{translator:Translate nuevarecetaview_guardar_nueva_receta}" Style="{StaticResource buttonStyle}"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

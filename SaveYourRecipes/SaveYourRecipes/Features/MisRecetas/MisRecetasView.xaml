@@ -35,7 +35,7 @@
 
             <Entry x:Name="idRecetaTxt" IsVisible="false" />
 
-            <ListView x:Name="lstRecetas" ItemSelected="lstRecetas_ItemSelected" VerticalScrollBarVisibility="Default" SeparatorVisibility="Default" HasUnevenRows="True">
+            <ListView x:Name="lstRecetas" ItemSelected="lstRecetas_ItemSelected" VerticalScrollBarVisibility="Default" SeparatorVisibility="Default" HasUnevenRows="True" IsVisible="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
