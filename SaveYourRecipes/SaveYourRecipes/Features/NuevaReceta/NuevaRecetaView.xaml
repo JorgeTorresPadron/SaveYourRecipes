@@ -58,7 +58,7 @@
                 <Entry x:Name="tiempoCocinaTxt" Placeholder="{translator:Translate nuevarecetaview_tiempo_cocina}" Style="{StaticResource entryStyle}" Keyboard="Numeric" />
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Picker x:Name="paisesPicker" SelectedItem="{Binding receta_pais_nombre}" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}">
+                    <Picker x:Name="paisesPicker" SelectedItem="{Binding receta_pais_nombre}" Title="{translator:Translate nuevarecetaview_anadir_pais_picker}" Style="{StaticResource pickerStyle}" >
                         <Picker.ItemDisplayBinding>
                             <Binding Path="pais_nombre" />
                         </Picker.ItemDisplayBinding>

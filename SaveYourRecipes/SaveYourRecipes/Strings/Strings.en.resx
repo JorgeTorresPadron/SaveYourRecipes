@@ -222,13 +222,16 @@
   <data name="iniciarsesionview_titulo" xml:space="preserve">
     <value>LOG IN TO CONTINUE</value>
   </data>
-  <data name="misrecetasview_eliminar_receta" xml:space="preserve">
+  <data name="misrecetasview_actualizar_receta_button" xml:space="preserve">
+    <value>Update recipe</value>
+  </data>
+  <data name="misrecetasview_eliminar_receta_button" xml:space="preserve">
     <value>Remove recipe</value>
   </data>
   <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
     <value>MY RECIPES</value>
   </data>
-  <data name="misrecetasview_mostrar_receta" xml:space="preserve">
+  <data name="misrecetasview_mostrar_receta_button" xml:space="preserve">
     <value>Show stored recipes</value>
   </data>
   <data name="nuevacategoriaview_eliminar_categoria_button" xml:space="preserve">

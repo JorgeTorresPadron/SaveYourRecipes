@@ -24,22 +24,57 @@ namespace SaveYourRecipes.Features.MisRecetas
         public MisRecetasView()
         {
             InitializeComponent();
+            ListaMostrar();
 
         }
 
-        private async void listaRecetas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void lstRecetas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            
+            var obj = (Receta)e.SelectedItem;
+            mostrarDatos.IsVisible = false;
+            eliminarDatos.IsVisible = true;
+
+            if (!string.IsNullOrEmpty(obj.receta_id.ToString()))
+            {
+                var receta = await App.Database.GetRecetaIdAsync(obj.receta_id);
+                if (receta != null)
+                {
+                    idRecetaTxt.Text = receta.receta_id.ToString();
+                }
+
+                idRecetaTxt.IsVisible = false;
+            }
         }
 
-        private async void mostrarDatos_Clicked(object sender, EventArgs e)
+        public async void ListaMostrar()
         {
-
+            var recetaList = await App.Database.GetRecetaAsync();
+            if (recetaList != null)
+            {
+                lstRecetas.ItemsSource = recetaList;
+            }
         }
 
-        private async void SwipeItem_Invoked(object sender, EventArgs e)
+        private void mostrarDatos_Clicked(object sender, EventArgs e)
         {
-            
+            ListaMostrar();
+        }
+
+        private async void eliminarDatos_Clicked(object sender, EventArgs e)
+        {
+            var receta = await App.Database.GetRecetaIdAsync(Convert.ToInt32(idRecetaTxt.Text));
+
+            if (receta != null)
+            {
+                await App.Database.DeleteRecetaAsync(receta);
+                await DisplayAlert("Eliminado / Deleted", "Receta eliminada correctamente / Successfully deleted recipe", "Ok");
+
+
+                eliminarDatos.IsVisible = false;
+                mostrarDatos.IsVisible = true;
+
+                ListaMostrar();
+            }
         }
     }
 }

@@ -376,11 +376,20 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Eliminar recetas.
+        ///   Busca una cadena traducida similar a Actualizar receta.
         /// </summary>
-        internal static string misrecetasview_eliminar_receta {
+        internal static string misrecetasview_actualizar_receta_button {
             get {
-                return ResourceManager.GetString("misrecetasview_eliminar_receta", resourceCulture);
+                return ResourceManager.GetString("misrecetasview_actualizar_receta_button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar receta.
+        /// </summary>
+        internal static string misrecetasview_eliminar_receta_button {
+            get {
+                return ResourceManager.GetString("misrecetasview_eliminar_receta_button", resourceCulture);
             }
         }
         
@@ -396,9 +405,9 @@ namespace SaveYourRecipes.Strings {
         /// <summary>
         ///   Busca una cadena traducida similar a Mostrar recetas almacenadas.
         /// </summary>
-        internal static string misrecetasview_mostrar_receta {
+        internal static string misrecetasview_mostrar_receta_button {
             get {
-                return ResourceManager.GetString("misrecetasview_mostrar_receta", resourceCulture);
+                return ResourceManager.GetString("misrecetasview_mostrar_receta_button", resourceCulture);
             }
         }
         

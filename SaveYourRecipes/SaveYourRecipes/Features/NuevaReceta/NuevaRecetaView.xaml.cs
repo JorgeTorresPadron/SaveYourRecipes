@@ -28,7 +28,6 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         private async void guardarRecetaButton_Clicked(object sender, EventArgs e)
         {
-            LoadData();
 
             if (string.IsNullOrEmpty(this.nombreRecetaTxt.Text))
             {
@@ -66,19 +65,10 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 return;
             }
 
-            /*
-            if (string.IsNullOrEmpty((string)paisesPicker.SelectedItem))
-            {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes seleccionar un pais / You must select a country", "Ok");
-                return;
-            }
-
-            if (string.IsNullOrEmpty((string)categoriaPicker.SelectedItem))
-            {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes seleccionar una cateroría de comida / You must select a food category", "Ok");
-                return;
-            }
-            */
+            var paisSelectedItem = paisesPicker.SelectedItem as Pais;
+            var paisNombre = paisSelectedItem.pais_nombre;
+            var categoriaSelectedItem = categoriaPicker.SelectedItem as Categoria_comida;
+            var categoriaNombre = categoriaSelectedItem.categoria_comida_nombre;
 
             Receta receta = new Receta()
             {
@@ -88,8 +78,8 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 receta_ingredientes = ingredientesRecetaTxt.Text,
                 tiempo_preparacion = Convert.ToInt32(tiempoPreparacionTxt.Text),
                 tiempo_cocina = Convert.ToInt32(tiempoCocinaTxt.Text),
-                receta_pais_nombre = (string)paisesPicker.SelectedItem,
-                receta_categoria_comida_nombre = (string)categoriaPicker.SelectedItem,
+                receta_pais_nombre = paisNombre,
+                receta_categoria_comida_nombre = categoriaNombre,
             };
 
             await App.Database.SaveRecetaAsync(receta);
