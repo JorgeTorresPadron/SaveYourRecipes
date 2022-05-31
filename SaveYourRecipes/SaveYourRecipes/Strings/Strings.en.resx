@@ -183,6 +183,9 @@
   <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
     <value>Update recipe</value>
   </data>
+  <data name="eliminarusuarioview_advertencia_label" xml:space="preserve">
+    <value>Attention! This action is not reversible if you delete the user you will lose the application data</value>
+  </data>
   <data name="eliminarusuarioview_contrasena_entry" xml:space="preserve">
     <value>Enter your user password</value>
   </data>

@@ -8,13 +8,13 @@
             <Style TargetType="Label" x:Key="titleLabelStyle">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
-                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontSize" Value="Title" />
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
             <Style TargetType="Label" x:Key="normalLabelStyle">
                 <Setter Property="HorizontalOptions" Value="Start" />
-                <Setter Property="FontSize" Value="Header" />
+                <Setter Property="FontSize" Value="Small" />
                 <Setter Property="TextColor" Value="Black" />
             </Style>
             <Style TargetType="Entry" x:Key="nombreUsuarioEntryStyle" >
@@ -36,13 +36,22 @@
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="CornerRadius" Value="40" />
                 <Setter Property="BackgroundColor" Value="Orange" />
-                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="FontSize" Value="Small" />
+            </Style>
+            <Style TargetType="Label" x:Key="advertenciaLabelStyle">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Red"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="10, 25, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
+        <StackLayout Padding="10, 20, 10, 10" Spacing="10" HorizontalOptions="Center" VerticalOptions="Start">
             <Label Text="{translator:Translate eliminarusuarioview_titulo}" Style="{StaticResource titleLabelStyle}"/>
+
+            <Label Text="{translator:Translate eliminarusuarioview_advertencia_label}" Style="{StaticResource advertenciaLabelStyle}"/>
+
             <Label Text="{translator:Translate eliminarusuarioview_nombre_label}" Style="{StaticResource normalLabelStyle}"/>
             <Entry Placeholder="{translator:Translate eliminarusuarioview_nombre_entry}" Style="{StaticResource nombreUsuarioEntryStyle}" Text="{Binding nombreUsuarioTxt, Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 

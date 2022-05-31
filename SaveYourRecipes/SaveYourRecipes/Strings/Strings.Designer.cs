@@ -259,6 +259,15 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ¡Atención! Esta acción no es reversible si borras el usuario perderás los datos de la aplicación.
+        /// </summary>
+        internal static string eliminarusuarioview_advertencia_label {
+            get {
+                return ResourceManager.GetString("eliminarusuarioview_advertencia_label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Escribe tu contraseña de usuario.
         /// </summary>
         internal static string eliminarusuarioview_contrasena_entry {
