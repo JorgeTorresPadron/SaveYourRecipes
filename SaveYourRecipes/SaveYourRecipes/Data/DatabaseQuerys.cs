@@ -178,6 +178,15 @@ namespace SaveYourRecipes.Data
         {
             return _database.Table<Receta>().Where(r => r.receta_nombre_usuario == nombreUsuario).ToListAsync();
         }
+        /// <summary>
+        /// METOD-O ELIMINAR RECETA COMPLETAMENTE
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <returns></returns>
+        public Task DeleteRecetaCompletely(string nombreUsuario)
+        {
+            return _database.QueryAsync<Receta>("DELETE FROM Receta WHERE receta_nombre_usuario = '" + nombreUsuario + "'");
+        }
         #endregion
 
         #region CRUD - CATEGORIA_COMIDA TABLE
@@ -224,10 +233,22 @@ namespace SaveYourRecipes.Data
         {
             return _database.DeleteAsync(categoria_Comida);
         }
-
+        /// <summary>
+        /// METOD-O SELECCIONAR CATEGORIA PARA PICKER
+        /// </summary>
+        /// <returns></returns>
         public Task<List<Categoria_comida>> GetCategoriaComidaNombresAsync()
         {
             return _database.QueryAsync<Categoria_comida>("SELECT categoria_comida_nombre FROM Categoria_comida");
+        }
+        /// <summary>
+        /// METOD-O ELIMINAR CATEGORIA COMPLETAMENTE
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <returns></returns>
+        public Task DeleteCategoriaComidaCompletely(string nombreUsuario)
+        {
+            return _database.QueryAsync<Categoria_comida>("DELETE FROM Categoria_comida WHERE categoria_comida_nombre_usuario = '" + nombreUsuario + "'");
         }
         #endregion
 
@@ -275,10 +296,22 @@ namespace SaveYourRecipes.Data
         {
             return _database.DeleteAsync(pais);
         }
-
+        /// <summary>
+        /// METOD-O SELECCIONAR PAIS PARA PICKER
+        /// </summary>
+        /// <returns></returns>
         public Task<List<Pais>> GetPaisNombresAsync()
         {
             return _database.QueryAsync<Pais>("SELECT pais_nombre FROM Pais");
+        }
+        /// <summary>
+        /// METOD-O ELIMINAR PAIS COMPLETAMENTE
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <returns></returns>
+        public Task DeletePaisCompletely(string nombreUsuario)
+        {
+            return _database.QueryAsync<Categoria_comida>("DELETE FROM Pais WHERE pais_nombre_usuario = '" + nombreUsuario + "'");
         }
         #endregion
     }

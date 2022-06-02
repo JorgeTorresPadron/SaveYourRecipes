@@ -93,8 +93,11 @@ namespace SaveYourRecipes.Features.Usuarios
             }
             else if (e.Count > 0)
             {
+                await App.Database.DeleteRecetaCompletely(nombreUsuario);
+                await App.Database.DeletePaisCompletely(nombreUsuario);
+                await App.Database.DeleteCategoriaComidaCompletely(nombreUsuario);
                 await App.Database.DeleteUserCompletely(nombreUsuario, contrasenaUsuario);
-
+                
                 await App.Current.MainPage.DisplayAlert("Éxito / Success", "Usuario eliminado correctamente / User successfully deleted", "Ok");
 
                 await App.Current.MainPage.Navigation.PushModalAsync(new IniciarSesionView());
