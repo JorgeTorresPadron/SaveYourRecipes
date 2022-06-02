@@ -59,11 +59,13 @@
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="10*"/>
                                     <ColumnDefinition Width="75*"/>
+                                    <ColumnDefinition Width="15*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding categoria_comida_id}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
                                 <Label Text="{Binding categoria_comida_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="1" />
+                                <Label Text="{Binding categoria_comida_nombre_usuario}" IsVisible="false" Grid.Row="0" Grid.Column="2"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

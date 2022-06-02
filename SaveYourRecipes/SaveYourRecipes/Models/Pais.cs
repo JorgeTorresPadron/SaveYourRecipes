@@ -14,5 +14,7 @@ namespace SaveYourRecipes.Models
 
         public string pais_nombre { get; set; }
 
+        public string pais_nombre_usuario { get; set; }
+
     }
 }

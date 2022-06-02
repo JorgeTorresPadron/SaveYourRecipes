@@ -1,4 +1,5 @@
 ﻿using SaveYourRecipes.Models;
+using SaveYourRecipes.Service;
 using System;
 
 using Xamarin.Forms;
@@ -17,9 +18,12 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         private async void nuevoPaisButton_Clicked(object sender, EventArgs e)
         {
+            string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
+
             Pais pais = new Pais()
             {
                 pais_nombre = nuevoPaisTxt.Text,
+                pais_nombre_usuario = nombreUsuario,
             };
 
             await App.Database.SavePaisAsync(pais);
@@ -50,7 +54,8 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         public async void ListaMostrar()
         {
-            var paisesList = await App.Database.GetPaisAsync();
+            string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
+            var paisesList = await App.Database.GetPaisAsync(nombreUsuario);
             if (paisesList != null)
             {
                 lstPaises.ItemsSource = paisesList;
@@ -61,10 +66,12 @@ namespace SaveYourRecipes.Features.NuevaReceta
         {
             if (!string.IsNullOrEmpty(idPaisTxt.Text))
             {
+                string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
                 Pais pais = new Pais()
                 {
                     pais_id = Convert.ToInt32(idPaisTxt.Text),
                     pais_nombre = nuevoPaisTxt.Text,
+                    pais_nombre_usuario = nombreUsuario,
                 };
                 await App.Database.SavePaisAsync(pais);
                 await DisplayAlert("Éxito / Success", "Categoría modificada correctamente / Successfully modified category", "Ok");
@@ -73,7 +80,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 eliminarPaisButton.IsVisible = false;
                 nuevoPaisButton.IsVisible = true;
 
-                nuevoPaisButton.Text = "";
+                nuevoPaisTxt.Text = "";
 
                 ListaMostrar();
             }

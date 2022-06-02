@@ -14,5 +14,7 @@ namespace SaveYourRecipes.Models
 
         public string categoria_comida_nombre { get; set; }
 
+        public string categoria_comida_nombre_usuario { get; set; }
+
     }
 }

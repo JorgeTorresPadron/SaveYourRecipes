@@ -1,4 +1,5 @@
 ﻿using SaveYourRecipes.Models;
+using SaveYourRecipes.Service;
 using System;
 
 using Xamarin.Forms;
@@ -17,9 +18,12 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         private async void nuevaCategoriaButton_Clicked(object sender, EventArgs e)
         {
+            string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
+
             Categoria_comida categoria_Comida = new Categoria_comida()
             {
                 categoria_comida_nombre = nuevaCategoriaTxt.Text,
+                categoria_comida_nombre_usuario = nombreUsuario,
             };
 
             await App.Database.SaveCategoriaComidaAsync(categoria_Comida);
@@ -51,7 +55,8 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         public async void ListaMostrar()
         {
-            var categoriaList = await App.Database.GetCategoriaComidaAsync();
+            string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
+            var categoriaList = await App.Database.GetCategoriaComidaAsync(nombreUsuario);
             if (categoriaList != null)
             {
                lstCategorias.ItemsSource = categoriaList;
@@ -62,10 +67,12 @@ namespace SaveYourRecipes.Features.NuevaReceta
         {
             if (!string.IsNullOrEmpty(idCategoriaTxt.Text))
             {
+                string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
                 Categoria_comida categoria_Comida = new Categoria_comida()
                 {
                     categoria_comida_id = Convert.ToInt32(idCategoriaTxt.Text),
                     categoria_comida_nombre = nuevaCategoriaTxt.Text,
+                    categoria_comida_nombre_usuario = nombreUsuario,
                 };
                 await App.Database.SaveCategoriaComidaAsync(categoria_Comida);
                 await DisplayAlert("Éxito / Success", "Categoría modificada correctamente / Successfully modified category", "Ok");

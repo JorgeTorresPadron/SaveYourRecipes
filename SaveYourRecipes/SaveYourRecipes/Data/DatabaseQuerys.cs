@@ -105,15 +105,6 @@ namespace SaveYourRecipes.Data
             return _database.QueryAsync<User>("SELECT * FROM User WHERE user_nombre_usuario = '" + nombreUsuario + "'");
         }
         /// <summary>
-        /// METOD-O PARA MOSTRAR LOS USUARIOS QUE TIENEN SESIÓN INICIADA
-        /// </summary>
-        /// <param name="nombreUsuario"></param>
-        /// <returns></returns>
-        public Task<List<User>> GetUserThatAreLogIn()
-        {
-            return _database.QueryAsync<User>("SELECT * FROM User WHERE user_is_login = true");
-        }
-        /// <summary>
         /// METOD-O ACTUALIZAR CONTRASEÑA USUARIO
         /// </summary>
         /// <param name="nombreUsuario"></param>
@@ -178,7 +169,11 @@ namespace SaveYourRecipes.Data
         {
             return _database.DeleteAsync(receta);
         }
-
+        /// <summary>
+        /// METOD-O MOSTRAR RECETAS PARA UN USUARIO DETERMINADO
+        /// </summary>
+        /// <param name="nombreUsuario"></param>
+        /// <returns></returns>
         public Task<List<Receta>> GetRecipesOfMyUser(string nombreUsuario)
         {
             return _database.Table<Receta>().Where(r => r.receta_nombre_usuario == nombreUsuario).ToListAsync();
@@ -203,12 +198,13 @@ namespace SaveYourRecipes.Data
             }
         }
         /// <summary>
-        /// METOD-O PARA VER LAS CATEGORIAS DE COMIDA
+        /// METOD-O MOSTRAR CATEGORIAS PARA UN USUARIO DETERMINADO
         /// </summary>
+        /// <param name="nombreUsuario"></param>
         /// <returns></returns>
-        public Task<List<Categoria_comida>> GetCategoriaComidaAsync()
+        public Task<List<Categoria_comida>> GetCategoriaComidaAsync(string nombreUsuario)
         {
-            return _database.Table<Categoria_comida>().ToListAsync();
+            return _database.Table<Categoria_comida>().Where(c => c.categoria_comida_nombre_usuario == nombreUsuario).ToListAsync();
         }
         /// <summary>
         /// METOD-O PARA VER LAS CATEGORIAS POR ID
@@ -253,12 +249,13 @@ namespace SaveYourRecipes.Data
             }
         }
         /// <summary>
-        /// METOD-O PARA VER LOS PAISES
+        /// METOD-O MOSTRAR CATEGORIAS PARA UN USUARIO DETERMINADO
         /// </summary>
+        /// <param name="nombreUsuario"></param>
         /// <returns></returns>
-        public Task<List<Pais>> GetPaisAsync()
+        public Task<List<Pais>> GetPaisAsync(string nombreUsuario)
         {
-            return _database.Table<Pais>().ToListAsync();
+            return _database.Table<Pais>().Where(p => p.pais_nombre_usuario == nombreUsuario).ToListAsync();
         }
         /// <summary>
         /// METOD-O PARA VER LOS PAISES POR ID
