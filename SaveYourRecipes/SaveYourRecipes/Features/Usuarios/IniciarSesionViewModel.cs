@@ -83,6 +83,7 @@ namespace SaveYourRecipes.Features.Usuarios
             await Task.Delay(20);
 
             List<User> e = App.Database.GetUsersValidate(nombreUsuario, contrasenaUsuario).Result;
+            CompartirInformacion.nombreUsuarioShare = nombreUsuario;
 
             if (e.Count == 0)
             {
@@ -93,10 +94,7 @@ namespace SaveYourRecipes.Features.Usuarios
                 this.IsEnabledTxt = true;
             }
             else if (e.Count > 0)
-            {
-                CompartirInformacion.nombreUsuarioShare = nombreUsuario;
-                CompartirInformacion.isLoginShare = true;
-                await App.Database.UpdateUserIsLogin(nombreUsuario, CompartirInformacion.isLoginShare);
+            {         
                 await App.Current.MainPage.Navigation.PushModalAsync(new MainPageView());
 
                 this.IsRunningTxt = false;

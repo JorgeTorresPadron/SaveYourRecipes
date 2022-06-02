@@ -59,6 +59,7 @@
                                     <Label Text="{Binding receta_pasos_receta}" Style="{StaticResource listLabelStyle}" Grid.Row="1" Grid.Column="1" />
                                     <Label Text="{Binding receta_ingredientes}" Style="{StaticResource listLabelStyle}" Grid.Row="1" Grid.Column="2" />
 
+                                    <Label Text="{Binding receta_nombre_usuario}" IsVisible="false" Grid.Row="2" Grid.Column="0"/>
                                     <Label Text="{Binding tiempo_preparacion}" Style="{StaticResource listLabelStyle}" Grid.Row="2" Grid.Column="1" />
                                     <Label Text="{Binding tiempo_cocina}" Style="{StaticResource listLabelStyle}" Grid.Row="2" Grid.Column="2" />
 

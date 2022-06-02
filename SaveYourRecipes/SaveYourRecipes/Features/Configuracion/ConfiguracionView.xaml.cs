@@ -22,8 +22,6 @@ namespace SaveYourRecipes.Features.Configuracion
 
         private async void cerrarSesionButton_Clicked(object sender, EventArgs e)
         {
-            CompartirInformacion.isLoginShare = false;
-            await App.Database.UpdateUserIsLogin(CompartirInformacion.nombreUsuarioShare, CompartirInformacion.isLoginShare);
             await Navigation.PushModalAsync(new IniciarSesionView());
         }
 

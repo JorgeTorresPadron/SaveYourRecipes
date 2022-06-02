@@ -28,5 +28,7 @@ namespace SaveYourRecipes.Models
         public string receta_pais_nombre { get; set; }
 
         public string receta_categoria_comida_nombre { get; set; }
+
+        public string receta_nombre_usuario { get; set; }
     }
 }

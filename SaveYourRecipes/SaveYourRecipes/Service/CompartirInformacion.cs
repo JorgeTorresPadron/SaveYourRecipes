@@ -8,7 +8,5 @@ namespace SaveYourRecipes.Service
     public class CompartirInformacion
     {
         public static string nombreUsuarioShare;
-
-        public static bool isLoginShare;
     }
 }

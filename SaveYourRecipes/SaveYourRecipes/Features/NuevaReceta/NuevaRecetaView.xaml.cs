@@ -1,5 +1,6 @@
 ﻿using SaveYourRecipes.Features.MisRecetas;
 using SaveYourRecipes.Models;
+using SaveYourRecipes.Service;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -70,6 +71,8 @@ namespace SaveYourRecipes.Features.NuevaReceta
             var categoriaSelectedItem = categoriaPicker.SelectedItem as Categoria_comida;
             var categoriaNombre = categoriaSelectedItem.categoria_comida_nombre;
 
+            string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
+
             Receta receta = new Receta()
             {
                 receta_nombre = nombreRecetaTxt.Text,
@@ -80,6 +83,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 tiempo_cocina = Convert.ToInt32(tiempoCocinaTxt.Text),
                 receta_pais_nombre = paisNombre,
                 receta_categoria_comida_nombre = categoriaNombre,
+                receta_nombre_usuario = nombreUsuario,
             };
 
             await App.Database.SaveRecetaAsync(receta);

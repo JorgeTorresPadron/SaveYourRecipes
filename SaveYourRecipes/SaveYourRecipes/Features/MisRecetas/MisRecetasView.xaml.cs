@@ -48,7 +48,8 @@ namespace SaveYourRecipes.Features.MisRecetas
 
         public async void ListaMostrar()
         {
-            var recetaList = await App.Database.GetRecetaAsync();
+            string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
+            var recetaList = await App.Database.GetRecipesOfMyUser(nombreUsuario);
             if (recetaList != null)
             {
                 lstRecetas.ItemsSource = recetaList;
