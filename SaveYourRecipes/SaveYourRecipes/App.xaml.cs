@@ -18,7 +18,7 @@ namespace SaveYourRecipes
             {
                 if (database == null)
                 {
-                    database = new DatabaseQuerys(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DBname.db"));
+                    database = new DatabaseQuerys(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SaveYourRecipesDB.db3"));
                 }
                 return database;
             }

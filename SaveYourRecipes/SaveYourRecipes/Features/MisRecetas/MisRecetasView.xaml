@@ -52,7 +52,7 @@
                                         <ColumnDefinition Width="45*"/>
                                         <ColumnDefinition Width="45*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding receta_id}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
+                                    <Label Text="{Binding receta_id}" IsVisible="false" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="0" />
                                     <Label Text="{Binding receta_nombre}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="1" />
                                     <Label Text="{Binding receta_descripcion}" Style="{StaticResource listLabelStyle}" Grid.Row="0" Grid.Column="2" />
 
