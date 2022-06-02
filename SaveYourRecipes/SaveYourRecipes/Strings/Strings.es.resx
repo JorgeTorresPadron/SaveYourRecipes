@@ -118,249 +118,249 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="acercadeview_cuarto_texto" xml:space="preserve">
-    <value>SQLite Documentation</value>
+    <value>Documentación de SQLite</value>
   </data>
   <data name="acercadeview_cuarto_texto_link" xml:space="preserve">
     <value>https://sqlite.org/docs.html</value>
   </data>
   <data name="acercadeview_idiomas_disponibles" xml:space="preserve">
-    <value>Available in the following languages</value>
+    <value>Disponible en los idiomas siguientes</value>
   </data>
   <data name="acercadeview_primer_texto" xml:space="preserve">
-    <value>Application to store food recipes created by Jorge Torres Padrón using Xamarin Forms and SQLite for the final project of the cross-platform application development cycle</value>
+    <value>Aplicación para almacenar recetas de comida creada por Jorge Torres Padrón usando Xamarin Forms y SQLite para el proyecto final del ciclo de desarrollo de aplicaciones multiplataforma</value>
   </data>
   <data name="acercadeview_segundo_texto" xml:space="preserve">
-    <value>Follow me on GitHub</value>
+    <value>Sígueme en GitHub</value>
   </data>
   <data name="acercadeview_segundo_texto_link" xml:space="preserve">
     <value>https://github.com/JorgeTorresPadron</value>
   </data>
   <data name="acercadeview_tercer_texto" xml:space="preserve">
-    <value>Xamarin Forms Documentation</value>
+    <value>Documentación de Xamarin Forms</value>
   </data>
   <data name="acercadeview_tercer_texto_link" xml:space="preserve">
-    <value>https://docs.microsoft.com/en-us/xamarin/xamarin-forms/</value>
+    <value>https://docs.microsoft.com/es-es/xamarin/xamarin-forms/</value>
   </data>
   <data name="cambiarcontrasenaview_cambiar_contrasena_button" xml:space="preserve">
-    <value>Change password</value>
+    <value>Cambiar contraseña</value>
   </data>
   <data name="cambiarcontrasenaview_contrasena_entry" xml:space="preserve">
-    <value>Enter the user's new password</value>
+    <value>Escribe la nueva contraseña del usuario</value>
   </data>
   <data name="cambiarcontrasenaview_contrasena_label" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="cambiarcontrasenaview_inicio_sesion_button" xml:space="preserve">
-    <value>Back to login</value>
+    <value>Volver al inicio de sesión</value>
   </data>
   <data name="cambiarcontrasenaview_repetir_contrasena_entry" xml:space="preserve">
-    <value>Repeat the new user password</value>
+    <value>Repite la nueva contraseña de usuario</value>
   </data>
   <data name="cambiarcontrasenaview_titulo" xml:space="preserve">
-    <value>CHANGE PASSWORD</value>
+    <value>CAMBIAR CONTRASEÑA</value>
   </data>
   <data name="cambiarcontrasenaview_usuario_entry" xml:space="preserve">
-    <value>Enter the username</value>
+    <value>Escribe el nombre de usuario</value>
   </data>
   <data name="cambiarcontrasenaview_usuario_label" xml:space="preserve">
-    <value>Username</value>
+    <value>Nombre de usuario</value>
   </data>
   <data name="configuracionview_acerca_de" xml:space="preserve">
-    <value>About...</value>
+    <value>Acerca de...</value>
   </data>
   <data name="configuracionview_configuracion_label" xml:space="preserve">
-    <value>CONFIGURATION</value>
+    <value>CONFIGURACIÓN</value>
   </data>
   <data name="configurationview_cerrar_sesion" xml:space="preserve">
-    <value>Log off</value>
+    <value>Cerrar sesión</value>
   </data>
   <data name="configurationview_eliminar_usuario" xml:space="preserve">
-    <value>Delete my username</value>
+    <value>Eliminar mi usuario</value>
   </data>
   <data name="editarrecetaview_actualizar_receta_button" xml:space="preserve">
-    <value>Update recipe changes</value>
+    <value>Actualizar cambios en la receta</value>
   </data>
   <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
-    <value>Update recipe</value>
+    <value>Actualizar receta</value>
   </data>
   <data name="eliminarusuarioview_advertencia_label" xml:space="preserve">
-    <value>Attention! This action is not reversible if you delete the user you will lose the application data</value>
+    <value>¡Atención! Esta acción no es reversible si borras el usuario perderás los datos de la aplicación</value>
   </data>
   <data name="eliminarusuarioview_contrasena_entry" xml:space="preserve">
-    <value>Enter your user password</value>
+    <value>Escribe tu contraseña de usuario</value>
   </data>
   <data name="eliminarusuarioview_contrasena_label" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="eliminarusuarioview_eliminar_usuario_button" xml:space="preserve">
-    <value>Delete my username</value>
+    <value>Eliminar mi usuario</value>
   </data>
   <data name="eliminarusuarioview_nombre_entry" xml:space="preserve">
-    <value>Enter your username</value>
+    <value>Escribe tu nombre de usuario</value>
   </data>
   <data name="eliminarusuarioview_nombre_label" xml:space="preserve">
-    <value>Username</value>
+    <value>Nombre de usuario</value>
   </data>
   <data name="eliminarusuarioview_titulo" xml:space="preserve">
-    <value>USER DELETION</value>
+    <value>ELIMINACIÓN DEL USUARIO</value>
   </data>
   <data name="iniciarsesionview_contrasena_entry" xml:space="preserve">
-    <value>Enter your password</value>
+    <value>Escribe la contraseña</value>
   </data>
   <data name="iniciarsesionview_contrasena_label" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="iniciarsesionview_iniciar_sesion_button" xml:space="preserve">
-    <value>Log in</value>
+    <value>Iniciar Sesion</value>
   </data>
   <data name="iniciarsesionview_nombre_entry" xml:space="preserve">
-    <value>Enter the username</value>
+    <value>Escribe el nombre de usuario</value>
   </data>
   <data name="iniciarsesionview_nombre_label" xml:space="preserve">
-    <value>Username</value>
+    <value>Nombre de usuario</value>
   </data>
   <data name="iniciarsesionview_no_tiene_cuenta_button" xml:space="preserve">
-    <value>Don't have an account? Sign in</value>
+    <value>¿No tienes una cuenta? Registrate</value>
   </data>
   <data name="iniciarsesionview_olvida_contrasena_button" xml:space="preserve">
-    <value>Forgot your password?</value>
+    <value>¿Olvidaste la contraseña?</value>
   </data>
   <data name="iniciarsesionview_titulo" xml:space="preserve">
-    <value>LOG IN TO CONTINUE</value>
+    <value>INICIA SESIÓN PARA CONTINUAR</value>
   </data>
   <data name="misrecetasview_actualizar_receta_button" xml:space="preserve">
-    <value>Update recipe</value>
+    <value>Actualizar receta</value>
   </data>
   <data name="misrecetasview_eliminar_receta_button" xml:space="preserve">
-    <value>Remove recipe</value>
+    <value>Eliminar receta</value>
   </data>
   <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
-    <value>MY RECIPES</value>
+    <value>MIS RECETAS</value>
   </data>
   <data name="misrecetasview_mostrar_receta_button" xml:space="preserve">
-    <value>Show stored recipes</value>
+    <value>Mostrar recetas almacenadas</value>
   </data>
   <data name="nuevacategoriaview_eliminar_categoria_button" xml:space="preserve">
-    <value>Delete category</value>
+    <value>Eliminar categoría</value>
   </data>
   <data name="nuevacategoriaview_modificar_categoria_button" xml:space="preserve">
-    <value>Modify category</value>
+    <value>Modificar categoría</value>
   </data>
   <data name="nuevacategoriaview_nueva_categoria_button" xml:space="preserve">
-    <value>Save category</value>
+    <value>Guardar categoría</value>
   </data>
   <data name="nuevacategoriaview_nueva_categoria_entry" xml:space="preserve">
-    <value>Enter the category you want to add</value>
+    <value>Escribe la categoría que quieres añadir</value>
   </data>
   <data name="nuevacategoriaview_titulo" xml:space="preserve">
-    <value>ADD A NEW FOOD CATEGORY</value>
+    <value>AÑADIR UNA NUEVA CATEGORÍA DE COMIDA</value>
   </data>
   <data name="nuevarecetaview_anadir_categoria_button" xml:space="preserve">
-    <value>Add category</value>
+    <value>Añadir categoría</value>
   </data>
   <data name="nuevarecetaview_anadir_categoria_picker" xml:space="preserve">
-    <value>Select the category</value>
+    <value>Selecciona la categoría</value>
   </data>
   <data name="nuevarecetaview_anadir_pais_button" xml:space="preserve">
-    <value>Add country</value>
+    <value>Añadir país</value>
   </data>
   <data name="nuevarecetaview_anadir_pais_picker" xml:space="preserve">
-    <value>Select the country</value>
+    <value>Selecciona el país</value>
   </data>
   <data name="nuevarecetaview_categoria_comida" xml:space="preserve">
-    <value>Select the category to which it belongs</value>
+    <value>Selecciona la categoría a la que pertenece</value>
   </data>
   <data name="nuevarecetaview_descripcion_receta" xml:space="preserve">
-    <value>Write the recipe description</value>
+    <value>Escribe la descripción de la receta</value>
   </data>
   <data name="nuevarecetaview_guardar_nueva_receta" xml:space="preserve">
-    <value>Save Recipe</value>
+    <value>Guardar Receta</value>
   </data>
   <data name="nuevarecetaview_ingredientes_receta" xml:space="preserve">
-    <value>Write the ingredients of the recipe</value>
+    <value>Escribe los ingredientes de la receta</value>
   </data>
   <data name="nuevarecetaview_nombre_receta" xml:space="preserve">
-    <value>Enter the name of the recipe</value>
+    <value>Escribe el nombre de la receta</value>
   </data>
   <data name="nuevarecetaview_nueva_receta_label" xml:space="preserve">
-    <value>NEW RECIPE</value>
+    <value>NUEVA RECETA</value>
   </data>
   <data name="nuevarecetaview_pasos_receta" xml:space="preserve">
-    <value>Write the steps of the recipe</value>
+    <value>Escribe los pasos de la receta</value>
   </data>
   <data name="nuevarecetaview_tiempo_cocina" xml:space="preserve">
-    <value>Write down the cooking time of the recipe</value>
+    <value>Escribe el tiempo de cocina de la receta</value>
   </data>
   <data name="nuevarecetaview_tiempo_preparacion" xml:space="preserve">
-    <value>Write down the recipe preparation time</value>
+    <value>Escribe el tiempo de preparación de la receta</value>
   </data>
   <data name="nuevopaisview_eliminar_pais_button" xml:space="preserve">
-    <value>Delete country</value>
+    <value>Eliminar país</value>
   </data>
   <data name="nuevopaisview_modificar_pais_button" xml:space="preserve">
-    <value>Modify country</value>
+    <value>Modificar país</value>
   </data>
   <data name="nuevopaisview_nuevo_pais_button" xml:space="preserve">
-    <value>Save country</value>
+    <value>Guardar país</value>
   </data>
   <data name="nuevopaisview_nuevo_pais_entry" xml:space="preserve">
-    <value>Enter the country you want to add</value>
+    <value>Escribe el país que quieres añadir</value>
   </data>
   <data name="nuevopaisview_titulo" xml:space="preserve">
-    <value>ADD A COUNTRY</value>
+    <value>AÑADIR UN PAÍS</value>
   </data>
   <data name="registrarseview_apellido_real_entry" xml:space="preserve">
-    <value>Write your last name</value>
+    <value>Escribe tu apellido</value>
   </data>
   <data name="registrarseview_apellido_real_label" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Apellido</value>
   </data>
   <data name="registrarseview_contrasena_entry" xml:space="preserve">
-    <value>Enter your password</value>
+    <value>Escribe la contraseña</value>
   </data>
   <data name="registrarseview_contrasena_label" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="registrarseview_edad_entry" xml:space="preserve">
-    <value>Enter your age</value>
+    <value>Escribe tu edad</value>
   </data>
   <data name="registrarseview_edad_label" xml:space="preserve">
-    <value>Age</value>
+    <value>Edad</value>
   </data>
   <data name="registrarseview_nombre_entry" xml:space="preserve">
-    <value>Enter the username</value>
+    <value>Escribe el nombre de usuario</value>
   </data>
   <data name="registrarseview_nombre_label" xml:space="preserve">
-    <value>Username</value>
+    <value>Nombre de usuario</value>
   </data>
   <data name="registrarseview_nombre_real_entry" xml:space="preserve">
-    <value>Write your first name</value>
+    <value>Escribe tu nombre</value>
   </data>
   <data name="registrarseview_nombre_real_label" xml:space="preserve">
-    <value>First Name</value>
+    <value>Nombre</value>
   </data>
   <data name="registrarseview_registrarse_button" xml:space="preserve">
-    <value>Register</value>
+    <value>Registrarse</value>
   </data>
   <data name="registrarseview_repetir_contrasena_entry" xml:space="preserve">
-    <value>Repeat the password you just typed</value>
+    <value>Repite la contraseña que acabas de escribir</value>
   </data>
   <data name="registrarseview_tiene_cuenta_button" xml:space="preserve">
-    <value>Already have an account? Log in</value>
+    <value>¿Ya tienes una cuenta? Inicia Sesión</value>
   </data>
   <data name="registrarseview_titulo" xml:space="preserve">
-    <value>CREATE A NEW ACCOUNT TO CONTINUE</value>
+    <value>CREA UNA NUEVA CUENTA PARA CONTINUAR</value>
   </data>
   <data name="tabbed_page_configuracion_title" xml:space="preserve">
-    <value>Settings</value>
+    <value>Configuración</value>
   </data>
   <data name="tabbed_page_mis_recetas_title" xml:space="preserve">
-    <value>My Recipes</value>
+    <value>Mis Recetas</value>
   </data>
   <data name="tabbed_page_nueva_receta_title" xml:space="preserve">
-    <value>New Recipe</value>
+    <value>Nueva Receta</value>
   </data>
   <data name="volver_al_menu_principal_button" xml:space="preserve">
-    <value>Back to main menu</value>
+    <value>Volver al menú principal</value>
   </data>
 </root>
