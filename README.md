@@ -20,7 +20,7 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 * Xamarin Forms -> Plataforma que permite la creación de aplicaciones en iOS, Android y Plataforma universal de Windows utilizando código C# y XAML.
 * SQLite -> Sistema de gestión de bases de datos relacional
 
-## ¿Cómo funciona la aplicación?
+## Funcionamiento de la aplicación
 
 ### Inicio de sesión 
 
