@@ -47,3 +47,15 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 ### Eliminación de receta
 
 <img src="https://user-images.githubusercontent.com/49475382/173413944-6a727629-7584-4013-96d1-10267075257d.gif" width="402" height="858" />
+
+### Configuración
+
+<img src="https://user-images.githubusercontent.com/49475382/173415921-0fa69679-9235-472a-af1e-72cea2fe024d.png" width="402" height="858" />
+
+### Acerca de...
+
+<img src="https://user-images.githubusercontent.com/49475382/173416051-9700dc45-b422-401c-80a7-e536a3be71ba.png" width="402" height="858" />
+
+### Eliminación de usuario
+
+<img src="https://user-images.githubusercontent.com/49475382/173416201-8d5a1f10-faeb-45ee-b017-9b9cdd32c85e.gif" width="402" height="858" />
