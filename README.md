@@ -26,11 +26,11 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 
 <img src="https://user-images.githubusercontent.com/49475382/173413362-94881548-04b3-4c48-a0be-218716314b77.gif" width="402" height="858" />
 
-### Cambiar contraseña
+### Cambio de contraseña
 
 <img src="https://user-images.githubusercontent.com/49475382/173413457-fb65d5b7-0dbf-42a5-bab6-e5a05b3ae93a.gif" width="402" height="858" />
 
-### Registro usuario
+### Registro de usuario
 
 <img src="https://user-images.githubusercontent.com/49475382/173413533-0160687c-d1f7-4c09-8a53-a2032d481ce2.gif" width="402" height="858" />
 
