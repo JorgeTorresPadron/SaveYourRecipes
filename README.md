@@ -24,26 +24,26 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 
 ### Inicio de sesión 
 
-<img src="https://user-images.githubusercontent.com/49475382/173413362-94881548-04b3-4c48-a0be-218716314b77.gif" width="402" height="758" />
+<img src="https://user-images.githubusercontent.com/49475382/173413362-94881548-04b3-4c48-a0be-218716314b77.gif" width="402" height="858" />
 
 ### Cambiar contraseña
 
-<img src="https://user-images.githubusercontent.com/49475382/173413457-fb65d5b7-0dbf-42a5-bab6-e5a05b3ae93a.gif" width="402" height="758" />
+<img src="https://user-images.githubusercontent.com/49475382/173413457-fb65d5b7-0dbf-42a5-bab6-e5a05b3ae93a.gif" width="402" height="858" />
 
 ### Registro usuario
 
-<img src="https://user-images.githubusercontent.com/49475382/173413533-0160687c-d1f7-4c09-8a53-a2032d481ce2.gif" width="402" height="758" />
+<img src="https://user-images.githubusercontent.com/49475382/173413533-0160687c-d1f7-4c09-8a53-a2032d481ce2.gif" width="402" height="858" />
 
 ### Creación de receta
 
 ### Adición, modificación y eliminación de país
 
-<img src="https://user-images.githubusercontent.com/49475382/173413828-bfc09eee-8a6c-471b-b29d-3e1bf189fb22.gif" width="402" height="758" />
+<img src="https://user-images.githubusercontent.com/49475382/173413828-bfc09eee-8a6c-471b-b29d-3e1bf189fb22.gif" width="402" height="858" />
 
 ### Adición, modificación y eliminación de categoría
 
-<img src="https://user-images.githubusercontent.com/49475382/173413865-eb09f617-d797-441e-9150-0eaa1b842d7d.gif" width="402" height="758" />
+<img src="https://user-images.githubusercontent.com/49475382/173413865-eb09f617-d797-441e-9150-0eaa1b842d7d.gif" width="402" height="858" />
 
 ### Eliminación de receta
 
-<img src="https://user-images.githubusercontent.com/49475382/173413944-6a727629-7584-4013-96d1-10267075257d.gif" width="402" height="758" />
+<img src="https://user-images.githubusercontent.com/49475382/173413944-6a727629-7584-4013-96d1-10267075257d.gif" width="402" height="858" />
