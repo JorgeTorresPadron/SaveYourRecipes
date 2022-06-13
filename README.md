@@ -24,7 +24,7 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 
 ### Inicio de sesión 
 
-<img src="https://user-images.githubusercontent.com/49475382/173413362-94881548-04b3-4c48-a0be-218716314b77.gif" width="302" height="658" />
+<img src="https://user-images.githubusercontent.com/49475382/173413362-94881548-04b3-4c48-a0be-218716314b77.gif" width="602" height="1258" />
 
 ### Cambiar contraseña
 
