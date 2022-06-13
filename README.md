@@ -23,3 +23,27 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 ## ¿Cómo funciona la aplicación?
 
 ### Inicio de sesión 
+
+![Iniciar_sesion](https://user-images.githubusercontent.com/49475382/173413362-94881548-04b3-4c48-a0be-218716314b77.gif)
+
+### Cambiar contraseña
+
+![Cambiar_contrasena](https://user-images.githubusercontent.com/49475382/173413457-fb65d5b7-0dbf-42a5-bab6-e5a05b3ae93a.gif)
+
+### Registro usuario
+
+![Registrar_usuario](https://user-images.githubusercontent.com/49475382/173413533-0160687c-d1f7-4c09-8a53-a2032d481ce2.gif)
+
+### Creación de receta
+
+### Adición, modificación y eliminación de país
+
+![Registrar_pais](https://user-images.githubusercontent.com/49475382/173413828-bfc09eee-8a6c-471b-b29d-3e1bf189fb22.gif)
+
+### Adición, modificación y eliminación de categoría
+
+![Registrar_categoria_comida](https://user-images.githubusercontent.com/49475382/173413865-eb09f617-d797-441e-9150-0eaa1b842d7d.gif)
+
+### Eliminación de receta
+
+![Eliminar_receta](https://user-images.githubusercontent.com/49475382/173413944-6a727629-7584-4013-96d1-10267075257d.gif)
