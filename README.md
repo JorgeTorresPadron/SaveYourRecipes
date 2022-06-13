@@ -5,6 +5,7 @@
 SaveYourRecipes es una aplicación para almacenar recetas de comida realizada en Xamarin Forms disponible para Android e iOS utilizando la base de datos SQLite.
 
 La aplicación esta disponible en modo claro y modo oscuro.
+
 ![modo_oscuro](https://user-images.githubusercontent.com/49475382/173412184-90275fa0-5b46-4a3a-b133-46cf9e1c0231.png)
 ![modo_claro](https://user-images.githubusercontent.com/49475382/173412204-0fb05952-8156-4690-a801-55a8df2ad5dc.png)
 
