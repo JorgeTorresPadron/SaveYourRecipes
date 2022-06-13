@@ -50,11 +50,11 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 
 ### Configuración
 
-<img src="https://user-images.githubusercontent.com/49475382/173415921-0fa69679-9235-472a-af1e-72cea2fe024d.png" width="402" height="858" />
+<img src="https://user-images.githubusercontent.com/49475382/173416364-061b40fd-f1cb-4978-bedf-e80a4a410fad.png" width="402" height="858" />
 
 ### Acerca de...
 
-<img src="https://user-images.githubusercontent.com/49475382/173416051-9700dc45-b422-401c-80a7-e536a3be71ba.png" width="402" height="858" />
+<img src="https://user-images.githubusercontent.com/49475382/173416413-cd7289aa-55d3-4379-8684-eb27a1928ba6.png" width="402" height="858" />
 
 ### Eliminación de usuario
 
