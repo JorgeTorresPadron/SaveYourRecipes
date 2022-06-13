@@ -36,6 +36,8 @@ La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y 
 
 ### Creación de receta
 
+<img src="https://user-images.githubusercontent.com/49475382/173424421-f979d283-7780-43b0-8826-6152c328c382.gif" width="402" height="858" />
+
 ### Adición, modificación y eliminación de país
 
 <img src="https://user-images.githubusercontent.com/49475382/173413828-bfc09eee-8a6c-471b-b29d-3e1bf189fb22.gif" width="402" height="858" />
