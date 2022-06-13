@@ -11,7 +11,8 @@ La aplicación esta disponible en modo claro y modo oscuro.
 
 La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y español, el idioma se escoge automáticamente según el idioma que el usuario tenga seleccionado en su dispositivo
 
-![cambiar_idioma](https://user-images.githubusercontent.com/49475382/173412648-21dd631c-85bb-439d-a4e7-110cbbb82b03.png)
+![image](https://user-images.githubusercontent.com/49475382/173412998-92fffbca-121e-4ef1-99a7-b80f019ee667.png)
+![image](https://user-images.githubusercontent.com/49475382/173413031-bd6d227d-a063-4fc0-a8e7-c41dea34d85c.png)
 
 ## Herramientas utilizadas
 
