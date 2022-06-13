@@ -9,6 +9,9 @@ La aplicación esta disponible en modo claro y modo oscuro.
 ![modo_oscuro](https://user-images.githubusercontent.com/49475382/173412184-90275fa0-5b46-4a3a-b133-46cf9e1c0231.png)
 ![modo_claro](https://user-images.githubusercontent.com/49475382/173412204-0fb05952-8156-4690-a801-55a8df2ad5dc.png)
 
+La aplicación esta disponible en dos idiomas inglés (idioma predeterminado) y español, el idioma se escoge automáticamente según el idioma que el usuario tenga seleccionado en su dispositivo
+
+![cambiar_idioma](https://user-images.githubusercontent.com/49475382/173412648-21dd631c-85bb-439d-a4e7-110cbbb82b03.png)
 
 ## Herramientas utilizadas
 
