@@ -19,14 +19,14 @@ namespace SaveYourRecipes.Strings {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Build.Tasks.StronglyTypedResourceBuilder", "15.1.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Strings_es {
+    internal class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Strings_es() {
+        internal Strings() {
         }
         
         /// <summary>
@@ -36,7 +36,7 @@ namespace SaveYourRecipes.Strings {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SaveYourRecipes.Strings.Strings.es", typeof(Strings_es).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SaveYourRecipes.Strings.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -58,7 +58,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Documentación de SQLite.
+        ///   Looks up a localized string similar to SQLite Documentation.
         /// </summary>
         internal static string acercadeview_cuarto_texto {
             get {
@@ -76,7 +76,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disponible en los idiomas siguientes.
+        ///   Looks up a localized string similar to Available in the following languages.
         /// </summary>
         internal static string acercadeview_idiomas_disponibles {
             get {
@@ -85,7 +85,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aplicación para almacenar recetas de comida creada por Jorge Torres Padrón usando Xamarin Forms y SQLite para el proyecto final del ciclo de desarrollo de aplicaciones multiplataforma.
+        ///   Looks up a localized string similar to Application to store food recipes created by Jorge Torres Padrón using Xamarin Forms and SQLite for the final project of the cross-platform application development cycle.
         /// </summary>
         internal static string acercadeview_primer_texto {
             get {
@@ -94,7 +94,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sígueme en GitHub.
+        ///   Looks up a localized string similar to Follow me on GitHub.
         /// </summary>
         internal static string acercadeview_segundo_texto {
             get {
@@ -112,7 +112,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Documentación de Xamarin Forms.
+        ///   Looks up a localized string similar to Xamarin Forms Documentation.
         /// </summary>
         internal static string acercadeview_tercer_texto {
             get {
@@ -121,7 +121,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://docs.microsoft.com/es-es/xamarin/xamarin-forms/.
+        ///   Looks up a localized string similar to https://docs.microsoft.com/en-us/xamarin/xamarin-forms/.
         /// </summary>
         internal static string acercadeview_tercer_texto_link {
             get {
@@ -130,7 +130,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cambiar contraseña.
+        ///   Looks up a localized string similar to Change password.
         /// </summary>
         internal static string cambiarcontrasenaview_cambiar_contrasena_button {
             get {
@@ -139,7 +139,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe la nueva contraseña del usuario.
+        ///   Looks up a localized string similar to Enter the user&apos;s new password.
         /// </summary>
         internal static string cambiarcontrasenaview_contrasena_entry {
             get {
@@ -148,7 +148,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contraseña.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string cambiarcontrasenaview_contrasena_label {
             get {
@@ -157,7 +157,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volver al inicio de sesión.
+        ///   Looks up a localized string similar to Back to login.
         /// </summary>
         internal static string cambiarcontrasenaview_inicio_sesion_button {
             get {
@@ -166,7 +166,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Repite la nueva contraseña de usuario.
+        ///   Looks up a localized string similar to Repeat the new user password.
         /// </summary>
         internal static string cambiarcontrasenaview_repetir_contrasena_entry {
             get {
@@ -175,7 +175,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CAMBIAR CONTRASEÑA.
+        ///   Looks up a localized string similar to CHANGE PASSWORD.
         /// </summary>
         internal static string cambiarcontrasenaview_titulo {
             get {
@@ -184,7 +184,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el nombre de usuario.
+        ///   Looks up a localized string similar to Enter the username.
         /// </summary>
         internal static string cambiarcontrasenaview_usuario_entry {
             get {
@@ -193,7 +193,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nombre de usuario.
+        ///   Looks up a localized string similar to Username.
         /// </summary>
         internal static string cambiarcontrasenaview_usuario_label {
             get {
@@ -202,7 +202,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Acerca de....
+        ///   Looks up a localized string similar to About....
         /// </summary>
         internal static string configuracionview_acerca_de {
             get {
@@ -211,7 +211,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CONFIGURACIÓN.
+        ///   Looks up a localized string similar to CONFIGURATION.
         /// </summary>
         internal static string configuracionview_configuracion_label {
             get {
@@ -220,7 +220,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cerrar sesión.
+        ///   Looks up a localized string similar to Log off.
         /// </summary>
         internal static string configurationview_cerrar_sesion {
             get {
@@ -229,7 +229,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eliminar mi usuario.
+        ///   Looks up a localized string similar to Delete my username.
         /// </summary>
         internal static string configurationview_eliminar_usuario {
             get {
@@ -238,7 +238,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aceptar.
+        ///   Looks up a localized string similar to Accept.
         /// </summary>
         internal static string display_alert_aceptar {
             get {
@@ -247,7 +247,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to El usuario al que intentas cambiar la contraseña no existe.
+        ///   Looks up a localized string similar to The user you are trying to change the password does not exist.
         /// </summary>
         internal static string display_alert_cant_change_password_user_not_exist {
             get {
@@ -256,7 +256,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categoría eliminada correctamente.
+        ///   Looks up a localized string similar to Successfully deleted category.
         /// </summary>
         internal static string display_alert_category_deleted {
             get {
@@ -265,7 +265,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categoría almacenada correctamente.
+        ///   Looks up a localized string similar to Successfully stored category.
         /// </summary>
         internal static string display_alert_category_stored {
             get {
@@ -274,7 +274,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categoría modificada correctamente.
+        ///   Looks up a localized string similar to Successfully modified category.
         /// </summary>
         internal static string display_alert_category_updated {
             get {
@@ -283,7 +283,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to El usuario que intentas eliminar no existe.
+        ///   Looks up a localized string similar to The user you are trying to delete does not exist.
         /// </summary>
         internal static string display_alert_delete_user_not_exist {
             get {
@@ -292,7 +292,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eliminado.
+        ///   Looks up a localized string similar to Deleted.
         /// </summary>
         internal static string display_alert_eliminado {
             get {
@@ -310,7 +310,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Debes ingresar tu edad.
+        ///   Looks up a localized string similar to You must enter your age.
         /// </summary>
         internal static string display_alert_error_empty_age {
             get {
@@ -319,7 +319,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Debes ingresar tu nombre.
+        ///   Looks up a localized string similar to You must enter your first name.
         /// </summary>
         internal static string display_alert_error_empty_firstname {
             get {
@@ -328,7 +328,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Debes ingresar tu apellido.
+        ///   Looks up a localized string similar to You must enter your last name.
         /// </summary>
         internal static string display_alert_error_empty_lastname {
             get {
@@ -337,7 +337,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Debe ingresar una contraseña.
+        ///   Looks up a localized string similar to You must enter a password.
         /// </summary>
         internal static string display_alert_error_empty_password {
             get {
@@ -346,7 +346,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Debe ingresar un nombre de usuario.
+        ///   Looks up a localized string similar to You must enter a user name.
         /// </summary>
         internal static string display_alert_error_empty_username {
             get {
@@ -355,7 +355,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to El usuario no existe o los datos introducidos son incorrectos.
+        ///   Looks up a localized string similar to The user doesn&apos;t exist or the introduced data is incorrect.
         /// </summary>
         internal static string display_alert_error_iniciarsesionview {
             get {
@@ -364,7 +364,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to La contraseña repetida no es igual.
+        ///   Looks up a localized string similar to Repeated password is not the same.
         /// </summary>
         internal static string display_alert_error_password_not_match {
             get {
@@ -373,7 +373,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contraseña de usuario actualizada.
+        ///   Looks up a localized string similar to Updated user password.
         /// </summary>
         internal static string display_alert_password_updated {
             get {
@@ -382,7 +382,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Receta eliminada correctamente.
+        ///   Looks up a localized string similar to Recipe deleted correctly.
         /// </summary>
         internal static string display_alert_receta_eliminada {
             get {
@@ -391,7 +391,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Éxito.
+        ///   Looks up a localized string similar to Success.
         /// </summary>
         internal static string display_alert_success {
             get {
@@ -400,7 +400,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usuario eliminado correctamente.
+        ///   Looks up a localized string similar to User successfully deleted.
         /// </summary>
         internal static string display_alert_user_delete_correctly {
             get {
@@ -409,7 +409,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bienvenido.
+        ///   Looks up a localized string similar to Welcome.
         /// </summary>
         internal static string display_alert_welcome {
             get {
@@ -418,7 +418,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Actualizar cambios en la receta.
+        ///   Looks up a localized string similar to Update recipe changes.
         /// </summary>
         internal static string editarrecetaview_actualizar_receta_button {
             get {
@@ -427,7 +427,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Actualizar receta.
+        ///   Looks up a localized string similar to Update recipe.
         /// </summary>
         internal static string editarrecetaview_actualizar_receta_label {
             get {
@@ -436,7 +436,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ¡Atención! Esta acción no es reversible si borras el usuario perderás los datos de la aplicación.
+        ///   Looks up a localized string similar to Attention! This action is not reversible if you delete the user you will lose the application data.
         /// </summary>
         internal static string eliminarusuarioview_advertencia_label {
             get {
@@ -445,7 +445,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe tu contraseña de usuario.
+        ///   Looks up a localized string similar to Enter your user password.
         /// </summary>
         internal static string eliminarusuarioview_contrasena_entry {
             get {
@@ -454,7 +454,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contraseña.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string eliminarusuarioview_contrasena_label {
             get {
@@ -463,7 +463,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eliminar mi usuario.
+        ///   Looks up a localized string similar to Delete my username.
         /// </summary>
         internal static string eliminarusuarioview_eliminar_usuario_button {
             get {
@@ -472,7 +472,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe tu nombre de usuario.
+        ///   Looks up a localized string similar to Enter your username.
         /// </summary>
         internal static string eliminarusuarioview_nombre_entry {
             get {
@@ -481,7 +481,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nombre de usuario.
+        ///   Looks up a localized string similar to Username.
         /// </summary>
         internal static string eliminarusuarioview_nombre_label {
             get {
@@ -490,7 +490,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ELIMINACIÓN DEL USUARIO.
+        ///   Looks up a localized string similar to USER DELETION.
         /// </summary>
         internal static string eliminarusuarioview_titulo {
             get {
@@ -499,7 +499,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe la contraseña.
+        ///   Looks up a localized string similar to Enter your password.
         /// </summary>
         internal static string iniciarsesionview_contrasena_entry {
             get {
@@ -508,7 +508,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contraseña.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string iniciarsesionview_contrasena_label {
             get {
@@ -517,7 +517,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Iniciar Sesion.
+        ///   Looks up a localized string similar to Log in.
         /// </summary>
         internal static string iniciarsesionview_iniciar_sesion_button {
             get {
@@ -526,7 +526,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ¿No tienes una cuenta? Registrate.
+        ///   Looks up a localized string similar to Don&apos;t have an account? Sign in.
         /// </summary>
         internal static string iniciarsesionview_no_tiene_cuenta_button {
             get {
@@ -535,7 +535,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el nombre de usuario.
+        ///   Looks up a localized string similar to Enter the username.
         /// </summary>
         internal static string iniciarsesionview_nombre_entry {
             get {
@@ -544,7 +544,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nombre de usuario.
+        ///   Looks up a localized string similar to Username.
         /// </summary>
         internal static string iniciarsesionview_nombre_label {
             get {
@@ -553,7 +553,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ¿Olvidaste la contraseña?.
+        ///   Looks up a localized string similar to Forgot your password?.
         /// </summary>
         internal static string iniciarsesionview_olvida_contrasena_button {
             get {
@@ -562,7 +562,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to INICIA SESIÓN PARA CONTINUAR.
+        ///   Looks up a localized string similar to LOG IN TO CONTINUE.
         /// </summary>
         internal static string iniciarsesionview_titulo {
             get {
@@ -571,7 +571,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Actualizar receta.
+        ///   Looks up a localized string similar to Update recipe.
         /// </summary>
         internal static string misrecetasview_actualizar_receta_button {
             get {
@@ -580,7 +580,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eliminar receta.
+        ///   Looks up a localized string similar to Remove recipe.
         /// </summary>
         internal static string misrecetasview_eliminar_receta_button {
             get {
@@ -589,7 +589,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MIS RECETAS.
+        ///   Looks up a localized string similar to MY RECIPES.
         /// </summary>
         internal static string misrecetasview_mis_recetas_label {
             get {
@@ -598,7 +598,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mostrar recetas almacenadas.
+        ///   Looks up a localized string similar to Show stored recipes.
         /// </summary>
         internal static string misrecetasview_mostrar_receta_button {
             get {
@@ -607,7 +607,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eliminar categoría.
+        ///   Looks up a localized string similar to Delete category.
         /// </summary>
         internal static string nuevacategoriaview_eliminar_categoria_button {
             get {
@@ -616,7 +616,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Modificar categoría.
+        ///   Looks up a localized string similar to Modify category.
         /// </summary>
         internal static string nuevacategoriaview_modificar_categoria_button {
             get {
@@ -625,7 +625,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Guardar categoría.
+        ///   Looks up a localized string similar to Save category.
         /// </summary>
         internal static string nuevacategoriaview_nueva_categoria_button {
             get {
@@ -634,7 +634,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe la categoría que quieres añadir.
+        ///   Looks up a localized string similar to Enter the category you want to add.
         /// </summary>
         internal static string nuevacategoriaview_nueva_categoria_entry {
             get {
@@ -643,7 +643,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AÑADIR UNA NUEVA CATEGORÍA DE COMIDA.
+        ///   Looks up a localized string similar to ADD A NEW FOOD CATEGORY.
         /// </summary>
         internal static string nuevacategoriaview_titulo {
             get {
@@ -652,7 +652,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Añadir categoría.
+        ///   Looks up a localized string similar to Add category.
         /// </summary>
         internal static string nuevarecetaview_anadir_categoria_button {
             get {
@@ -661,7 +661,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Selecciona la categoría.
+        ///   Looks up a localized string similar to Select the category.
         /// </summary>
         internal static string nuevarecetaview_anadir_categoria_picker {
             get {
@@ -670,7 +670,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Añadir país.
+        ///   Looks up a localized string similar to Add country.
         /// </summary>
         internal static string nuevarecetaview_anadir_pais_button {
             get {
@@ -679,7 +679,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Selecciona el país.
+        ///   Looks up a localized string similar to Select the country.
         /// </summary>
         internal static string nuevarecetaview_anadir_pais_picker {
             get {
@@ -688,7 +688,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Selecciona la categoría a la que pertenece.
+        ///   Looks up a localized string similar to Select the category to which it belongs.
         /// </summary>
         internal static string nuevarecetaview_categoria_comida {
             get {
@@ -697,7 +697,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe la descripción de la receta.
+        ///   Looks up a localized string similar to Write the recipe description.
         /// </summary>
         internal static string nuevarecetaview_descripcion_receta {
             get {
@@ -706,7 +706,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Guardar Receta.
+        ///   Looks up a localized string similar to Save Recipe.
         /// </summary>
         internal static string nuevarecetaview_guardar_nueva_receta {
             get {
@@ -715,7 +715,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe los ingredientes de la receta.
+        ///   Looks up a localized string similar to Write the ingredients of the recipe.
         /// </summary>
         internal static string nuevarecetaview_ingredientes_receta {
             get {
@@ -724,7 +724,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el nombre de la receta.
+        ///   Looks up a localized string similar to Enter the name of the recipe.
         /// </summary>
         internal static string nuevarecetaview_nombre_receta {
             get {
@@ -733,7 +733,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NUEVA RECETA.
+        ///   Looks up a localized string similar to NEW RECIPE.
         /// </summary>
         internal static string nuevarecetaview_nueva_receta_label {
             get {
@@ -742,7 +742,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe los pasos de la receta.
+        ///   Looks up a localized string similar to Write the steps of the recipe.
         /// </summary>
         internal static string nuevarecetaview_pasos_receta {
             get {
@@ -751,7 +751,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el tiempo de cocina de la receta.
+        ///   Looks up a localized string similar to Write down the cooking time of the recipe.
         /// </summary>
         internal static string nuevarecetaview_tiempo_cocina {
             get {
@@ -760,7 +760,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el tiempo de preparación de la receta.
+        ///   Looks up a localized string similar to Write down the recipe preparation time.
         /// </summary>
         internal static string nuevarecetaview_tiempo_preparacion {
             get {
@@ -769,7 +769,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eliminar país.
+        ///   Looks up a localized string similar to Delete country.
         /// </summary>
         internal static string nuevopaisview_eliminar_pais_button {
             get {
@@ -778,7 +778,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Modificar país.
+        ///   Looks up a localized string similar to Modify country.
         /// </summary>
         internal static string nuevopaisview_modificar_pais_button {
             get {
@@ -787,7 +787,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Guardar país.
+        ///   Looks up a localized string similar to Save country.
         /// </summary>
         internal static string nuevopaisview_nuevo_pais_button {
             get {
@@ -796,7 +796,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el país que quieres añadir.
+        ///   Looks up a localized string similar to Enter the country you want to add.
         /// </summary>
         internal static string nuevopaisview_nuevo_pais_entry {
             get {
@@ -805,7 +805,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AÑADIR UN PAÍS.
+        ///   Looks up a localized string similar to ADD A COUNTRY.
         /// </summary>
         internal static string nuevopaisview_titulo {
             get {
@@ -814,7 +814,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe tu apellido.
+        ///   Looks up a localized string similar to Write your last name.
         /// </summary>
         internal static string registrarseview_apellido_real_entry {
             get {
@@ -823,7 +823,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apellido.
+        ///   Looks up a localized string similar to Last Name.
         /// </summary>
         internal static string registrarseview_apellido_real_label {
             get {
@@ -832,7 +832,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe la contraseña.
+        ///   Looks up a localized string similar to Enter your password.
         /// </summary>
         internal static string registrarseview_contrasena_entry {
             get {
@@ -841,7 +841,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contraseña.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string registrarseview_contrasena_label {
             get {
@@ -850,7 +850,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe tu edad.
+        ///   Looks up a localized string similar to Enter your age.
         /// </summary>
         internal static string registrarseview_edad_entry {
             get {
@@ -859,7 +859,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edad.
+        ///   Looks up a localized string similar to Age.
         /// </summary>
         internal static string registrarseview_edad_label {
             get {
@@ -868,7 +868,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe el nombre de usuario.
+        ///   Looks up a localized string similar to Enter the username.
         /// </summary>
         internal static string registrarseview_nombre_entry {
             get {
@@ -877,7 +877,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nombre de usuario.
+        ///   Looks up a localized string similar to Username.
         /// </summary>
         internal static string registrarseview_nombre_label {
             get {
@@ -886,7 +886,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Escribe tu nombre.
+        ///   Looks up a localized string similar to Write your first name.
         /// </summary>
         internal static string registrarseview_nombre_real_entry {
             get {
@@ -895,7 +895,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nombre.
+        ///   Looks up a localized string similar to First Name.
         /// </summary>
         internal static string registrarseview_nombre_real_label {
             get {
@@ -904,7 +904,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registrarse.
+        ///   Looks up a localized string similar to Register.
         /// </summary>
         internal static string registrarseview_registrarse_button {
             get {
@@ -913,7 +913,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Repite la contraseña que acabas de escribir.
+        ///   Looks up a localized string similar to Repeat the password you just typed.
         /// </summary>
         internal static string registrarseview_repetir_contrasena_entry {
             get {
@@ -922,7 +922,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ¿Ya tienes una cuenta? Inicia Sesión.
+        ///   Looks up a localized string similar to Already have an account? Log in.
         /// </summary>
         internal static string registrarseview_tiene_cuenta_button {
             get {
@@ -931,7 +931,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CREA UNA NUEVA CUENTA PARA CONTINUAR.
+        ///   Looks up a localized string similar to CREATE A NEW ACCOUNT TO CONTINUE.
         /// </summary>
         internal static string registrarseview_titulo {
             get {
@@ -940,7 +940,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Configuración.
+        ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string tabbed_page_configuracion_title {
             get {
@@ -949,7 +949,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mis Recetas.
+        ///   Looks up a localized string similar to My Recipes.
         /// </summary>
         internal static string tabbed_page_mis_recetas_title {
             get {
@@ -958,7 +958,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nueva Receta.
+        ///   Looks up a localized string similar to New Recipe.
         /// </summary>
         internal static string tabbed_page_nueva_receta_title {
             get {
@@ -967,7 +967,7 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volver al menú principal.
+        ///   Looks up a localized string similar to Back to main menu.
         /// </summary>
         internal static string volver_al_menu_principal_button {
             get {

@@ -1,18 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Collections.ObjectModel;
+using SaveYourRecipes.Models;
+using SaveYourRecipes.Service;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using SaveYourRecipes.Models;
-using SaveYourRecipes.Features.Editar;
-using SaveYourRecipes.Service;
-using System.Reflection;
-using System.IO;
-using SaveYourRecipes.Data;
-using System.Collections.ObjectModel;
 
 namespace SaveYourRecipes.Features.MisRecetas
 {
@@ -68,7 +59,7 @@ namespace SaveYourRecipes.Features.MisRecetas
             if (receta != null)
             {
                 await App.Database.DeleteRecetaAsync(receta);
-                await DisplayAlert("Eliminado / Deleted", "Receta eliminada correctamente / Successfully deleted recipe", "Ok");
+                await DisplayAlert(Strings.Strings.display_alert_eliminado, Strings.Strings.display_alert_receta_eliminada, Strings.Strings.display_alert_aceptar);
 
 
                 eliminarDatos.IsVisible = false;

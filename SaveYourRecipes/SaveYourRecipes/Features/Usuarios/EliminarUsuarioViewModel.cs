@@ -65,13 +65,13 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             if (string.IsNullOrEmpty(this.nombreUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debe ingresar un nombre de usuario / You must enter a user name", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_username, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.contrasenaUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingreser una contraseña / You must enter a password", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_password, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
@@ -85,7 +85,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
             if (e.Count == 0)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "El usuario que intentas eliminar no existe / The user you are trying to delete does not exist", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_delete_user_not_exist, Strings.Strings.display_alert_aceptar);
 
                 this.IsRunningTxt = false;
                 this.IsVisibleTxt = false;
@@ -98,7 +98,7 @@ namespace SaveYourRecipes.Features.Usuarios
                 await App.Database.DeleteCategoriaComidaCompletely(nombreUsuario);
                 await App.Database.DeleteUserCompletely(nombreUsuario, contrasenaUsuario);
                 
-                await App.Current.MainPage.DisplayAlert("Éxito / Success", "Usuario eliminado correctamente / User successfully deleted", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_user_delete_correctly, Strings.Strings.display_alert_user_delete_correctly, Strings.Strings.display_alert_aceptar);
 
                 await App.Current.MainPage.Navigation.PushModalAsync(new IniciarSesionView());
 

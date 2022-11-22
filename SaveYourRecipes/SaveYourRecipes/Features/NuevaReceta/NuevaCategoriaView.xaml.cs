@@ -27,7 +27,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
             };
 
             await App.Database.SaveCategoriaComidaAsync(categoria_Comida);
-            await DisplayAlert("Éxito / Success", "Categoría almacenada correctamente / Successfully stored category", "Ok");
+            await DisplayAlert(Strings.Strings.display_alert_success, Strings.Strings.display_alert_category_stored, Strings.Strings.display_alert_aceptar);
 
             ListaMostrar();
 
@@ -75,7 +75,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
                     categoria_comida_nombre_usuario = nombreUsuario,
                 };
                 await App.Database.SaveCategoriaComidaAsync(categoria_Comida);
-                await DisplayAlert("Éxito / Success", "Categoría modificada correctamente / Successfully modified category", "Ok");
+                await DisplayAlert(Strings.Strings.display_alert_eliminado, Strings.Strings.display_alert_category_updated, Strings.Strings.display_alert_aceptar);
 
                 modificarCategoriaButton.IsVisible = false;
                 eliminarCategoriaButton.IsVisible = false;
@@ -94,7 +94,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
             if (categoria != null)
             {
                 await App.Database.DeleteCategoriaComidaAsync(categoria);
-                await DisplayAlert("Eliminado / Deleted", "Categoría eliminada correctamente / Successfully deleted category", "Ok");
+                await DisplayAlert(Strings.Strings.display_alert_eliminado, Strings.Strings.display_alert_category_deleted, Strings.Strings.display_alert_aceptar);
 
                 modificarCategoriaButton.IsVisible = false;
                 eliminarCategoriaButton.IsVisible = false;

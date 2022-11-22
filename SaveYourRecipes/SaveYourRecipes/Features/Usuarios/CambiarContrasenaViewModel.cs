@@ -72,19 +72,19 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             if (string.IsNullOrEmpty(this.nombreUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debe ingresar un nombre de usuario / You must enter a user name", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_username, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.contrasenaUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingreser una contraseña / You must enter a password", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_password, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (this.contrasenaUsuario != this.contrasenaRepetidaUsuario)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "La contraseña repetida no es igual / Repeated password is not the same", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_password_not_match, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
@@ -98,7 +98,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
             if (e.Count == 0)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "El usuario al que intentas cambiar la contraseña no existe / The user you are trying to change the password does not exist", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_cant_change_password_user_not_exist, Strings.Strings.display_alert_aceptar);
 
                 this.IsRunningTxt = false;
                 this.IsVisibleTxt = false;
@@ -108,7 +108,7 @@ namespace SaveYourRecipes.Features.Usuarios
             {
                 await App.Database.UpdateUserPassword(nombreUsuario, contrasenaUsuario);
 
-                await App.Current.MainPage.DisplayAlert("Éxito / Success", "Contraseña de usuario actualizada / Updated user password", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_password_updated, Strings.Strings.display_alert_aceptar);
 
                 await App.Current.MainPage.Navigation.PushModalAsync(new IniciarSesionView());
 

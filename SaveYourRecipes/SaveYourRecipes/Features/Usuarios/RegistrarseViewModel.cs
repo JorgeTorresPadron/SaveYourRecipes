@@ -95,37 +95,37 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             if (string.IsNullOrEmpty(this.nombreUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debe ingresar un nombre de usuario / You must enter a user name", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_username, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.contrasenaUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingreser una contraseña / You must enter a password", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_password, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.nombreUsuarioReal))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingresar tu nombre / You must enter your first name", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_firstname, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.apellidoUsuarioReal))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Error", "Debes ingresar tu apellido / You must enter your last name", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_lastname, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (this.edadUsuario.Equals(null) | this.edadUsuario.Equals(""))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingresar tu edad / You must enter your age", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_age, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (this.contrasenaUsuario != this.contrasenaRepetidaUsuario)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "La contraseña repetida no es igual / Repeated password is not the same", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_password_not_match, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
@@ -147,7 +147,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
             await App.Database.SaveUserAsync(user);
 
-            await App.Current.MainPage.DisplayAlert("Éxito / Success", "Bienvenido / Welcome " + nombreUsuario.ToString(), "Ok");
+            await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_success, Strings.Strings.display_alert_welcome + " " + nombreUsuario.ToString(), Strings.Strings.display_alert_aceptar);
 
             this.IsRunningTxt = false;
             this.IsVisibleTxt = false;

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,308 +59,368 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="acercadeview_cuarto_texto" xml:space="preserve">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="acercadeview_cuarto_texto" xml:space="preserve">
     <value>SQLite Documentation</value>
   </data>
-  <data name="acercadeview_cuarto_texto_link" xml:space="preserve">
+	<data name="acercadeview_cuarto_texto_link" xml:space="preserve">
     <value>https://sqlite.org/docs.html</value>
   </data>
-  <data name="acercadeview_idiomas_disponibles" xml:space="preserve">
+	<data name="acercadeview_idiomas_disponibles" xml:space="preserve">
     <value>Available in the following languages</value>
   </data>
-  <data name="acercadeview_primer_texto" xml:space="preserve">
+	<data name="acercadeview_primer_texto" xml:space="preserve">
     <value>Application to store food recipes created by Jorge Torres Padrón using Xamarin Forms and SQLite for the final project of the cross-platform application development cycle</value>
   </data>
-  <data name="acercadeview_segundo_texto" xml:space="preserve">
+	<data name="acercadeview_segundo_texto" xml:space="preserve">
     <value>Follow me on GitHub</value>
   </data>
-  <data name="acercadeview_segundo_texto_link" xml:space="preserve">
+	<data name="acercadeview_segundo_texto_link" xml:space="preserve">
     <value>https://github.com/JorgeTorresPadron</value>
   </data>
-  <data name="acercadeview_tercer_texto" xml:space="preserve">
+	<data name="acercadeview_tercer_texto" xml:space="preserve">
     <value>Xamarin Forms Documentation</value>
   </data>
-  <data name="acercadeview_tercer_texto_link" xml:space="preserve">
+	<data name="acercadeview_tercer_texto_link" xml:space="preserve">
     <value>https://docs.microsoft.com/en-us/xamarin/xamarin-forms/</value>
   </data>
-  <data name="cambiarcontrasenaview_cambiar_contrasena_button" xml:space="preserve">
+	<data name="cambiarcontrasenaview_cambiar_contrasena_button" xml:space="preserve">
     <value>Change password</value>
   </data>
-  <data name="cambiarcontrasenaview_contrasena_entry" xml:space="preserve">
+	<data name="cambiarcontrasenaview_contrasena_entry" xml:space="preserve">
     <value>Enter the user's new password</value>
   </data>
-  <data name="cambiarcontrasenaview_contrasena_label" xml:space="preserve">
+	<data name="cambiarcontrasenaview_contrasena_label" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="cambiarcontrasenaview_inicio_sesion_button" xml:space="preserve">
+	<data name="cambiarcontrasenaview_inicio_sesion_button" xml:space="preserve">
     <value>Back to login</value>
   </data>
-  <data name="cambiarcontrasenaview_repetir_contrasena_entry" xml:space="preserve">
+	<data name="cambiarcontrasenaview_repetir_contrasena_entry" xml:space="preserve">
     <value>Repeat the new user password</value>
   </data>
-  <data name="cambiarcontrasenaview_titulo" xml:space="preserve">
+	<data name="cambiarcontrasenaview_titulo" xml:space="preserve">
     <value>CHANGE PASSWORD</value>
   </data>
-  <data name="cambiarcontrasenaview_usuario_entry" xml:space="preserve">
+	<data name="cambiarcontrasenaview_usuario_entry" xml:space="preserve">
     <value>Enter the username</value>
   </data>
-  <data name="cambiarcontrasenaview_usuario_label" xml:space="preserve">
+	<data name="cambiarcontrasenaview_usuario_label" xml:space="preserve">
     <value>Username</value>
   </data>
-  <data name="configuracionview_acerca_de" xml:space="preserve">
+	<data name="configuracionview_acerca_de" xml:space="preserve">
     <value>About...</value>
   </data>
-  <data name="configuracionview_configuracion_label" xml:space="preserve">
+	<data name="configuracionview_configuracion_label" xml:space="preserve">
     <value>CONFIGURATION</value>
   </data>
-  <data name="configurationview_cerrar_sesion" xml:space="preserve">
+	<data name="configurationview_cerrar_sesion" xml:space="preserve">
     <value>Log off</value>
   </data>
-  <data name="configurationview_eliminar_usuario" xml:space="preserve">
+	<data name="configurationview_eliminar_usuario" xml:space="preserve">
     <value>Delete my username</value>
   </data>
-  <data name="editarrecetaview_actualizar_receta_button" xml:space="preserve">
+	<data name="editarrecetaview_actualizar_receta_button" xml:space="preserve">
     <value>Update recipe changes</value>
   </data>
-  <data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
+	<data name="editarrecetaview_actualizar_receta_label" xml:space="preserve">
     <value>Update recipe</value>
   </data>
-  <data name="eliminarusuarioview_advertencia_label" xml:space="preserve">
+	<data name="eliminarusuarioview_advertencia_label" xml:space="preserve">
     <value>Attention! This action is not reversible if you delete the user you will lose the application data</value>
   </data>
-  <data name="eliminarusuarioview_contrasena_entry" xml:space="preserve">
+	<data name="eliminarusuarioview_contrasena_entry" xml:space="preserve">
     <value>Enter your user password</value>
   </data>
-  <data name="eliminarusuarioview_contrasena_label" xml:space="preserve">
+	<data name="eliminarusuarioview_contrasena_label" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="eliminarusuarioview_eliminar_usuario_button" xml:space="preserve">
+	<data name="eliminarusuarioview_eliminar_usuario_button" xml:space="preserve">
     <value>Delete my username</value>
   </data>
-  <data name="eliminarusuarioview_nombre_entry" xml:space="preserve">
+	<data name="eliminarusuarioview_nombre_entry" xml:space="preserve">
     <value>Enter your username</value>
   </data>
-  <data name="eliminarusuarioview_nombre_label" xml:space="preserve">
+	<data name="eliminarusuarioview_nombre_label" xml:space="preserve">
     <value>Username</value>
   </data>
-  <data name="eliminarusuarioview_titulo" xml:space="preserve">
+	<data name="eliminarusuarioview_titulo" xml:space="preserve">
     <value>USER DELETION</value>
   </data>
-  <data name="iniciarsesionview_contrasena_entry" xml:space="preserve">
+	<data name="iniciarsesionview_contrasena_entry" xml:space="preserve">
     <value>Enter your password</value>
   </data>
-  <data name="iniciarsesionview_contrasena_label" xml:space="preserve">
+	<data name="iniciarsesionview_contrasena_label" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="iniciarsesionview_iniciar_sesion_button" xml:space="preserve">
+	<data name="iniciarsesionview_iniciar_sesion_button" xml:space="preserve">
     <value>Log in</value>
   </data>
-  <data name="iniciarsesionview_nombre_entry" xml:space="preserve">
+	<data name="iniciarsesionview_nombre_entry" xml:space="preserve">
     <value>Enter the username</value>
   </data>
-  <data name="iniciarsesionview_nombre_label" xml:space="preserve">
+	<data name="iniciarsesionview_nombre_label" xml:space="preserve">
     <value>Username</value>
   </data>
-  <data name="iniciarsesionview_no_tiene_cuenta_button" xml:space="preserve">
+	<data name="iniciarsesionview_no_tiene_cuenta_button" xml:space="preserve">
     <value>Don't have an account? Sign in</value>
   </data>
-  <data name="iniciarsesionview_olvida_contrasena_button" xml:space="preserve">
+	<data name="iniciarsesionview_olvida_contrasena_button" xml:space="preserve">
     <value>Forgot your password?</value>
   </data>
-  <data name="iniciarsesionview_titulo" xml:space="preserve">
+	<data name="iniciarsesionview_titulo" xml:space="preserve">
     <value>LOG IN TO CONTINUE</value>
   </data>
-  <data name="misrecetasview_actualizar_receta_button" xml:space="preserve">
+	<data name="misrecetasview_actualizar_receta_button" xml:space="preserve">
     <value>Update recipe</value>
   </data>
-  <data name="misrecetasview_eliminar_receta_button" xml:space="preserve">
+	<data name="misrecetasview_eliminar_receta_button" xml:space="preserve">
     <value>Remove recipe</value>
   </data>
-  <data name="misrecetasview_mis_recetas_label" xml:space="preserve">
+	<data name="misrecetasview_mis_recetas_label" xml:space="preserve">
     <value>MY RECIPES</value>
   </data>
-  <data name="misrecetasview_mostrar_receta_button" xml:space="preserve">
+	<data name="misrecetasview_mostrar_receta_button" xml:space="preserve">
     <value>Show stored recipes</value>
   </data>
-  <data name="nuevacategoriaview_eliminar_categoria_button" xml:space="preserve">
+	<data name="nuevacategoriaview_eliminar_categoria_button" xml:space="preserve">
     <value>Delete category</value>
   </data>
-  <data name="nuevacategoriaview_modificar_categoria_button" xml:space="preserve">
+	<data name="nuevacategoriaview_modificar_categoria_button" xml:space="preserve">
     <value>Modify category</value>
   </data>
-  <data name="nuevacategoriaview_nueva_categoria_button" xml:space="preserve">
+	<data name="nuevacategoriaview_nueva_categoria_button" xml:space="preserve">
     <value>Save category</value>
   </data>
-  <data name="nuevacategoriaview_nueva_categoria_entry" xml:space="preserve">
+	<data name="nuevacategoriaview_nueva_categoria_entry" xml:space="preserve">
     <value>Enter the category you want to add</value>
   </data>
-  <data name="nuevacategoriaview_titulo" xml:space="preserve">
+	<data name="nuevacategoriaview_titulo" xml:space="preserve">
     <value>ADD A NEW FOOD CATEGORY</value>
   </data>
-  <data name="nuevarecetaview_anadir_categoria_button" xml:space="preserve">
+	<data name="nuevarecetaview_anadir_categoria_button" xml:space="preserve">
     <value>Add category</value>
   </data>
-  <data name="nuevarecetaview_anadir_categoria_picker" xml:space="preserve">
+	<data name="nuevarecetaview_anadir_categoria_picker" xml:space="preserve">
     <value>Select the category</value>
   </data>
-  <data name="nuevarecetaview_anadir_pais_button" xml:space="preserve">
+	<data name="nuevarecetaview_anadir_pais_button" xml:space="preserve">
     <value>Add country</value>
   </data>
-  <data name="nuevarecetaview_anadir_pais_picker" xml:space="preserve">
+	<data name="nuevarecetaview_anadir_pais_picker" xml:space="preserve">
     <value>Select the country</value>
   </data>
-  <data name="nuevarecetaview_categoria_comida" xml:space="preserve">
+	<data name="nuevarecetaview_categoria_comida" xml:space="preserve">
     <value>Select the category to which it belongs</value>
   </data>
-  <data name="nuevarecetaview_descripcion_receta" xml:space="preserve">
+	<data name="nuevarecetaview_descripcion_receta" xml:space="preserve">
     <value>Write the recipe description</value>
   </data>
-  <data name="nuevarecetaview_guardar_nueva_receta" xml:space="preserve">
+	<data name="nuevarecetaview_guardar_nueva_receta" xml:space="preserve">
     <value>Save Recipe</value>
   </data>
-  <data name="nuevarecetaview_ingredientes_receta" xml:space="preserve">
+	<data name="nuevarecetaview_ingredientes_receta" xml:space="preserve">
     <value>Write the ingredients of the recipe</value>
   </data>
-  <data name="nuevarecetaview_nombre_receta" xml:space="preserve">
+	<data name="nuevarecetaview_nombre_receta" xml:space="preserve">
     <value>Enter the name of the recipe</value>
   </data>
-  <data name="nuevarecetaview_nueva_receta_label" xml:space="preserve">
+	<data name="nuevarecetaview_nueva_receta_label" xml:space="preserve">
     <value>NEW RECIPE</value>
   </data>
-  <data name="nuevarecetaview_pasos_receta" xml:space="preserve">
+	<data name="nuevarecetaview_pasos_receta" xml:space="preserve">
     <value>Write the steps of the recipe</value>
   </data>
-  <data name="nuevarecetaview_tiempo_cocina" xml:space="preserve">
+	<data name="nuevarecetaview_tiempo_cocina" xml:space="preserve">
     <value>Write down the cooking time of the recipe</value>
   </data>
-  <data name="nuevarecetaview_tiempo_preparacion" xml:space="preserve">
+	<data name="nuevarecetaview_tiempo_preparacion" xml:space="preserve">
     <value>Write down the recipe preparation time</value>
   </data>
-  <data name="nuevopaisview_eliminar_pais_button" xml:space="preserve">
+	<data name="nuevopaisview_eliminar_pais_button" xml:space="preserve">
     <value>Delete country</value>
   </data>
-  <data name="nuevopaisview_modificar_pais_button" xml:space="preserve">
+	<data name="nuevopaisview_modificar_pais_button" xml:space="preserve">
     <value>Modify country</value>
   </data>
-  <data name="nuevopaisview_nuevo_pais_button" xml:space="preserve">
+	<data name="nuevopaisview_nuevo_pais_button" xml:space="preserve">
     <value>Save country</value>
   </data>
-  <data name="nuevopaisview_nuevo_pais_entry" xml:space="preserve">
+	<data name="nuevopaisview_nuevo_pais_entry" xml:space="preserve">
     <value>Enter the country you want to add</value>
   </data>
-  <data name="nuevopaisview_titulo" xml:space="preserve">
+	<data name="nuevopaisview_titulo" xml:space="preserve">
     <value>ADD A COUNTRY</value>
   </data>
-  <data name="registrarseview_apellido_real_entry" xml:space="preserve">
+	<data name="registrarseview_apellido_real_entry" xml:space="preserve">
     <value>Write your last name</value>
   </data>
-  <data name="registrarseview_apellido_real_label" xml:space="preserve">
+	<data name="registrarseview_apellido_real_label" xml:space="preserve">
     <value>Last Name</value>
   </data>
-  <data name="registrarseview_contrasena_entry" xml:space="preserve">
+	<data name="registrarseview_contrasena_entry" xml:space="preserve">
     <value>Enter your password</value>
   </data>
-  <data name="registrarseview_contrasena_label" xml:space="preserve">
+	<data name="registrarseview_contrasena_label" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="registrarseview_edad_entry" xml:space="preserve">
+	<data name="registrarseview_edad_entry" xml:space="preserve">
     <value>Enter your age</value>
   </data>
-  <data name="registrarseview_edad_label" xml:space="preserve">
+	<data name="registrarseview_edad_label" xml:space="preserve">
     <value>Age</value>
   </data>
-  <data name="registrarseview_nombre_entry" xml:space="preserve">
+	<data name="registrarseview_nombre_entry" xml:space="preserve">
     <value>Enter the username</value>
   </data>
-  <data name="registrarseview_nombre_label" xml:space="preserve">
+	<data name="registrarseview_nombre_label" xml:space="preserve">
     <value>Username</value>
   </data>
-  <data name="registrarseview_nombre_real_entry" xml:space="preserve">
+	<data name="registrarseview_nombre_real_entry" xml:space="preserve">
     <value>Write your first name</value>
   </data>
-  <data name="registrarseview_nombre_real_label" xml:space="preserve">
+	<data name="registrarseview_nombre_real_label" xml:space="preserve">
     <value>First Name</value>
   </data>
-  <data name="registrarseview_registrarse_button" xml:space="preserve">
+	<data name="registrarseview_registrarse_button" xml:space="preserve">
     <value>Register</value>
   </data>
-  <data name="registrarseview_repetir_contrasena_entry" xml:space="preserve">
+	<data name="registrarseview_repetir_contrasena_entry" xml:space="preserve">
     <value>Repeat the password you just typed</value>
   </data>
-  <data name="registrarseview_tiene_cuenta_button" xml:space="preserve">
+	<data name="registrarseview_tiene_cuenta_button" xml:space="preserve">
     <value>Already have an account? Log in</value>
   </data>
-  <data name="registrarseview_titulo" xml:space="preserve">
+	<data name="registrarseview_titulo" xml:space="preserve">
     <value>CREATE A NEW ACCOUNT TO CONTINUE</value>
   </data>
-  <data name="tabbed_page_configuracion_title" xml:space="preserve">
+	<data name="tabbed_page_configuracion_title" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="tabbed_page_mis_recetas_title" xml:space="preserve">
+	<data name="tabbed_page_mis_recetas_title" xml:space="preserve">
     <value>My Recipes</value>
   </data>
-  <data name="tabbed_page_nueva_receta_title" xml:space="preserve">
+	<data name="tabbed_page_nueva_receta_title" xml:space="preserve">
     <value>New Recipe</value>
   </data>
-  <data name="volver_al_menu_principal_button" xml:space="preserve">
+	<data name="volver_al_menu_principal_button" xml:space="preserve">
     <value>Back to main menu</value>
+  </data>
+	<data name="display_alert_aceptar" xml:space="preserve">
+      <value>Accept</value>
+  </data>
+	<data name="display_alert_eliminado" xml:space="preserve">
+      <value>Deleted</value>
+  </data>
+	<data name="display_alert_receta_eliminada" xml:space="preserve">
+      <value>Recipe deleted correctly</value>
+  </data>
+	<data name="display_alert_error" xml:space="preserve">
+      <value>Error</value>
+  </data>
+	<data name="display_alert_error_iniciarsesionview" xml:space="preserve">
+      <value>The user doesn't exist or the introduced data is incorrect</value>
+  </data>
+	<data name="display_alert_error_empty_username" xml:space="preserve">
+      <value>You must enter a user name</value>
+  </data>
+	<data name="display_alert_error_empty_password" xml:space="preserve">
+      <value>You must enter a password</value>
+  </data>
+	<data name="display_alert_error_empty_firstname" xml:space="preserve">
+      <value>You must enter your first name</value>
+  </data>
+	<data name="display_alert_error_empty_lastname" xml:space="preserve">
+      <value>You must enter your last name</value>
+  </data>
+	<data name="display_alert_error_empty_age" xml:space="preserve">
+      <value>You must enter your age</value>
+  </data>
+  <data name="display_alert_error_password_not_match" xml:space="preserve">
+      <value>Repeated password is not the same</value>
+  </data>
+  <data name="display_alert_success" xml:space="preserve">
+      <value>Success</value>
+  </data>
+  <data name="display_alert_welcome" xml:space="preserve">
+      <value>Welcome</value>
+  </data>
+  <data name="display_alert_cant_change_password_user_not_exist" xml:space="preserve">
+      <value>The user you are trying to change the password does not exist</value>
+  </data>
+  <data name="display_alert_password_updated" xml:space="preserve">
+      <value>Updated user password</value>
+  </data>
+  <data name="display_alert_delete_user_not_exist" xml:space="preserve">
+      <value>The user you are trying to delete does not exist</value>
+  </data>
+  <data name="display_alert_user_delete_correctly" xml:space="preserve">
+      <value>User successfully deleted</value>
+  </data>
+  <data name="display_alert_category_stored" xml:space="preserve">
+      <value>Successfully stored category</value>
+  </data>
+  <data name="display_alert_category_updated" xml:space="preserve">
+      <value>Successfully modified category</value>
+  </data>
+  <data name="display_alert_category_deleted" xml:space="preserve">
+      <value>Successfully deleted category</value>
   </data>
 </root>

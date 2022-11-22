@@ -66,13 +66,13 @@ namespace SaveYourRecipes.Features.Usuarios
         {
             if (string.IsNullOrEmpty(this.nombreUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debe ingresar un nombre de usuario / You must enter a user name", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_username, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.contrasenaUsuario))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes ingreser una contraseña / You must enter a password", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_empty_password, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
@@ -87,7 +87,7 @@ namespace SaveYourRecipes.Features.Usuarios
 
             if (e.Count == 0)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "El usuario no existe o los datos introducidos son incorrectos / The user does not exist or the data entered is incorrect", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_error_iniciarsesionview, Strings.Strings.display_alert_aceptar);
 
                 this.IsRunningTxt = false;
                 this.IsVisibleTxt = false;
