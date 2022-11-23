@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using SaveYourRecipes.Models;
 using SaveYourRecipes.Service;
 using Xamarin.Forms;
@@ -15,8 +16,6 @@ namespace SaveYourRecipes.Features.MisRecetas
         public MisRecetasView()
         {
             InitializeComponent();
-            ListaMostrar();
-
         }
 
         private async void lstRecetas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -37,7 +36,7 @@ namespace SaveYourRecipes.Features.MisRecetas
             }
         }
 
-        public async void ListaMostrar()
+        public async Task ListaMostrar()
         {
             string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
             var recetaList = await App.Database.GetRecipesOfMyUser(nombreUsuario);
@@ -47,9 +46,9 @@ namespace SaveYourRecipes.Features.MisRecetas
             }
         }
 
-        private void mostrarDatos_Clicked(object sender, EventArgs e)
+        private async void mostrarDatos_Clicked(object sender, EventArgs e)
         {
-            ListaMostrar();
+           await ListaMostrar();
         }
 
         private async void eliminarDatos_Clicked(object sender, EventArgs e)
@@ -65,8 +64,14 @@ namespace SaveYourRecipes.Features.MisRecetas
                 eliminarDatos.IsVisible = false;
                 mostrarDatos.IsVisible = true;
 
-                ListaMostrar();
+              await ListaMostrar();
             }
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await ListaMostrar();
         }
     }
 }
