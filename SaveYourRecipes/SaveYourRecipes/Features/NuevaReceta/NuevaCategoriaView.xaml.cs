@@ -1,7 +1,7 @@
 ﻿using SaveYourRecipes.Models;
 using SaveYourRecipes.Service;
 using System;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +13,6 @@ namespace SaveYourRecipes.Features.NuevaReceta
         public NuevaCategoriaView()
         {
             InitializeComponent();
-            ListaMostrar();
         }
 
         private async void nuevaCategoriaButton_Clicked(object sender, EventArgs e)
@@ -29,7 +28,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
             await App.Database.SaveCategoriaComidaAsync(categoria_Comida);
             await DisplayAlert(Strings.Strings.display_alert_success, Strings.Strings.display_alert_category_stored, Strings.Strings.display_alert_aceptar);
 
-            ListaMostrar();
+            await ListaMostrar();
 
         }
 
@@ -53,7 +52,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
             }
         }
 
-        public async void ListaMostrar()
+        public async Task ListaMostrar()
         {
             string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
             var categoriaList = await App.Database.GetCategoriaComidaAsync(nombreUsuario);
@@ -83,7 +82,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
                 nuevaCategoriaTxt.Text = "";
 
-                ListaMostrar();
+                await ListaMostrar();
             }
         }
 
@@ -100,8 +99,14 @@ namespace SaveYourRecipes.Features.NuevaReceta
                 eliminarCategoriaButton.IsVisible = false;
                 nuevaCategoriaButton.IsVisible = true;
 
-                ListaMostrar();
+               await ListaMostrar();
             }
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await ListaMostrar();
         }
     }
 }

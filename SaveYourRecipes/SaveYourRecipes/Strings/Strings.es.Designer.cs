@@ -283,6 +283,33 @@ namespace SaveYourRecipes.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to País eliminado correctamente.
+        /// </summary>
+        internal static string display_alert_country_deleted {
+            get {
+                return ResourceManager.GetString("display_alert_country_deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to País almacenado correctamente.
+        /// </summary>
+        internal static string display_alert_country_stored_correctly {
+            get {
+                return ResourceManager.GetString("display_alert_country_stored_correctly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to País modificado correctamente.
+        /// </summary>
+        internal static string display_alert_country_updated {
+            get {
+                return ResourceManager.GetString("display_alert_country_updated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to El usuario que intentas eliminar no existe.
         /// </summary>
         internal static string display_alert_delete_user_not_exist {
@@ -297,6 +324,60 @@ namespace SaveYourRecipes.Strings {
         internal static string display_alert_eliminado {
             get {
                 return ResourceManager.GetString("display_alert_eliminado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debes escribir el tiempo de cocina de la receta.
+        /// </summary>
+        internal static string display_alert_empty_recipe_cooking_time {
+            get {
+                return ResourceManager.GetString("display_alert_empty_recipe_cooking_time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debes escribir una descripción para la receta.
+        /// </summary>
+        internal static string display_alert_empty_recipe_description {
+            get {
+                return ResourceManager.GetString("display_alert_empty_recipe_description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debes escribir los ingredientes de la receta.
+        /// </summary>
+        internal static string display_alert_empty_recipe_ingredients {
+            get {
+                return ResourceManager.GetString("display_alert_empty_recipe_ingredients", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debes escribir un nombre para la receta.
+        /// </summary>
+        internal static string display_alert_empty_recipe_name {
+            get {
+                return ResourceManager.GetString("display_alert_empty_recipe_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debes escribir el tiempo de preparación de la receta.
+        /// </summary>
+        internal static string display_alert_empty_recipe_preparation_time {
+            get {
+                return ResourceManager.GetString("display_alert_empty_recipe_preparation_time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debes escribir los pasos de la receta.
+        /// </summary>
+        internal static string display_alert_empty_recipe_steps {
+            get {
+                return ResourceManager.GetString("display_alert_empty_recipe_steps", resourceCulture);
             }
         }
         
@@ -387,6 +468,24 @@ namespace SaveYourRecipes.Strings {
         internal static string display_alert_receta_eliminada {
             get {
                 return ResourceManager.GetString("display_alert_receta_eliminada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receta.
+        /// </summary>
+        internal static string display_alert_recipe {
+            get {
+                return ResourceManager.GetString("display_alert_recipe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to almacenada correctamente.
+        /// </summary>
+        internal static string display_alert_stored_correctly {
+            get {
+                return ResourceManager.GetString("display_alert_stored_correctly", resourceCulture);
             }
         }
         

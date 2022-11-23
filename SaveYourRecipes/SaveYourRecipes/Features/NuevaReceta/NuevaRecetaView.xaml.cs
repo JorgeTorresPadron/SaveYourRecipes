@@ -14,7 +14,6 @@ namespace SaveYourRecipes.Features.NuevaReceta
         public NuevaRecetaView()
         {
             InitializeComponent();
-            LoadData();
         }
 
         private async void anadirPaisButton_Clicked(object sender, EventArgs e)
@@ -32,37 +31,37 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
             if (string.IsNullOrEmpty(this.nombreRecetaTxt.Text))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes escribir un nombre para la receta / You must write a name for the recipe", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_empty_recipe_name, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.descripcionRecetaTxt.Text))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes escribir una descripción para la receta / You must write a description for the recipe", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_empty_recipe_description, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.pasosRecetaTxt.Text))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes escribir los pasos de la receta / You must write the steps of the recipe", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_empty_recipe_steps, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.ingredientesRecetaTxt.Text))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes escribir los ingredientes de la receta / You must write the ingredients of the recipe", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_empty_recipe_ingredients, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (this.tiempoPreparacionTxt.Equals(null) | this.tiempoPreparacionTxt.Equals(""))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes escribir el tiempo de preparación de la receta / You must write the recipe preparation time", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_empty_recipe_preparation_time, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
             if (this.tiempoCocinaTxt.Equals(null) | this.tiempoCocinaTxt.Equals(""))
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Debes escribir el tiempo de cocina de la receta / You must write the cooking time of the recipe", "Ok");
+                await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_error, Strings.Strings.display_alert_empty_recipe_cooking_time, Strings.Strings.display_alert_aceptar);
                 return;
             }
 
@@ -88,7 +87,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
             await App.Database.SaveRecetaAsync(receta);
            
-            await App.Current.MainPage.DisplayAlert("Éxito / Success", "Receta / Recipe " + nombreRecetaTxt.ToString() + " almacenada correctamente / stored correctly", "Ok");
+            await App.Current.MainPage.DisplayAlert(Strings.Strings.display_alert_success, Strings.Strings.display_alert_recipe + " " + nombreRecetaTxt.ToString() + " " + Strings.Strings.display_alert_stored_correctly, Strings.Strings.display_alert_aceptar);
         }
 
         public async Task LoadData()
@@ -98,9 +97,15 @@ namespace SaveYourRecipes.Features.NuevaReceta
             categoriaPicker.ItemsSource = await App.Database.GetCategoriaComidaNombresAsync();
         }
 
-        private void refrescarPickersButton_Clicked(object sender, EventArgs e)
+        private async void refrescarPickersButton_Clicked(object sender, EventArgs e)
         {
-            LoadData();
+            await LoadData();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await LoadData();
         }
     }
 }

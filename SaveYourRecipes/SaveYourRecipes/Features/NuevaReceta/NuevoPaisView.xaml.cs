@@ -1,7 +1,7 @@
 ﻿using SaveYourRecipes.Models;
 using SaveYourRecipes.Service;
 using System;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +13,6 @@ namespace SaveYourRecipes.Features.NuevaReceta
         public NuevoPaisView()
         {
             InitializeComponent();
-            ListaMostrar();
         }
 
         private async void nuevoPaisButton_Clicked(object sender, EventArgs e)
@@ -27,9 +26,9 @@ namespace SaveYourRecipes.Features.NuevaReceta
             };
 
             await App.Database.SavePaisAsync(pais);
-            await DisplayAlert("Éxito / Success", "Categoría almacenada correctamente / Successfully stored category", "Ok");
+            await DisplayAlert(Strings.Strings.display_alert_success, Strings.Strings.display_alert_country_stored_correctly, Strings.Strings.display_alert_aceptar);
 
-            ListaMostrar();
+            await ListaMostrar();
         }
 
         private async void lstPaises_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -52,7 +51,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
             }
         }
 
-        public async void ListaMostrar()
+        public async Task ListaMostrar()
         {
             string nombreUsuario = CompartirInformacion.nombreUsuarioShare;
             var paisesList = await App.Database.GetPaisAsync(nombreUsuario);
@@ -74,7 +73,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
                     pais_nombre_usuario = nombreUsuario,
                 };
                 await App.Database.SavePaisAsync(pais);
-                await DisplayAlert("Éxito / Success", "Categoría modificada correctamente / Successfully modified category", "Ok");
+                await DisplayAlert(Strings.Strings.display_alert_success, Strings.Strings.display_alert_country_updated, Strings.Strings.display_alert_aceptar);
 
                 modificarPaisButton.IsVisible = false;
                 eliminarPaisButton.IsVisible = false;
@@ -82,7 +81,7 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
                 nuevoPaisTxt.Text = "";
 
-                ListaMostrar();
+             await ListaMostrar();
             }
         }
 
@@ -93,15 +92,21 @@ namespace SaveYourRecipes.Features.NuevaReceta
             if (pais != null)
             {
                 await App.Database.DeletePaisAsync(pais);
-                await DisplayAlert("Eliminado / Deleted", "Categoría eliminada correctamente / Successfully deleted category", "Ok");
+                await DisplayAlert(Strings.Strings.display_alert_eliminado, Strings.Strings.display_alert_country_deleted, Strings.Strings.display_alert_aceptar);
 
                 modificarPaisButton.IsVisible = false;
                 eliminarPaisButton.IsVisible = false;
                 nuevoPaisButton.IsVisible = true;
 
-                ListaMostrar();
+               await ListaMostrar();
             }
 
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await ListaMostrar();
         }
     }
 }

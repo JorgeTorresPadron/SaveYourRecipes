@@ -423,4 +423,37 @@
   <data name="display_alert_category_deleted" xml:space="preserve">
       <value>Successfully deleted category</value>
   </data>
+  <data name="display_alert_empty_recipe_name" xml:space="preserve">
+      <value>You must write a name for the recipe</value>
+  </data>
+  <data name="display_alert_empty_recipe_description" xml:space="preserve">
+      <value>You must write a description for the recipe</value>
+  </data>
+  <data name="display_alert_empty_recipe_steps" xml:space="preserve">
+      <value>You must write the steps of the recipe</value>
+  </data>
+  <data name="display_alert_empty_recipe_ingredients" xml:space="preserve">
+      <value>You must write the ingredients of the recipe</value>
+  </data>
+  <data name="display_alert_empty_recipe_preparation_time" xml:space="preserve">
+      <value>You must write the recipe preparation time</value>
+  </data>
+  <data name="display_alert_empty_recipe_cooking_time" xml:space="preserve">
+      <value>You must write the cooking time of the recipe</value>
+  </data>
+  <data name="display_alert_recipe" xml:space="preserve">
+      <value>Recipe</value>
+  </data>
+  <data name="display_alert_stored_correctly" xml:space="preserve">
+      <value>stored correctly</value>
+  </data>
+  <data name="display_alert_country_stored_correctly" xml:space="preserve">
+      <value>Successfully stored country</value>
+  </data>
+  <data name="display_alert_country_updated" xml:space="preserve">
+      <value>Successfully updated country</value>
+  </data>
+  <data name="display_alert_country_deleted" xml:space="preserve">
+      <value>Successfully deleted country</value>
+  </data>
 </root>
