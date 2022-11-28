@@ -17,17 +17,17 @@ namespace SaveYourRecipes.Features.Configuracion
 
         private async void acercaDeButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new AcercaDeView());
+            await Navigation.PushAsync(new AcercaDeView());
         }
 
         private async void cerrarSesionButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new IniciarSesionView());
+            await Navigation.PushAsync(new IniciarSesionView());
         }
 
         private async void eliminarUsuarioButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new EliminarUsuarioView());
+            await Navigation.PushAsync(new EliminarUsuarioView());
         }
     }
 }

@@ -30,7 +30,7 @@ namespace SaveYourRecipes
         public App()
         {
             InitializeComponent();
-            MainPage = new IniciarSesionView();
+            MainPage = new NavigationPage(new IniciarSesionView());
         }
 
         protected override void OnStart()

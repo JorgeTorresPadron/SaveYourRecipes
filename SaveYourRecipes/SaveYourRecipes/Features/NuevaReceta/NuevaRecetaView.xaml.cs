@@ -18,12 +18,12 @@ namespace SaveYourRecipes.Features.NuevaReceta
 
         private async void anadirPaisButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NuevoPaisView());
+            await Navigation.PushAsync(new NuevoPaisView());
         }
 
         private async void anadirCategoriaButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NuevaCategoriaView());
+            await Navigation.PushAsync(new NuevaCategoriaView());
         }
 
         private async void guardarRecetaButton_Clicked(object sender, EventArgs e)

@@ -13,10 +13,5 @@ namespace SaveYourRecipes.Features.AcercaDe
             InitializeComponent();
             BindingContext = new AcercaDeViewModel();
         }
-
-        private void volverButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushModalAsync(new MainPageView());
-        }
     }
 }

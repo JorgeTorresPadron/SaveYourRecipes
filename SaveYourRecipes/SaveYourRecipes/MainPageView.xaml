@@ -12,7 +12,8 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             SelectedTabColor="Red"
-            x:Class="SaveYourRecipes.MainPageView">
+            x:Class="SaveYourRecipes.MainPageView"
+            NavigationPage.HasBackButton="False">
 
     <localNuevo:NuevaRecetaView 
         Title="{translator:Translate tabbed_page_nueva_receta_title}"
